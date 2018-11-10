@@ -1,0 +1,577 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2015-10-02T21:29:47+02:00\n"
+"PO-Revision-Date: 2015-10-02T21:29:48+02:00\n"
+"Language: fi_FI\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# - - - - - - - - - - - - - - - - - - - 
+# add-on Menu
+# next entry is Editable in-place
+msgid "Add Lazy Menu to your website"
+msgstr "Lis&auml;&auml; Lazy Menu sivustoosi"
+
+# - - - - - - - - - - - - - - - - - - -
+# block Menu
+msgid "Delete this Menu item"
+msgstr "Poista t&auml;m&auml; valikkokohta"
+
+msgid "You can leave this blank if you want to link to this same page"
+msgstr "Voit j&auml;tt&auml;&auml; t&auml;m&auml;n tyhj&auml;n, jos haluat linkitt&auml;&auml; t&auml;h&auml;n samaan sivuun"
+
+msgid "Title displays only on mobile view"
+msgstr "Otsikko n&auml;kyy vain mobiilin&auml;kym&auml;ss&auml;"
+
+msgid "Logo"
+msgstr "Logo"
+
+msgid "site name"
+msgstr "sivuston nimi"
+
+msgid "List of Add-ons"
+msgstr "Lis&auml;osien luettelo"
+
+msgid "Dedicated Add-on"
+msgstr "Dedicated Add-on"
+
+msgid "all your menu items are listed below"
+msgstr "kaikki valikon kohdat on lueteltu alla"
+
+msgid "menu items"
+msgstr "valikon kohteita"
+
+msgid "show logo?"
+msgstr "n&auml;yt&auml; logo?"
+
+msgid "show language switch?"
+msgstr "n&auml;yt&auml; kieli kytkin?"
+
+# block shared
+msgid "File type required: JPG or PNG"
+msgstr "Tiedostotyyppi tarvitaan: JPG tai PNG"
+
+msgid "File extension required: JPG or PNG"
+msgstr "File extension vaaditaan: JPG tai PNG"
+
+msgid "File image is invalid"
+msgstr "Tiedoston kuva on virheellinen"
+
+msgid "Cannot be empty"
+msgstr "Ei voi olla tyhj&auml;"
+
+msgid "Title"
+msgstr "Otsikko"
+
+msgid "Subtitle"
+msgstr "Alaotsikko"
+
+msgid "Customise Style"
+msgstr "Muokkaa Style"
+
+msgid "background image"
+msgstr "taustakuva"
+
+msgid "font colour"
+msgstr "fontin v&auml;rin"
+
+msgid "with Animation"
+msgstr "animation"
+
+msgid "a title goes here"
+msgstr "otsikko tulee t&auml;h&auml;n"
+
+msgid "and subtitle here"
+msgstr "ja tekstityksen t&auml;&auml;ll&auml;"
+
+msgid "contact us"
+msgstr "ota meihin yhteytt&auml;"
+
+msgid "name"
+msgstr "nimi"
+
+msgid "Required"
+msgstr "Edellytet&auml;&auml;n"
+
+msgid "your"
+msgstr "sinun"
+
+msgid "Your"
+msgstr "Sinun"
+
+msgid "Page"
+msgstr "Sivu"
+
+msgid "here"
+msgstr "t&auml;ss&auml;"
+
+msgid "click here"
+msgstr "klikkaa t&auml;st&auml;"
+
+msgid "Contacts"
+msgstr "Yhteydet"
+
+msgid "contact me"
+msgstr "ota yhteytt&auml; minuun"
+
+msgid "yeah, go ahead"
+msgstr "joo, menn&auml; eteenp&auml;in"
+
+msgid "Title: %s"
+msgstr "Otsikko: %s"
+
+msgid "Subtitle: %s"
+msgstr "Alaotsikko: %s"
+
+msgid "Email: %s"
+msgstr "S&auml;hk&ouml;posti: %s"
+
+msgid "%1$s Page %2$s: %3$s"
+msgstr "%1$s Page %2$s: %3$s"
+
+msgid "my"
+msgstr "minun"
+
+msgid "File size exceeded: Max %s"
+msgstr "Tiedoston koko exceded: Max %s"
+
+msgid "Cannot be empty: %s"
+msgstr "Ei voi olla tyhj&auml;: %s"
+
+msgid "name: %s"
+msgstr "name: %s"
+
+msgid "and"
+msgstr "ja"
+
+msgid "Here"
+msgstr "T&auml;ss&auml;"
+
+msgid "Invalid link: %s"
+msgstr "Virheellinen linkki: %s"
+
+msgid "Visible?"
+msgstr "N&auml;kyv&auml;?"
+
+msgid "Background Colour"
+msgstr "Taustav&auml;ri"
+
+msgid "Adjust Background Opacity"
+msgstr "S&auml;&auml;d&auml; tausta peitt&auml;vyys"
+
+msgid "Background Image"
+msgstr "Taustakuva"
+
+msgid "Foreground Colour"
+msgstr "Etualalla Colour"
+
+msgid "Animation / Transition"
+msgstr "Animaatio / Transition"
+
+msgid "Yes"
+msgstr "Joo"
+
+msgid "No"
+msgstr "Ei"
+
+msgid "Choose Image"
+msgstr "Valitse Image"
+
+msgid "default"
+msgstr "oletusarvo"
+
+msgid "adjust top opacity"
+msgstr "s&auml;&auml;d&auml; top peitt&auml;vyytt&auml;"
+
+msgid "find out more"
+msgstr "lis&auml;tietoja"
+
+msgid "Random image from: %s"
+msgstr "Satunnainen kuva: %s"
+
+msgid "File Sets"
+msgstr "Tiedostossa asetetaan"
+
+msgid "Choose"
+msgstr "Valita"
+
+msgid "Otherwise"
+msgstr "Muuten"
+
+msgid "stick a single image here"
+msgstr "laittaa yhden kuvan t&auml;st&auml;"
+
+msgid "it has priority over single image"
+msgstr "sill&auml; on etusija yhden kuvan"
+
+msgid "%1$s Select a %2$s %1$s"
+msgstr "%1$s Valitse %2$s %1$s"
+
+msgid "File Set"
+msgstr "Tiedoston Set"
+
+msgid "How to add a %s"
+msgstr "Kuinka lis&auml;t&auml; %s"
+
+msgid "Content: %s"
+msgstr "Sis&auml;lt&ouml;: %s"
+
+msgid "Text Button: %s"
+msgstr "Teksti Button: %s"
+
+msgid "Link / anchor to: %s"
+msgstr "Linkki / ankkuri: %s"
+
+msgid "hi everyone"
+msgstr "hei kaikki"
+
+msgid "Global Text Button: %s"
+msgstr "Global Teksti Button: %s"
+
+msgid "Global Link / anchor to: %s"
+msgstr "Global Link / ankkuri: %s"
+
+msgid "Choose an icon:"
+msgstr "Valitse kuvake:"
+
+msgid "it has priority over the icon"
+msgstr "sill&auml; on etusija kuvakkeen"
+
+msgid "Title below icon / image: %s"
+msgstr "Nimike alle kuvake / kuva: %s"
+
+msgid "Single Text Button: %s"
+msgstr "Yhden Teksti Button: %s"
+
+msgid "check it out"
+msgstr "tarkista se"
+
+msgid "Or stick an image:"
+msgstr "Tai laittaa kuvan:"
+
+msgid "1st %s"
+msgstr "1st %s"
+
+msgid "2nd %s"
+msgstr "2nd %s"
+
+msgid "3rd %s"
+msgstr "3rd %s"
+
+msgid "4th %s"
+msgstr "4. %s"
+
+msgid "Invalid URL: %s"
+msgstr "Virheellinen URL: %s"
+
+msgid "Options file sets list"
+msgstr "Asetustiedostojen luettelo"
+
+msgid "URL How to add a file set"
+msgstr "URL-Kuinka lis&auml;t&auml; tiedoston setti"
+
+msgid "Custom template name"
+msgstr "Mukautetun mallin nimen"
+
+msgid "Custom Foreground image"
+msgstr "Custom Edustav&auml;ri kuva"
+
+msgid "Content"
+msgstr "Pitoisuus"
+
+msgid "see how"
+msgstr "katso kuinka"
+
+msgid "Global Link: %s"
+msgstr "Global Linkki: %s"
+
+msgid "Item %s"
+msgstr "Tuote %s"
+
+msgid "How to choose a %s"
+msgstr "Miten valita %s"
+
+msgid "available"
+msgstr "k&auml;ytett&auml;viss&auml;"
+
+msgid "I got the skills"
+msgstr "Minulla on taitoja"
+
+msgid "find out who I am"
+msgstr "selvit&auml; kuka min&auml; olen"
+
+msgid "check me out"
+msgstr "tarkista minut"
+
+msgid "ask me more"
+msgstr "kysy lis&auml;&auml;"
+
+msgid "1st"
+msgstr "1st"
+
+msgid "2nd"
+msgstr "2nd"
+
+msgid "3rd"
+msgstr "3rd"
+
+msgid "4th"
+msgstr "4th"
+
+msgid "5th"
+msgstr "5th"
+
+msgid "6th"
+msgstr "6th"
+
+msgid "7th"
+msgstr "7th"
+
+msgid "8th"
+msgstr "8th"
+
+msgid "9th"
+msgstr "9th"
+
+msgid "what I do"
+msgstr "mit&auml; teen"
+
+msgid "What I do"
+msgstr "Mit&auml; teen"
+
+msgid "Prices"
+msgstr "Hintoja"
+
+msgid "prices"
+msgstr "hintoja"
+
+msgid "contacts"
+msgstr "yhteystiedot"
+
+msgid "subtitle goes here"
+msgstr "alaotsikko menee t&auml;nne"
+
+msgid "text: %s"
+msgstr "teksti: %s"
+
+msgid "Link to text: %s"
+msgstr "Linkki tekstiin: %s"
+
+msgid "background colour %s"
+msgstr "taustav&auml;ri %s"
+
+msgid "with or without transparency"
+msgstr "avoimuuden kanssa tai ilman"
+
+msgid "Page: %s"
+msgstr "Sivu: %s"
+
+msgid "it has priority over the link"
+msgstr "sill&auml; on etusija linkin yl&auml;puolella"
+
+msgid "Choose File"
+msgstr "Valitse tiedosto"
+
+msgid "File type required: PDF, ODT or DOC"
+msgstr "Tarvittava tiedostotyyppi: PDF, ODT tai DOC"
+
+msgid "File extension required: PDF, ODT or DOC"
+msgstr "Tiedostop&auml;&auml;te tarvitaan: PDF, ODT tai DOC"
+
+msgid "File is invalid"
+msgstr "Tiedosto on virheellinen"
+
+msgid "new"
+msgstr "uusi"
+
+msgid "Title below / over image: %s"
+msgstr "Otsikko alla / yli kuva: %s"
+
+msgid "And now Choose"
+msgstr "Ja nyt Valitse"
+
+msgid "Pop Up image?"
+msgstr "Pop up kuva?"
+
+msgid "it has priority over Single Link"
+msgstr "se on etusijalla yksitt&auml;isen linkin suhteen"
+
+msgid "Link type"
+msgstr "Linkin tyyppi"
+
+msgid "Select a Page"
+msgstr "Valitse sivu"
+
+msgid "Autoscroll to"
+msgstr "Autoscroll to"
+
+msgid "Custom anchor"
+msgstr "Mukautettu ankkuri"
+
+msgid "if you have not installed it yet"
+msgstr "jos et ole viel&auml; asentanut sit&auml;"
+
+msgid "OK good"
+msgstr "Okei hyv&auml;"
+
+msgid "Menu item"
+msgstr "Valikkokohta"
+
+msgid "Add menu item"
+msgstr "Lis&auml;&auml; valikkokohta"
+
+msgid "Link to a web page"
+msgstr "Linkki verkkosivulle"
+
+msgid "NO auto scrolling"
+msgstr "EI automaattista vierityst&auml;"
+
+msgid "Same window"
+msgstr "Sama ikkuna"
+
+msgid "New window"
+msgstr "Uusi ikkuna"
+
+msgid "Target of link"
+msgstr "Linkin kohde"
+
+msgid "anchor-name"
+msgstr "ankkurin-nimi"
+
+msgid "visit:"
+msgstr "vierailla:"
+
+msgid "See them All"
+msgstr "Katso kaikki"
+
+msgid "See more"
+msgstr "Katso lis&auml;&auml;"
+
+msgid "Same Page"
+msgstr "Sama sivu"
+
+msgid "New Page"
+msgstr "Uusi sivu"
+
+msgid "Type a URL"
+msgstr "Kirjoita URL"
+
+msgid "Profile icon"
+msgstr "Profiilin kuvaketta"
+
+msgid "Profile URL"
+msgstr "Profiili-URL"
+
+msgid "Link types list"
+msgstr "Linkityyppien luettelo"
+
+msgid "Link targets list"
+msgstr "Linkki tavoitteiden luettelo"
+
+msgid "Or stick a custom logo:"
+msgstr "Tai laita oma logo:"
+
+msgid "Global Link"
+msgstr "Global Link"
+
+msgid "Single Link to Page or URL"
+msgstr "Yhden linkin sivulle tai URL-osoitteeseen"
+
+msgid "Title below / over image"
+msgstr "Otsikko alle / yli kuva"
+
+msgid "Global URL"
+msgstr "Globaali URL-osoite"
+
+msgid "Profile"
+msgstr "Profiili"
+
+msgid "Custom image"
+msgstr "Mukautettu kuva"
+
+msgid "Text"
+msgstr "Teksti"
+
+msgid "page"
+msgstr "sivu"
+
+msgid "Button Text"
+msgstr "Button Text"
+
+msgid "Text Link: %s"
+msgstr "Tekstilinkki: %s"
+
+msgid "Action Link"
+msgstr "Action Link"
+
+msgid "Link Name: %s"
+msgstr "Linkin nimi: %s"
+
+msgid "Link name"
+msgstr "Linkin nimi"
+
+msgid "all your items are listed below"
+msgstr "kaikki kohteet on lueteltu alla"
+
+msgid "templates"
+msgstr "malleja"
+
+msgid "Link to Page or URL"
+msgstr "Linkki Sivun tai URL-osoite"
+
+msgid "it has priority over Link to Page or URL"
+msgstr "se on ensisijainen Linkki Sivun tai URL-osoite"
+
+msgid "item Title: %s"
+msgstr "kohteen Nimi: %s"
+
+msgid "Name: %s"
+msgstr "Nimi: %s"
+
+msgid "all your %s are listed below"
+msgstr "kaikki %s on lueteltu alla"
+
+msgid "items"
+msgstr "kohteita"
+
+msgid "item Title"
+msgstr "kohteen Nimi"
+
+msgid "single image here"
+msgstr "yhden kuvan t&auml;nne"
+
+msgid "random image from: %s"
+msgstr "satunnainen kuva: %s"
+
+msgid "Choose this item's icon"
+msgstr "Valitse t&auml;m&auml;n tuotteen kuvaketta"
+
+msgid "template"
+msgstr "malli"
+
+msgid "Here you define:"
+msgstr "T&auml;&auml;ll&auml; voit m&auml;&auml;ritt&auml;&auml;:"
+
+msgid "link to a %1$s URL %2$s or to a %1$s Page %2$s"
+msgstr "linkki %1$s URL-osoite %2$s tai %1$s %2$s"
+
+msgid "add an %1$s anchor %2$s to scroll to a %1$s section %2$s of a page"
+msgstr "lis&auml;&auml; %1$s ankkuri %2$s selaa to %1$s-osiossa %2$s sivu"
+
+msgid "open up to a %1$s new page %2$s or on the %1$s same page %2$s"
+msgstr "avaa enint&auml;&auml;n %1$s new page %2$s tai %1$s saman web-sivun %2$s"
+
+msgid "Leave it empty to hide it"
+msgstr "J&auml;t&auml; se tyhj&auml;ksi, jos haluat piilottaa sen"
+
+msgid "documentation:"
+msgstr "asiakirjat:"
+
+msgid "an %1$s anchor %2$s to scroll to a %1$s section %2$s of a page"
+msgstr "%1$s ankkuri %2$s selaa to %1$s-osiossa %2$s sivu"

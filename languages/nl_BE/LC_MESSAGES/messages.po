@@ -1,0 +1,577 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2015-10-02T21:29:47+02:00\n"
+"PO-Revision-Date: 2015-10-02T21:29:48+02:00\n"
+"Language: nl_BE\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# - - - - - - - - - - - - - - - - - - - 
+# add-on Menu
+# next entry is Editable in-place
+msgid "Add Lazy Menu to your website"
+msgstr "Voeg Lazy Menu aan uw website"
+
+# - - - - - - - - - - - - - - - - - - -
+# block Menu
+msgid "Delete this Menu item"
+msgstr "Verwijder dit menu-item"
+
+msgid "You can leave this blank if you want to link to this same page"
+msgstr "U kunt dit veld leeg laten als u naar dezelfde pagina wilt linken"
+
+msgid "Title displays only on mobile view"
+msgstr "Titel wordt alleen weergegeven in mobiele weergave"
+
+msgid "Logo"
+msgstr "Logo"
+
+msgid "site name"
+msgstr "site naam"
+
+msgid "List of Add-ons"
+msgstr "Lijst met add-ons"
+
+msgid "Dedicated Add-on"
+msgstr "Toegewijde add-on"
+
+msgid "all your menu items are listed below"
+msgstr "alle menu-items worden weergegeven onder"
+
+msgid "menu items"
+msgstr "menu-items"
+
+msgid "show logo?"
+msgstr "toon logo?"
+
+msgid "show language switch?"
+msgstr "toon het wisselen van taal?"
+
+# block shared
+msgid "File type required: JPG or PNG"
+msgstr "Bestandstype nodig: JPG of PNG"
+
+msgid "File extension required: JPG or PNG"
+msgstr "Extensiebestand vereist: JPG of PNG"
+
+msgid "File image is invalid"
+msgstr "Image-bestand is ongeldig"
+
+msgid "Cannot be empty"
+msgstr "Kan niet leeg zijn"
+
+msgid "Title"
+msgstr "Titel"
+
+msgid "Subtitle"
+msgstr "Subtitel"
+
+msgid "Customise Style"
+msgstr "Pas Style"
+
+msgid "background image"
+msgstr "achtergrond afbeelding"
+
+msgid "font colour"
+msgstr "font color"
+
+msgid "with Animation"
+msgstr "met Animation"
+
+msgid "a title goes here"
+msgstr "een titel komt hier"
+
+msgid "and subtitle here"
+msgstr "en ondertiteling hier"
+
+msgid "contact us"
+msgstr "neem contact met ons op"
+
+msgid "name"
+msgstr "naam"
+
+msgid "Required"
+msgstr "Nodig"
+
+msgid "your"
+msgstr "jouw"
+
+msgid "Your"
+msgstr "Jouw"
+
+msgid "Page"
+msgstr "Pagina"
+
+msgid "here"
+msgstr "hier"
+
+msgid "click here"
+msgstr "klik hier"
+
+msgid "Contacts"
+msgstr "Contacten"
+
+msgid "contact me"
+msgstr "contact met mij op"
+
+msgid "yeah, go ahead"
+msgstr "ja, ga je gang"
+
+msgid "Title: %s"
+msgstr "Titel: %s"
+
+msgid "Subtitle: %s"
+msgstr "Ondertitel: %s"
+
+msgid "Email: %s"
+msgstr "E-mail: %s"
+
+msgid "%1$s Page %2$s: %3$s"
+msgstr "%1$s pagina %2$s: %3$s"
+
+msgid "my"
+msgstr "mijn"
+
+msgid "File size exceeded: Max %s"
+msgstr "Bestandsgrootte overtrof: Max %s"
+
+msgid "Cannot be empty: %s"
+msgstr "Kan niet leeg zijn: %s"
+
+msgid "name: %s"
+msgstr "naam: %s"
+
+msgid "and"
+msgstr "en"
+
+msgid "Here"
+msgstr "Hier"
+
+msgid "Invalid link: %s"
+msgstr "Ongeldige link: %s"
+
+msgid "Visible?"
+msgstr "Zichtbaar?"
+
+msgid "Background Colour"
+msgstr "Achtergrond Kleur"
+
+msgid "Adjust Background Opacity"
+msgstr "Pas Achtergrond Dekking"
+
+msgid "Background Image"
+msgstr "Achtergrond afbeelding"
+
+msgid "Foreground Colour"
+msgstr "Voorgrond kleur"
+
+msgid "Animation / Transition"
+msgstr "Animatie / Transition"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "No"
+msgstr "Nee"
+
+msgid "Choose Image"
+msgstr "Kies Afbeelding"
+
+msgid "default"
+msgstr "standaard"
+
+msgid "adjust top opacity"
+msgstr "aan te passen top ondoorzichtigheid"
+
+msgid "find out more"
+msgstr "meer te weten komen"
+
+msgid "Random image from: %s"
+msgstr "Willekeurige afbeelding uit: %s"
+
+msgid "File Sets"
+msgstr "File Sets"
+
+msgid "Choose"
+msgstr "Kiezen"
+
+msgid "Otherwise"
+msgstr "Anders"
+
+msgid "stick a single image here"
+msgstr "zet een enkel beeld hier"
+
+msgid "it has priority over single image"
+msgstr "het heeft voorrang enkel beeld boven"
+
+msgid "%1$s Select a %2$s %1$s"
+msgstr "%1$s Selecteer een %2$s %1$s"
+
+msgid "File Set"
+msgstr "File Set"
+
+msgid "How to add a %s"
+msgstr "Hoe maak je een %s toe te voegen"
+
+msgid "Content: %s"
+msgstr "Inhoud: %s"
+
+msgid "Text Button: %s"
+msgstr "Tekst Knop: %s"
+
+msgid "Link / anchor to: %s"
+msgstr "Link / anchor naar: %s"
+
+msgid "hi everyone"
+msgstr "hallo iedereen"
+
+msgid "Global Text Button: %s"
+msgstr "Global Text Button: %s"
+
+msgid "Global Link / anchor to: %s"
+msgstr "Global Link / anchor naar: %s"
+
+msgid "Choose an icon:"
+msgstr "Kies een icoon:"
+
+msgid "it has priority over the icon"
+msgstr "het heeft voorrang boven het pictogram"
+
+msgid "Title below icon / image: %s"
+msgstr "Titel / pictogram hieronder: %s"
+
+msgid "Single Text Button: %s"
+msgstr "Single Tekst Knop: %s"
+
+msgid "check it out"
+msgstr "bekijken"
+
+msgid "Or stick an image:"
+msgstr "Of zet een afbeelding:"
+
+msgid "1st %s"
+msgstr "1 %s"
+
+msgid "2nd %s"
+msgstr "2 %s"
+
+msgid "3rd %s"
+msgstr "3 %s"
+
+msgid "4th %s"
+msgstr "4 %s"
+
+msgid "Invalid URL: %s"
+msgstr "Ongeldige URL: %s"
+
+msgid "Options file sets list"
+msgstr "Opties file sets lijst"
+
+msgid "URL How to add a file set"
+msgstr "URL Hoe maak je een bestand wilt toevoegen"
+
+msgid "Custom template name"
+msgstr "Template naam Custom"
+
+msgid "Custom Foreground image"
+msgstr "Aangepaste afbeelding voorgrond"
+
+msgid "Content"
+msgstr "Inhoud"
+
+msgid "see how"
+msgstr "zie hoe"
+
+msgid "Global Link: %s"
+msgstr "Global Link: %s"
+
+msgid "Item %s"
+msgstr "Item %s"
+
+msgid "How to choose a %s"
+msgstr "Hoe kies je een %s"
+
+msgid "available"
+msgstr "beschikbaar"
+
+msgid "I got the skills"
+msgstr "Ik heb de vaardigheden"
+
+msgid "find out who I am"
+msgstr "ontdek wie ik ben"
+
+msgid "check me out"
+msgstr "controleer me uit"
+
+msgid "ask me more"
+msgstr "vraag me nog meer"
+
+msgid "1st"
+msgstr "1"
+
+msgid "2nd"
+msgstr "2e"
+
+msgid "3rd"
+msgstr "3e"
+
+msgid "4th"
+msgstr "4e"
+
+msgid "5th"
+msgstr "5e"
+
+msgid "6th"
+msgstr "6e"
+
+msgid "7th"
+msgstr "7e"
+
+msgid "8th"
+msgstr "8ste"
+
+msgid "9th"
+msgstr "9de"
+
+msgid "what I do"
+msgstr "wat ik doe"
+
+msgid "What I do"
+msgstr "Wat ik doe"
+
+msgid "Prices"
+msgstr "Prijzen"
+
+msgid "prices"
+msgstr "prijzen"
+
+msgid "contacts"
+msgstr "contacten"
+
+msgid "subtitle goes here"
+msgstr "ondertitel gaat hier"
+
+msgid "text: %s"
+msgstr "tekst: %s"
+
+msgid "Link to text: %s"
+msgstr "Link naar tekst: %s"
+
+msgid "background colour %s"
+msgstr "achtergrondkleur %s"
+
+msgid "with or without transparency"
+msgstr "met of zonder transparantie"
+
+msgid "Page: %s"
+msgstr "Pagina: %s"
+
+msgid "it has priority over the link"
+msgstr "het heeft prioriteit boven de link"
+
+msgid "Choose File"
+msgstr "Kies bestand"
+
+msgid "File type required: PDF, ODT or DOC"
+msgstr "Bestandstype vereist: PDF, ODT of DOC"
+
+msgid "File extension required: PDF, ODT or DOC"
+msgstr "Bestandsuitbreiding vereist: PDF, ODT of DOC"
+
+msgid "File is invalid"
+msgstr "Bestand is ongeldig"
+
+msgid "new"
+msgstr "nieuwe"
+
+msgid "Title below / over image: %s"
+msgstr "Titel onder / boven afbeelding: %s"
+
+msgid "And now Choose"
+msgstr "En nu kies"
+
+msgid "Pop Up image?"
+msgstr "Pop-upafbeelding?"
+
+msgid "it has priority over Single Link"
+msgstr "het heeft voorrang op een enkele link"
+
+msgid "Link type"
+msgstr "Link type"
+
+msgid "Select a Page"
+msgstr "Selecteer een pagina"
+
+msgid "Autoscroll to"
+msgstr "Autoscroll naar"
+
+msgid "Custom anchor"
+msgstr "Aangepast anker"
+
+msgid "if you have not installed it yet"
+msgstr "als je het nog niet hebt ge&iuml;nstalleerd"
+
+msgid "OK good"
+msgstr "OK goed"
+
+msgid "Menu item"
+msgstr "Menu onderdeel"
+
+msgid "Add menu item"
+msgstr "Menu-item toevoegen"
+
+msgid "Link to a web page"
+msgstr "Link naar een webpagina"
+
+msgid "NO auto scrolling"
+msgstr "GEEN automatisch scrollen"
+
+msgid "Same window"
+msgstr "Hetzelfde venster"
+
+msgid "New window"
+msgstr "Nieuw raam"
+
+msgid "Target of link"
+msgstr "Doel van de link"
+
+msgid "anchor-name"
+msgstr "ankernaam"
+
+msgid "visit:"
+msgstr "bezoek:"
+
+msgid "See them All"
+msgstr "Zie ze allemaal"
+
+msgid "See more"
+msgstr "Bekijk meer"
+
+msgid "Same Page"
+msgstr "Dezelfde pagina"
+
+msgid "New Page"
+msgstr "Nieuwe pagina"
+
+msgid "Type a URL"
+msgstr "Typ een URL"
+
+msgid "Profile icon"
+msgstr "Profielpictogram"
+
+msgid "Profile URL"
+msgstr "Profiel URL"
+
+msgid "Link types list"
+msgstr "Link types lijst"
+
+msgid "Link targets list"
+msgstr "Link doelen lijst"
+
+msgid "Or stick a custom logo:"
+msgstr "Of zet een aangepast logo:"
+
+msgid "Global Link"
+msgstr "Wereldwijde link"
+
+msgid "Single Link to Page or URL"
+msgstr "Enkele link naar pagina of URL"
+
+msgid "Title below / over image"
+msgstr "Titel onder / over afbeelding"
+
+msgid "Global URL"
+msgstr "Algemene URL"
+
+msgid "Profile"
+msgstr "Profiel"
+
+msgid "Custom image"
+msgstr "Aangepaste afbeelding"
+
+msgid "Text"
+msgstr "Tekst"
+
+msgid "page"
+msgstr "pagina"
+
+msgid "Button Text"
+msgstr "Knop tekst"
+
+msgid "Text Link: %s"
+msgstr "Tekstlink: %s"
+
+msgid "Action Link"
+msgstr "Actiekoppeling"
+
+msgid "Link Name: %s"
+msgstr "Linknaam: %s"
+
+msgid "Link name"
+msgstr "Link naam"
+
+msgid "all your items are listed below"
+msgstr "al uw items worden hieronder vermeld"
+
+msgid "templates"
+msgstr "templates"
+
+msgid "Link to Page or URL"
+msgstr "Link naar de Pagina of URL"
+
+msgid "it has priority over Link to Page or URL"
+msgstr "het heeft voorrang op de Link naar de Pagina of URL"
+
+msgid "item Title: %s"
+msgstr "item Titel: %s"
+
+msgid "Name: %s"
+msgstr "Naam: %s"
+
+msgid "all your %s are listed below"
+msgstr "al uw %s zijn hieronder vermeld"
+
+msgid "items"
+msgstr "items"
+
+msgid "item Title"
+msgstr "artikel Titel"
+
+msgid "single image here"
+msgstr "enkel beeld hier"
+
+msgid "random image from: %s"
+msgstr "willekeurige afbeelding uit: %s"
+
+msgid "Choose this item's icon"
+msgstr "Kies dit item het pictogram van"
+
+msgid "template"
+msgstr "sjabloon"
+
+msgid "Here you define:"
+msgstr "Hier kunt u het volgende defini&euml;ren:"
+
+msgid "link to a %1$s URL %2$s or to a %1$s Page %2$s"
+msgstr "link naar %1$s URL %2$s of %1$s Pagina %2$s"
+
+msgid "add an %1$s anchor %2$s to scroll to a %1$s section %2$s of a page"
+msgstr "voeg een %1$s anker %2$s om naar %1$s gedeelte %2$s van een pagina"
+
+msgid "open up to a %1$s new page %2$s or on the %1$s same page %2$s"
+msgstr "open tot een %1$s nieuwe pagina %2$s op %1$s dezelfde pagina %2$s"
+
+msgid "Leave it empty to hide it"
+msgstr "Leeg laten om het te verbergen"
+
+msgid "documentation:"
+msgstr "documentatie:"
+
+msgid "an %1$s anchor %2$s to scroll to a %1$s section %2$s of a page"
+msgstr "een %1$s anker %2$s om naar %1$s gedeelte %2$s van een pagina"

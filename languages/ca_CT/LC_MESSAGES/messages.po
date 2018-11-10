@@ -1,0 +1,577 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2015-10-02T21:29:47+02:00\n"
+"PO-Revision-Date: 2015-10-02T21:29:48+02:00\n"
+"Language: ca_CT\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# - - - - - - - - - - - - - - - - - - - 
+# add-on Menu
+# next entry is Editable in-place
+msgid "Add Lazy Menu to your website"
+msgstr "Afegir z% del seu lloc web"
+
+# - - - - - - - - - - - - - - - - - - -
+# block Menu
+msgid "Delete this Menu item"
+msgstr "Suprimeix aquest element de men&uacute;"
+
+msgid "You can leave this blank if you want to link to this same page"
+msgstr "Podeu deixar aquest text en blanc si voleu enlla&ccedil;ar a aquesta mateixa p&agrave;gina"
+
+msgid "Title displays only on mobile view"
+msgstr "El t&iacute;tol nom&eacute;s es mostra a la vista m&ograve;bil"
+
+msgid "Logo"
+msgstr "Logotip"
+
+msgid "site name"
+msgstr "nom del lloc"
+
+msgid "List of Add-ons"
+msgstr "Llista de complements"
+
+msgid "Dedicated Add-on"
+msgstr "Complement Dedicat"
+
+msgid "all your menu items are listed below"
+msgstr "tots els elements del men&uacute; es relacionen a continuaci&oacute;"
+
+msgid "menu items"
+msgstr "els elements de men&uacute;"
+
+msgid "show logo?"
+msgstr "mostra el logotip?"
+
+msgid "show language switch?"
+msgstr "mostra canviar idioma?"
+
+# block shared
+msgid "File type required: JPG or PNG"
+msgstr "Tipus d'arxiu requerit: JPG o PNG"
+
+msgid "File extension required: JPG or PNG"
+msgstr "Extensi&oacute; d'arxiu requerit: JPG o PNG"
+
+msgid "File image is invalid"
+msgstr "Imatge d'arxiu no &eacute;s v&agrave;lid"
+
+msgid "Cannot be empty"
+msgstr "No pot estar buit"
+
+msgid "Title"
+msgstr "T&iacute;tol"
+
+msgid "Subtitle"
+msgstr "Subt&iacute;tol"
+
+msgid "Customise Style"
+msgstr "Modifica per a requisits particulars Estil"
+
+msgid "background image"
+msgstr "imatge de fons"
+
+msgid "font colour"
+msgstr "color de la font"
+
+msgid "with Animation"
+msgstr "amb l'animaci&oacute;"
+
+msgid "a title goes here"
+msgstr "un t&iacute;tol va aqu&iacute;"
+
+msgid "and subtitle here"
+msgstr "i el subt&iacute;tol aqu&iacute;"
+
+msgid "contact us"
+msgstr "contacti'ns"
+
+msgid "name"
+msgstr "nom"
+
+msgid "Required"
+msgstr "Necessari"
+
+msgid "your"
+msgstr "seva"
+
+msgid "Your"
+msgstr "Seva"
+
+msgid "Page"
+msgstr "P&agrave;gina"
+
+msgid "here"
+msgstr "aqu&iacute;"
+
+msgid "click here"
+msgstr "clica aqu&iacute;"
+
+msgid "Contacts"
+msgstr "Contactes"
+
+msgid "contact me"
+msgstr "en contacte amb mi"
+
+msgid "yeah, go ahead"
+msgstr "s&iacute;, endavant"
+
+msgid "Title: %s"
+msgstr "T&iacute;tol: %s"
+
+msgid "Subtitle: %s"
+msgstr "Subt&iacute;tol: %s"
+
+msgid "Email: %s"
+msgstr "Correu electr&ograve;nic: %s"
+
+msgid "%1$s Page %2$s: %3$s"
+msgstr "%1$s p&agrave;gina %2$s: %3$s"
+
+msgid "my"
+msgstr "el meu"
+
+msgid "File size exceeded: Max %s"
+msgstr "Mida del fitxer depassades: Max %s"
+
+msgid "Cannot be empty: %s"
+msgstr "No pot estar buit: %s"
+
+msgid "name: %s"
+msgstr "nom: %s"
+
+msgid "and"
+msgstr "i"
+
+msgid "Here"
+msgstr "Aqu&iacute;"
+
+msgid "Invalid link: %s"
+msgstr "Vincle no v&agrave;lid: %s"
+
+msgid "Visible?"
+msgstr "Visible?"
+
+msgid "Background Colour"
+msgstr "Color de fons"
+
+msgid "Adjust Background Opacity"
+msgstr "Ajust Opacitat de fons"
+
+msgid "Background Image"
+msgstr "Imatge de fons"
+
+msgid "Foreground Colour"
+msgstr "Primer pla Color"
+
+msgid "Animation / Transition"
+msgstr "Animaci&oacute; / Transici&oacute;"
+
+msgid "Yes"
+msgstr "Si"
+
+msgid "No"
+msgstr "No"
+
+msgid "Choose Image"
+msgstr "Seleccioneu imatge"
+
+msgid "default"
+msgstr "defecte"
+
+msgid "adjust top opacity"
+msgstr "ajustar la part superior d'opacitat"
+
+msgid "find out more"
+msgstr "descobrir m&eacute;s"
+
+msgid "Random image from: %s"
+msgstr "Imatge aleat&ograve;ria a partir de: %s"
+
+msgid "File Sets"
+msgstr "Conjunts d'arxius"
+
+msgid "Choose"
+msgstr "Triar"
+
+msgid "Otherwise"
+msgstr "D'una altra manera"
+
+msgid "stick a single image here"
+msgstr "posar una sola imatge aqu&iacute;"
+
+msgid "it has priority over single image"
+msgstr "t&eacute; prioritat sobre una sola imatge"
+
+msgid "%1$s Select a %2$s %1$s"
+msgstr "%1$s Seleccioneu un %2$s %1$s"
+
+msgid "File Set"
+msgstr "Conjunt de fitxers"
+
+msgid "How to add a %s"
+msgstr "Com afegir un %s"
+
+msgid "Content: %s"
+msgstr "Contingut: %s"
+
+msgid "Text Button: %s"
+msgstr "Bot&oacute; de text: %s"
+
+msgid "Link / anchor to: %s"
+msgstr "Enlla&ccedil; / ancoratge a: %s"
+
+msgid "hi everyone"
+msgstr "hola a tothom"
+
+msgid "Global Text Button: %s"
+msgstr "Text del bot&oacute; mundial: %s"
+
+msgid "Global Link / anchor to: %s"
+msgstr "Enlla&ccedil; Global / ancoratge a: %s"
+
+msgid "Choose an icon:"
+msgstr "Triar una icona:"
+
+msgid "it has priority over the icon"
+msgstr "t&eacute; prioritat sobre la icona"
+
+msgid "Title below icon / image: %s"
+msgstr "T&iacute;tol de la icona / imatge a continuaci&oacute;: %s"
+
+msgid "Single Text Button: %s"
+msgstr "Bot&oacute; de Text &Uacute;nic: %s"
+
+msgid "check it out"
+msgstr "comprova-ho"
+
+msgid "Or stick an image:"
+msgstr "O dit d'una imatge:"
+
+msgid "1st %s"
+msgstr "primer %s"
+
+msgid "2nd %s"
+msgstr "segon %s"
+
+msgid "3rd %s"
+msgstr "3ª %s"
+
+msgid "4th %s"
+msgstr "4ª %s"
+
+msgid "Invalid URL: %s"
+msgstr "URL no v&agrave;lida: %s"
+
+msgid "Options file sets list"
+msgstr "Opcions d'arxiu de llista de conjunts"
+
+msgid "URL How to add a file set"
+msgstr "URL Com afegir un conjunt d'arxius"
+
+msgid "Custom template name"
+msgstr "Personalitzada nom de la plantilla"
+
+msgid "Custom Foreground image"
+msgstr "Primer pla d'imatge personalitzada"
+
+msgid "Content"
+msgstr "Contingut"
+
+msgid "see how"
+msgstr "veure com"
+
+msgid "Global Link: %s"
+msgstr "Enlla&ccedil; Global: %s"
+
+msgid "Item %s"
+msgstr "Element %s"
+
+msgid "How to choose a %s"
+msgstr "Com triar un %s"
+
+msgid "available"
+msgstr "disponible"
+
+msgid "I got the skills"
+msgstr "Tinc les habilitats"
+
+msgid "find out who I am"
+msgstr "descobreix qui s&oacute;c"
+
+msgid "check me out"
+msgstr "fes-me un cop d'ull"
+
+msgid "ask me more"
+msgstr "pregunta'm m&eacute;s"
+
+msgid "1st"
+msgstr "1r"
+
+msgid "2nd"
+msgstr "2n"
+
+msgid "3rd"
+msgstr "3r"
+
+msgid "4th"
+msgstr "4t"
+
+msgid "5th"
+msgstr "5&egrave;"
+
+msgid "6th"
+msgstr "6&egrave;"
+
+msgid "7th"
+msgstr "7&egrave;"
+
+msgid "8th"
+msgstr "vuitena"
+
+msgid "9th"
+msgstr "9&egrave;"
+
+msgid "what I do"
+msgstr "que faig"
+
+msgid "What I do"
+msgstr "Que faig"
+
+msgid "Prices"
+msgstr "Preus"
+
+msgid "prices"
+msgstr "preus"
+
+msgid "contacts"
+msgstr "contactes"
+
+msgid "subtitle goes here"
+msgstr "el subt&iacute;tol va aqu&iacute;"
+
+msgid "text: %s"
+msgstr "text: %s"
+
+msgid "Link to text: %s"
+msgstr "Enlla&ccedil; al text: %s"
+
+msgid "background colour %s"
+msgstr "color de fons %s"
+
+msgid "with or without transparency"
+msgstr "amb transpar&egrave;ncia o sense"
+
+msgid "Page: %s"
+msgstr "P&agrave;gina: %s"
+
+msgid "it has priority over the link"
+msgstr "t&eacute; prioritat sobre l'enlla&ccedil;"
+
+msgid "Choose File"
+msgstr "Trieu l'arxiu"
+
+msgid "File type required: PDF, ODT or DOC"
+msgstr "Tipus de fitxer requerit: PDF, ODT o DOC"
+
+msgid "File extension required: PDF, ODT or DOC"
+msgstr "Es necessita extensi&oacute; d'arxiu: PDF, ODT o DOC"
+
+msgid "File is invalid"
+msgstr "El fitxer no &eacute;s v&agrave;lid"
+
+msgid "new"
+msgstr "nou"
+
+msgid "Title below / over image: %s"
+msgstr "T&iacute;tol a sota / a sobre de la imatge: %s"
+
+msgid "And now Choose"
+msgstr "I ara trieu"
+
+msgid "Pop Up image?"
+msgstr "Imatge emergent?"
+
+msgid "it has priority over Single Link"
+msgstr "t&eacute; prioritat sobre Single Link"
+
+msgid "Link type"
+msgstr "Tipus d'enlla&ccedil;"
+
+msgid "Select a Page"
+msgstr "Seleccioneu una p&agrave;gina"
+
+msgid "Autoscroll to"
+msgstr "Autoscolar a"
+
+msgid "Custom anchor"
+msgstr "&Agrave;ncora personalitzada"
+
+msgid "if you have not installed it yet"
+msgstr "si encara no l'heu instal·lat"
+
+msgid "OK good"
+msgstr "D'acord"
+
+msgid "Menu item"
+msgstr "Element del men&uacute;"
+
+msgid "Add menu item"
+msgstr "Afegeix un element del men&uacute;"
+
+msgid "Link to a web page"
+msgstr "Enlla&ccedil; a una p&agrave;gina web"
+
+msgid "NO auto scrolling"
+msgstr "SENSE despla&ccedil;ament autom&agrave;tic"
+
+msgid "Same window"
+msgstr "Mateixa finestra"
+
+msgid "New window"
+msgstr "Finestra nova"
+
+msgid "Target of link"
+msgstr "Orientaci&oacute; de l'enlla&ccedil;"
+
+msgid "anchor-name"
+msgstr "nom-d-ancoratge"
+
+msgid "visit:"
+msgstr "visita:"
+
+msgid "See them All"
+msgstr "Veure'ls tots"
+
+msgid "See more"
+msgstr "Veure m&eacute;s"
+
+msgid "Same Page"
+msgstr "La mateixa p&agrave;gina"
+
+msgid "New Page"
+msgstr "P&agrave;gina nova"
+
+msgid "Type a URL"
+msgstr "Escriviu un URL"
+
+msgid "Profile icon"
+msgstr "Icona del perfil"
+
+msgid "Profile URL"
+msgstr "URL del perfil"
+
+msgid "Link types list"
+msgstr "Llista de tipus d'enlla&ccedil;os"
+
+msgid "Link targets list"
+msgstr "Llista d'objectius d'enlla&ccedil;"
+
+msgid "Or stick a custom logo:"
+msgstr "O poseu un logotip personalitzat:"
+
+msgid "Global Link"
+msgstr "Enlla&ccedil; global"
+
+msgid "Single Link to Page or URL"
+msgstr "Enlla&ccedil; &uacute;nic a la p&agrave;gina o URL"
+
+msgid "Title below / over image"
+msgstr "T&iacute;tol a sota / sobre la imatge"
+
+msgid "Global URL"
+msgstr "URL global"
+
+msgid "Profile"
+msgstr "Perfil"
+
+msgid "Custom image"
+msgstr "Imatge personalitzada"
+
+msgid "Text"
+msgstr "Text"
+
+msgid "page"
+msgstr "p&agrave;gina"
+
+msgid "Button Text"
+msgstr "Text de bot&oacute;"
+
+msgid "Text Link: %s"
+msgstr "Enlla&ccedil; de text: %s"
+
+msgid "Action Link"
+msgstr "Enlla&ccedil; d'acci&oacute;"
+
+msgid "Link Name: %s"
+msgstr "Nom de l'enlla&ccedil;: %s"
+
+msgid "Link name"
+msgstr "Nom de l'enlla&ccedil;"
+
+msgid "all your items are listed below"
+msgstr "tots els elements es mostren a continuaci&oacute;"
+
+msgid "templates"
+msgstr "plantilles"
+
+msgid "Link to Page or URL"
+msgstr "Enlla&ccedil; a la P&agrave;gina o un URL"
+
+msgid "it has priority over Link to Page or URL"
+msgstr "t&eacute; prioritat sobre l'Enlla&ccedil; o URL a la P&agrave;gina"
+
+msgid "item Title: %s"
+msgstr "item T&iacute;tol: %s"
+
+msgid "Name: %s"
+msgstr "Nom: %s"
+
+msgid "all your %s are listed below"
+msgstr "tots els teus %s enumeren a continuaci&oacute;"
+
+msgid "items"
+msgstr "articles"
+
+msgid "item Title"
+msgstr "item T&iacute;tol"
+
+msgid "single image here"
+msgstr "imatge d'aqu&iacute;"
+
+msgid "random image from: %s"
+msgstr "imatge a l'atzar a partir de: %s"
+
+msgid "Choose this item's icon"
+msgstr "Escolliu aquest element de la icona"
+
+msgid "template"
+msgstr "plantilla"
+
+msgid "Here you define:"
+msgstr "Aqu&iacute; podeu definir:"
+
+msgid "link to a %1$s URL %2$s or to a %1$s Page %2$s"
+msgstr "enlla&ccedil; a %1$s URL a %2$s o per a %1$s de la P&agrave;gina de %2$s"
+
+msgid "add an %1$s anchor %2$s to scroll to a %1$s section %2$s of a page"
+msgstr "afegir un %1$s &agrave;ncora %2$s per despla&ccedil;ar-vos a %1$s secci&oacute; de %2$s de la p&agrave;gina"
+
+msgid "open up to a %1$s new page %2$s or on the %1$s same page %2$s"
+msgstr "obrir-se a %1$s noves de la p&agrave;gina de %2$s o a les %1$s mateixa p&agrave;gina a %2$s"
+
+msgid "Leave it empty to hide it"
+msgstr "Deixeu-la buida per amagar-la"
+
+msgid "documentation:"
+msgstr "documentaci&oacute;:"
+
+msgid "an %1$s anchor %2$s to scroll to a %1$s section %2$s of a page"
+msgstr "una de %1$s &agrave;ncora %2$s per despla&ccedil;ar-vos a %1$s secci&oacute; de %2$s de la p&agrave;gina"

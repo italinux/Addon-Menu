@@ -1,0 +1,52 @@
+This software is licensed under the following terms & conditions:
+
+[[ Concrete5.org Marketplace Commercial Add-Ons & Themes License ]]
+
+This License (“the Agreement”) is between DEVELOPMENT PARTNER and Customer as 
+identified on the Order Details Email.  This Agreement applies to all employees 
+in Customer’s organization (“Authorized Users”).
+
+    1.    License Grant.  Subject to the provisions of this Agreement, Customer 
+is granted a limited, non-transferable, non-exclusive license to use the 
+Software Application for a single website and a single staging or development 
+version.  Customer may not offer the System for resale without expressed 
+permission from DEVELOPMENT PARTNER. 
+
+    2.    Augmenting Code. Customer may modify, supplement, adapt, translate or 
+create derivative works based upon the System. Any modifications are fully owned 
+by customer, and do not effect the license limitations for further use. 
+
+
+    3.    Ownership.  The System is licensed, not sold.  Customer acknowledges 
+that the System (including any changes Customer may request or suggest) is the 
+property of DEVELOPMENT PARTNER or its licensors.  Title to the System and all 
+related intellectual property will remain with DEVELOPMENT PARTNER and its 
+licensors at all times, as will all other rights not explicitly granted to 
+Customer in this Agreement. 
+
+    4.    Important Warranty Disclaimers and Limitation of Liability. 
+
+NO WARRANTY.  Although DEVELOPMENT PARTNER attempts to deliver accurate, 
+complete content and error-free software applications, occasional errors or 
+omissions may occur in the System.  EXCEPT AS SPECIFICALLY PROVIDED IN THIS 
+AGREEMENT, THE SYSTEM IS PROVIDED "AS IS."  DEVELOPMENT PARTNER MAKES NO OTHER 
+REPRESENTATION OR WARRANTY, EITHER EXPRESS OR IMPLIED.  DEVELOPMENT PARTNER DOES 
+NOT WARRANT THE ACCURACY, COMPLETENESS, PERFORMANCE, CURRENCY, MERCHANTABILITY, 
+OR FITNESS FOR A PARTICULAR PURPOSE OF THE SYSTEM.  DEVELOPMENT PARTNER 
+DISCLAIMS ALL RESPONSIBILITY FOR ANY LOSS OR CLAIM OF ANY KIND RESULTING FROM, 
+ARISING OUT OF, OR ANY WAY RELATED TO USE OF THE SYSTEM.  DEVELOPMENT PARTNER’S 
+ENTIRE LIABILITY AND OBLIGATION SHALL BE LIMITED TO DEVELOPMENT PARTNER USING 
+COMMERCIALLY REASONABLE EFFORTS TO CORRECT ERRORS OR OMISSIONS AND SHALL 
+CONSTITUTE CUSTOMER’S SOLE RIGHT AND EXCLUSIVE REMEDY HEREUNDER WITH RESPECT TO 
+THE SYSTEM.
+
+IMPORTANT LIMITATION OF LIABILITY.  IN NO EVENT SHALL DEVELOPMENT PARTNER OR ITS 
+OFFICERS, EMPLOYEES, VENDORS OR LICENSORS BE LIABLE FOR LOSS OF DATA, LOSS OF 
+PROFIT, OR FOR ANY OTHER SPECIAL, CONSEQUENTIAL, OR INCIDENTAL DAMAGES, HOWEVER 
+CAUSED, WHETHER BASED UPON CONTRACT, NEGLIGENCE, STRICT LIABILITY IN TORT, 
+WARRANTY, OR ANY OTHER LEGAL THEORY.  IN NO EVENT SHALL DEVELOPMENT PARTNER’S 
+CUMULATIVE AGGREGATE LIABILITY UNDER THIS AGREEMENT EXCEED THE TOTAL FEES PAID 
+BY CUSTOMER TO DEVELOPMENT PARTNER WITH RESPECT TO THE THEN-CURRENT TERM OF THE 
+AGREEMENT.
+
+EOF
