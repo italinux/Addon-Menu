@@ -1,0 +1,47 @@
+/**
+.---------------------------------------------------------------------.
+|  @package: Lazy Menu (a.k.a. Menu)
+|  @version: v1.0.8 (10 November 2018)
+|  @link:    http://italinux.com/addon-menu
+|  @docs:    http://italinux.com/addon-menu/docs
+|
+|  @author: Matteo Montanari <matteo@italinux.com>
+|  @link:   http://matteo-montanari.com
+'---------------------------------------------------------------------'
+.---------------------------------------------------------------------------.
+| @copyright (c) 2018                                                       |
+| ------------------------------------------------------------------------- |
+| @license: Concrete5.org Marketplace Commercial Add-Ons & Themes License   |
+|           http://concrete5.org/help/legal/commercial_add-on_license       |
+|           or just: file://lazy_menu/LICENSE.TXT                           |
+|                                                                           |
+| This program is distributed in the hope that it will be useful - WITHOUT  |
+| ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or     |
+| FITNESS FOR A PARTICULAR PURPOSE.                                         |
+'---------------------------------------------------------------------------'
+*/
+section.fullscreen.menu {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+section.fullscreen.menu.loggedIn {
+  top: 48px !important;
+}
+
+section.fullscreen.menu nav.navbar div.navbar-header div.navbar-toggle {
+  display: block;
+}
+section.fullscreen.menu nav.navbar div.navbar-header .nav-logo {
+  display: none;
+}
+section.fullscreen.menu nav.navbar div.navbar-center div.menu-wrapper {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  section.fullscreen.menu {
+    top: -2px;
+  }
+}
