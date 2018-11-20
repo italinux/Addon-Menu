@@ -1,2 +1,2 @@
 # addon-menu
-Addon Menu - Concrete5 CMS Package
+Addon Menu - Package for Concrete5 CMS
