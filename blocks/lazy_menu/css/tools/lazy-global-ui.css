@@ -1,7 +1,7 @@
 /**
 .---------------------------------------------------------------------.
-|  @package: Lazy Menu (a.k.a. Menu)
-|  @version: v1.0.8 (10 November 2018)
+|  @package: Lazy Menu (a.k.a. add-on Menu)
+|  @version: v1.0.9 (31 March 2019)
 |  @link:    http://italinux.com/addon-menu
 |  @docs:    http://italinux.com/addon-menu/docs
 |
@@ -9,7 +9,7 @@
 |  @link:   http://matteo-montanari.com
 '---------------------------------------------------------------------'
 .---------------------------------------------------------------------------.
-| @copyright (c) 2018                                                       |
+| @copyright (c) 2019                                                       |
 | ------------------------------------------------------------------------- |
 | @license: Concrete5.org Marketplace Commercial Add-Ons & Themes License   |
 |           http://concrete5.org/help/legal/commercial_add-on_license       |
@@ -148,6 +148,8 @@ div.lazy-ui section ul.nav-tabs {
   padding-left: 0px;
   margin-left: 0px;
   margin-right: 0px;
+  border-bottom: none;
+  display: flex;
 }
 div.lazy-ui section ul.nav-tabs > li {
   margin: 0px 4px;
@@ -155,13 +157,18 @@ div.lazy-ui section ul.nav-tabs > li {
   text-align: center;
   border-radius: 15px 15px 0px 0px;
   opacity: 0.65;
+  white-space: pre;
   overflow: hidden;
+  border: 1px solid #ddd;
+  border-bottom: none;
 }
 div.lazy-ui section ul.nav-tabs > li:hover {
   opacity: 0.9;
 }
 
 div.lazy-ui section ul.nav-tabs > li.active {
+  top: 2px;
+  border-bottom: none;
   opacity: 1;
 }
 div.lazy-ui section ul.nav-tabs > li > a {
@@ -172,55 +179,69 @@ div.lazy-ui section div.row.item_1,
 div.lazy-ui section div.row > .line_1,
 div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_1"],
 div.lazy-ui section div#ccm-tab-content-item_1 {
-  background-color: rgba(221, 245, 254, 0.5) !important;
+  background-color: #eefafd !important;
 }
 div.lazy-ui section div.row.item_2,
 div.lazy-ui section div.row > .line_2,
 div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_2"],
 div.lazy-ui section div#ccm-tab-content-item_2 {
-  background-color: rgba(221, 254, 222, 0.5) !important;
+  background-color: #eefdee !important;
 }
 div.lazy-ui section div.row.item_3,
 div.lazy-ui section div.row > .line_3,
 div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_3"],
 div.lazy-ui section div#ccm-tab-content-item_3 {
-  background-color: rgba(241, 238, 254, 0.5) !important;
+  background-color: #f8f6fd !important;
 }
 div.lazy-ui section div.row.item_4,
 div.lazy-ui section div.row > .line_4,
 div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_4"],
 div.lazy-ui section div#ccm-tab-content-item_4 {
-  background-color: rgba(254, 236, 221, 0.5) !important;
+  background-color: #fdf5ee !important;
 }
 div.lazy-ui section div.row.item_5,
 div.lazy-ui section div.row > .line_5,
 div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_5"],
 div.lazy-ui section div#ccm-tab-content-item_5 {
-  background-color: rgba(224, 255, 255, 0.5) !important;
+  background-color: #effefe !important;
 }
 div.lazy-ui section div.row.item_6,
 div.lazy-ui section div.row > .line_6,
 div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_6"],
 div.lazy-ui section div#ccm-tab-content-item_6 {
-  background-color: rgba(250, 240, 254, 0.5) !important;
+  background-color: #fcfafd !important;
 }
 div.lazy-ui section div.row.item_7,
 div.lazy-ui section div.row > .line_7,
 div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_7"],
 div.lazy-ui section div#ccm-tab-content-item_7 {
-  background-color: rgba(250, 254, 221, 0.5) !important;
+  background-color: #fcfdf4 !important;
 }
 div.lazy-ui section div.row.item_8,
 div.lazy-ui section div.row > .line_8,
 div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_8"],
 div.lazy-ui section div#ccm-tab-content-item_8 {
-  background-color: rgba(254, 221, 222, 0.5) !important;
+  background-color: #fdf4f4 !important;
 }
 div.lazy-ui section div.row.item_9,
 div.lazy-ui section div.row > .line_9,
 div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_9"],
 div.lazy-ui section div#ccm-tab-content-item_9 {
-  background-color: rgba(241, 241, 241, 0.5) !important;
+  background-color: #f9fafa !important;
+}
+
+/* Display Content Tabs Nicely (with borders)
+---------------------------------------------------------*/
+div.lazy-ui section div[id^="ccm-tab-content-"] {
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+}
+
+/* Contact Form inputs side spaces in Tabs
+---------------------------------------------------------*/
+div.lazy-ui section div#contacts-modal > div[id^="ccm-tab-content-"] div.form-group {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Display image Selector */
@@ -538,9 +559,10 @@ div.lazy-ui div.alert-info {
 div.lazy-ui div#questionEditedMsg,
 div.lazy-ui div#questionAddedMsg {
   position: absolute;
-  top: 50px;
+  top: 0px;
   margin: 0px;
   border-radius: 10px;
+  z-index: 1;
 }
 
 div.lazy-ui .single-margin-top {
@@ -621,8 +643,12 @@ div.lazy-ui section section.style {
   overflow: hidden;
 }
 div.lazy-ui section section div.title {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 8px;
   text-shadow: 1px 1px 3px #fff;
   font-weight: normal;
+  background-color: rgba(203, 246, 260, 0.4);
 }
 
 div.lazy-ui section.style {
@@ -708,6 +734,13 @@ div.lazy-ui section.warning p {
 div.ui-dialog {
   overflow: visible !important;
 }
+div.ui-dialog .ui-dialog-content a:not(.btn):not(.goto) {
+  text-decoration: underline !important;
+}
+div.ui-dialog .ui-dialog-content a:hover:not(.btn):not(.goto) {
+  text-decoration: none !important;
+}
+
 /* color picker */
 .sp-container.ccm-widget-colorpicker {
   width: 335px !important;
@@ -1005,6 +1038,7 @@ div.lazy-ui section div.input-group select[multiple="true"] {
   padding-right: 10px;
 }
 div.lazy-ui section div.input-group select[multiple="true"] > option {
+  padding-top: 2px;
   text-align: center !important;
 }
 
