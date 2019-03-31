@@ -1,8 +1,8 @@
 <?php
 /**
 .---------------------------------------------------------------------.
-|  @package: Lazy Menu (a.k.a. Menu)
-|  @version: v1.0.8 (10 November 2018)
+|  @package: Lazy Menu (a.k.a. add-on Menu)
+|  @version: v1.0.9 (31 March 2019)
 |  @link:    http://italinux.com/addon-menu
 |  @docs:    http://italinux.com/addon-menu/docs
 |
@@ -10,7 +10,7 @@
 |  @link:   http://matteo-montanari.com
 '---------------------------------------------------------------------'
 .---------------------------------------------------------------------------.
-| @copyright (c) 2018                                                       |
+| @copyright (c) 2019                                                       |
 | ------------------------------------------------------------------------- |
 | @license: Concrete5.org Marketplace Commercial Add-Ons & Themes License   |
 |           http://concrete5.org/help/legal/commercial_add-on_license       |
@@ -34,7 +34,7 @@ class Controller extends Package
 {
 
     protected $pkgHandle = 'lazy_menu';
-    protected $pkgVersion = '1.0.8';
+    protected $pkgVersion = '1.0.9';
 
     protected $appVersionRequired = '5.7.4.2';
 
