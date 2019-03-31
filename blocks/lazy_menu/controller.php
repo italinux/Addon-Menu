@@ -1,8 +1,8 @@
 <?php
 /**
 .---------------------------------------------------------------------.
-|  @package: Lazy Menu (a.k.a. Menu)
-|  @version: v1.0.8 (10 November 2018)
+|  @package: Lazy Menu (a.k.a. add-on Menu)
+|  @version: v1.0.9 (31 March 2019)
 |  @link:    http://italinux.com/addon-menu
 |  @docs:    http://italinux.com/addon-menu/docs
 |
@@ -10,7 +10,7 @@
 |  @link:   http://matteo-montanari.com
 '---------------------------------------------------------------------'
 .---------------------------------------------------------------------------.
-| @copyright (c) 2018                                                       |
+| @copyright (c) 2019                                                       |
 | ------------------------------------------------------------------------- |
 | @license: Concrete5.org Marketplace Commercial Add-Ons & Themes License   |
 |           http://concrete5.org/help/legal/commercial_add-on_license       |
@@ -560,7 +560,7 @@ class Controller extends BlockController
         );
 
         // Register Assets this Block
-        $al->register('css', 'cst.flags', 'blocks/lazy_menu/style/flags.css', $pf, 'lazy_menu');
+        $al->register('css', 'cst.flags', 'blocks/lazy_menu/style/flags.css', $ph, 'lazy_menu');
 
         // Register Assets this Block
         $al->register('javascript', 'jst.scroll-top', 'blocks/lazy_menu/jscript/scroll-top.js', $pf,'lazy_menu');
@@ -839,7 +839,7 @@ class Controller extends BlockController
 
         $db->executeQuery('DELETE from ' . $this->btTable . 'Item WHERE bID = ?', array($this->bID));
 
-        $this->insertMenuItems($this->bID, count($args['sort']), $args);
+        $this->insertMenuItems($this->bID, count((array)$args['sort']), $args);
 
         // Update custom Styles for all pages 
         foreach (array_keys(self::get_btStyles()) as $key) {

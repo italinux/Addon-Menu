@@ -1,8 +1,8 @@
 <?php
 /**
 .---------------------------------------------------------------------.
-|  @package: Lazy Menu (a.k.a. Menu)
-|  @version: v1.0.8 (10 November 2018)
+|  @package: Lazy Menu (a.k.a. add-on Menu)
+|  @version: v1.0.9 (31 March 2019)
 |  @link:    http://italinux.com/addon-menu
 |  @docs:    http://italinux.com/addon-menu/docs
 |
@@ -10,7 +10,7 @@
 |  @link:   http://matteo-montanari.com
 '---------------------------------------------------------------------'
 .---------------------------------------------------------------------------.
-| @copyright (c) 2018                                                       |
+| @copyright (c) 2019                                                       |
 | ------------------------------------------------------------------------- |
 | @license: Concrete5.org Marketplace Commercial Add-Ons & Themes License   |
 |           http://concrete5.org/help/legal/commercial_add-on_license       |
@@ -59,7 +59,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
               <div class="form-group center double-space-top">
                 <?php echo $form->label('title', t('Title: %s', '<span>(' . t('site name') . ')</span>'))?>
                 <div class="input-group center p90">
-                  <?php echo $form->text('title', t($title), array('maxlength' => '50'))?>
+                  <?php echo $form->text('title', $title, array('maxlength' => '50'))?>
                 </div>
                 <label class="single-space-top">
                   <span class="nota-bene"><?php echo t('%1$sNB:%2$s ', '<strong>','</strong>') . t('Title displays only on mobile view')?></span>
@@ -251,7 +251,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
                   <?php echo t('Customise Style')?>
                 </div>
                 <div class="col-lg-12">
-                  <div class="form-group center light-title single-space-top no-sides-paddings">
+                  <div class="form-group center light-title single-space-top no-sides-paddings single-space-bottom">
                     <?php echo $form->label('bgColorRGBA', t('background colour %s', '<br /><span>(' . t('with or without transparency') . ')</span>'))?>
                     <div class="input-group">
                       <!-- Show a Color Palette in RGB Color Format with Transparency Slider (RGBA) -->
@@ -284,7 +284,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
                 </div>
 
                 <div class="col-lg-12">
-                  <div class="form-group center light-title single-space-top">
+                  <div class="form-group center light-title single-space-top single-space-bottom">
                     <?php echo $form->label('bgFID', t('background image'))?>
                     <div class="input-group">
                       <?php echo $asset->image('ccm-b-image-bgFID', 'bgFID', t('Choose Image'), $bgFID, array())?>
