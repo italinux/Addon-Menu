@@ -1,7 +1,7 @@
 /**
 .---------------------------------------------------------------------.
 |  @package: Lazy Menu (a.k.a. add-on Menu)
-|  @version: v1.0.9 (31 March 2019)
+|  @version: v1.0.9 (20 May 2019)
 |  @link:    http://italinux.com/addon-menu
 |  @docs:    http://italinux.com/addon-menu/docs
 |
@@ -165,11 +165,19 @@ div.lazy-ui section ul.nav-tabs > li {
 div.lazy-ui section ul.nav-tabs > li:hover {
   opacity: 0.9;
 }
-
 div.lazy-ui section ul.nav-tabs > li.active {
   top: 2px;
   border-bottom: none;
   opacity: 1;
+}
+div.lazy-ui section ul.nav-tabs > li > span.fa-arrows {
+  position: absolute;
+  top: 6%;
+  right: 5%;
+  font-size: 80%;
+  z-index: 1;
+  cursor: move;
+  opacity: 0.6;
 }
 div.lazy-ui section ul.nav-tabs > li > a {
   padding: 10px 2px;
@@ -640,6 +648,7 @@ div.lazy-ui section.warning {
 }
 div.lazy-ui section section.style {
   margin-top: 5px;
+  border-radius: 12px 12px 0px 0px;
   overflow: hidden;
 }
 div.lazy-ui section section div.title {

@@ -2,7 +2,7 @@
 /**
 .---------------------------------------------------------------------.
 |  @package: Lazy Menu (a.k.a. add-on Menu)
-|  @version: v1.0.9 (31 March 2019)
+|  @version: v1.0.9 (20 May 2019)
 |  @link:    http://italinux.com/addon-menu
 |  @docs:    http://italinux.com/addon-menu/docs
 |
@@ -39,7 +39,6 @@ echo $cStyle;
             <div class="hamburger-box">
               <div class="hamburger-inner"></div>
             </div>
-            <!-- <span class="hamburger-label">Menu</span> -->
           </div>
         </div>
         <div class="navbar-left">

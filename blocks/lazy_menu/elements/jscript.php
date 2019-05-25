@@ -2,7 +2,7 @@
 /**
 .---------------------------------------------------------------------.
 |  @package: Lazy Menu (a.k.a. add-on Menu)
-|  @version: v1.0.9 (31 March 2019)
+|  @version: v1.0.9 (20 May 2019)
 |  @link:    http://italinux.com/addon-menu
 |  @docs:    http://italinux.com/addon-menu/docs
 |
@@ -167,7 +167,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
         var thisItem = $(this).closest('div[data-item]');
 
         var thisSelf = thisItem.find("div[data-id='target-self']");
-      var thisBlank = thisItem.find("div[data-id='target-blank']");
+       var thisBlank = thisItem.find("div[data-id='target-blank']");
 
         switch($(this).val()) {
         case 'self':
@@ -186,7 +186,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
 
         var thisItem = $(this).closest('div[data-item]');
 
-          var addon = thisItem.find("div[data-id='anchor-addon']");
+           var addon = thisItem.find("div[data-id='anchor-addon']");
             var hash = thisItem.find("div[data-id='anchor-hash']");
             var none = thisItem.find("div[data-id='anchor-none']");
 
@@ -212,11 +212,11 @@ defined('C5_EXECUTE') or die("Access Denied.");
 
         var thisItem = $(this).closest('div[data-item]');
 
-        var message = thisItem.find("div[data-id='anchor-message']");
-            var ko = message.children('.addon-ko');
-            var ok = message.children('.addon-ok');
+         var message = thisItem.find("div[data-id='anchor-message']");
+              var ko = message.children('.addon-ko');
+              var ok = message.children('.addon-ok');
 
-    var isInstalled = $(this).find(':selected').attr('data-install');
+        var isInstalled = $(this).find(':selected').attr('data-install');
 
         if (isInstalled == true) {
             ko.hide(); ok.show();

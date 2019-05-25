@@ -1,0 +1,115 @@
+/**
+.---------------------------------------------------------------------.
+|  @package: Lazy Menu (a.k.a. add-on Menu)
+|  @version: v1.0.9 (20 May 2019)
+|  @link:    http://italinux.com/addon-menu
+|  @docs:    http://italinux.com/addon-menu/docs
+|
+|  @author: Matteo Montanari <matteo@italinux.com>
+|  @link:   http://matteo-montanari.com
+'---------------------------------------------------------------------'
+.---------------------------------------------------------------------------.
+| @copyright (c) 2019                                                       |
+| ------------------------------------------------------------------------- |
+| @license: Concrete5.org Marketplace Commercial Add-Ons & Themes License   |
+|           http://concrete5.org/help/legal/commercial_add-on_license       |
+|           or just: file://lazy_menu/LICENSE.TXT                           |
+|                                                                           |
+| This program is distributed in the hope that it will be useful - WITHOUT  |
+| ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or     |
+| FITNESS FOR A PARTICULAR PURPOSE.                                         |
+'---------------------------------------------------------------------------'
+*/
+/* Full Height Window Overlay
+---------------------------------------------------------*/
+/*
+div.ui-dialog-content.ui-widget-content {
+  height: auto !important;
+}
+*/
+
+/* Global styles LAZY-UI Forms
+---------------------------------------------------------*/
+div#ccm-toolbar ul,
+div#ccm-toolbar ul li,
+div#ccm-toolbar ol {
+  list-style-type: none !important;
+}
+div.ccm-notification-help-launcher {
+  top: 200px !important;
+}
+div.ccm-menu-item-hover > div.ccm-area-block-list {
+  background-color: rgba(89, 236, 89, 0.2);
+}
+
+div.ccm-parent-menu-item-hover > div.ccm-area-block-list.ccm-parent-menu-item-hover {
+  background-color: rgba(89, 236, 89, 0.2);
+}
+
+/* Allow Highlight on Hover Blocks */
+div.ccm-parent-menu-item-hover > div.ccm-menu-item-hover .over-image {
+  opacity: 0.97;
+}
+div.ccm-parent-menu-item-hover > div.ccm-menu-item-hover .over-image::before {
+  opacity: 1;
+}
+
+div.ccm-area-block-list > div.ccm-area-drag-area {
+  color: #222 !important;
+  /* border: 1px dashed #bbb; */
+
+  background-color: rgba(89, 236, 236, 0.2);
+}
+
+/* OTHER c5 */
+ul.ccm-toolbar-item-list > li::before {
+  content: none !important;
+}
+
+/* clean menu editing */
+div#main-nav ul.ccm-edit-mode-inline-commands {
+  display: none !important;
+}
+
+/* clean menu display */
+div.navbar-fixed-top {
+  top: 49px !important;
+  z-index: 2 !important;
+}
+
+/* hide Account Area */
+div#ccm-account-menu-container {
+  display: none !important;
+}
+
+/* Other custom classes
+---------------------------------------------------------*/
+div.ccm-ui div.alert-danger {
+  color: #fff !important;
+  background-color: #c00 !important;
+}
+
+div.ccm-ui div.alert-success {
+  color: #fff !important;
+  background-color: #008000 !important;
+}
+
+div.ccm-ui div.alert-info {
+  color: #fff !important;
+  background-color: #428bca !important;
+}
+
+/* Welcome Back! News Flow */
+div#newsflow h1 {
+  font-size: 3em !important;
+  line-height: 1.2em !important;
+}
+div#newsflow p {
+  font-size: 1em !important;
+  line-height: 1.4em !important;
+  font-weight: normal !important;
+  margin-bottom: 10px !important;
+}
+div#newsflow span.label {
+  color: #666;
+}
