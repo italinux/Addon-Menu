@@ -1,8 +1,0 @@
-# Installation Instructions
-
-1. Unzip this file in your site's packages/ directory.
-2. Login to your site as an administrator.
-3. Go to your Dashboard (right handside)
-4. Find the "Add Functionality" page within "Extend concrete5"
-5. Find this package in the list of packages awaiting installation.
-6. Click the "install" button.

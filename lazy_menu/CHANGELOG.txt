@@ -1,2 +1,0 @@
- Date (d/m/Y) | Version | Description / Comment
- ================================================
