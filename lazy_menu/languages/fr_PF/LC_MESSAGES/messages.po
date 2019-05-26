@@ -1,0 +1,577 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2015-10-02T21:29:47+02:00\n"
+"PO-Revision-Date: 2015-10-02T21:29:48+02:00\n"
+"Language: fr_PF\n"
+"Plural-Forms: nplurals=2; plural=(n> 1);\n"
+
+# - - - - - - - - - - - - - - - - - - - 
+# add-on Menu
+# next entry is Editable in-place
+msgid "Add Lazy Menu to your website"
+msgstr "Ajoutez Lazy Menu &agrave; votre site Web"
+
+# - - - - - - - - - - - - - - - - - - -
+# block Menu
+msgid "Delete this Menu item"
+msgstr "Supprimer cet &eacute;l&eacute;ment de menu"
+
+msgid "You can leave this blank if you want to link to this same page"
+msgstr "Vous pouvez laisser ce champ vide si vous souhaitez cr&eacute;er un lien vers la m&ecirc;me page"
+
+msgid "Title displays only on mobile view"
+msgstr "Le titre ne s'affiche que sur la vue mobile"
+
+msgid "Logo"
+msgstr "Logo"
+
+msgid "site name"
+msgstr "nom du site"
+
+msgid "List of Add-ons"
+msgstr "Liste des Add-ons"
+
+msgid "Dedicated Add-on"
+msgstr "Add-on d&eacute;di&eacute;"
+
+msgid "all your menu items are listed below"
+msgstr "tous les &eacute;l&eacute;ments de menu sont &eacute;num&eacute;r&eacute;s ci-dessous"
+
+msgid "menu items"
+msgstr "les &eacute;l&eacute;ments de menu"
+
+msgid "show logo?"
+msgstr "afficher le logo?"
+
+msgid "show language switch?"
+msgstr "spectacle de changement de langue?"
+
+# block shared
+msgid "File type required: JPG or PNG"
+msgstr "Type de fichier requis: JPG ou PNG"
+
+msgid "File extension required: JPG or PNG"
+msgstr "Extension de fichier requise: JPG ou PNG"
+
+msgid "File image is invalid"
+msgstr "L'image du fichier n'est pas valide"
+
+msgid "Cannot be empty"
+msgstr "Ne peux pas &ecirc;tre vide"
+
+msgid "Title"
+msgstr "Titre"
+
+msgid "Subtitle"
+msgstr "Sous-titre"
+
+msgid "Customise Style"
+msgstr "Personnaliser le style"
+
+msgid "background image"
+msgstr "image de fond"
+
+msgid "font colour"
+msgstr "couleur de police"
+
+msgid "with Animation"
+msgstr "avec Animation"
+
+msgid "a title goes here"
+msgstr "un titre va ici"
+
+msgid "and subtitle here"
+msgstr "et sous-titre ici"
+
+msgid "contact us"
+msgstr "contactez nous"
+
+msgid "name"
+msgstr "pr&eacute;nom"
+
+msgid "Required"
+msgstr "Obligatoire"
+
+msgid "your"
+msgstr "votre"
+
+msgid "Your"
+msgstr "Votre"
+
+msgid "Page"
+msgstr "Page"
+
+msgid "here"
+msgstr "ici"
+
+msgid "click here"
+msgstr "cliquez ici"
+
+msgid "Contacts"
+msgstr "Contacts"
+
+msgid "contact me"
+msgstr "contactez moi"
+
+msgid "yeah, go ahead"
+msgstr "ouais, allez-y"
+
+msgid "Title: %s"
+msgstr "Titre: %s"
+
+msgid "Subtitle: %s"
+msgstr "Sous-titres %s"
+
+msgid "Email: %s"
+msgstr "Courriel: %s"
+
+msgid "%1$s Page %2$s: %3$s"
+msgstr "%1$s Page %2$s: %3$s"
+
+msgid "my"
+msgstr "mon"
+
+msgid "File size exceeded: Max %s"
+msgstr "Taille du fichier d&eacute;pass&eacute;e: Max %s"
+
+msgid "Cannot be empty: %s"
+msgstr "Impossible d'&ecirc;tre vide: %s"
+
+msgid "name: %s"
+msgstr "nom: %s"
+
+msgid "and"
+msgstr "et"
+
+msgid "Here"
+msgstr "Ici"
+
+msgid "Invalid link: %s"
+msgstr "Lien non valide: %s"
+
+msgid "Visible?"
+msgstr "Visible?"
+
+msgid "Background Colour"
+msgstr "La couleur d'arri&egrave;re-plan"
+
+msgid "Adjust Background Opacity"
+msgstr "Ajuster l'opacit&eacute; de l'arri&egrave;re-plan"
+
+msgid "Background Image"
+msgstr "Image de fond"
+
+msgid "Foreground Colour"
+msgstr "Couleur du premier plan"
+
+msgid "Animation / Transition"
+msgstr "Animation / Transition"
+
+msgid "Yes"
+msgstr "Oui"
+
+msgid "No"
+msgstr "Non"
+
+msgid "Choose Image"
+msgstr "Choisissez l'image"
+
+msgid "default"
+msgstr "d&eacute;faut"
+
+msgid "adjust top opacity"
+msgstr "ajustez l'opacit&eacute; sup&eacute;rieur"
+
+msgid "find out more"
+msgstr "en savoir plus"
+
+msgid "Random image from: %s"
+msgstr "Image al&eacute;atoire provenant de: %s"
+
+msgid "File Sets"
+msgstr "Fichiers"
+
+msgid "Choose"
+msgstr "Choisissez"
+
+msgid "Otherwise"
+msgstr "Autrement"
+
+msgid "stick a single image here"
+msgstr "mettez une image unique ici"
+
+msgid "it has priority over single image"
+msgstr "il a la priorit&eacute; sur l'image unique"
+
+msgid "%1$s Select a %2$s %1$s"
+msgstr "%1$s S&eacute;lectionnez un %2$s %1$s"
+
+msgid "File Set"
+msgstr "Ensemble de fichiers"
+
+msgid "How to add a %s"
+msgstr "Comment ajouter un %s"
+
+msgid "Content: %s"
+msgstr "Contenu: %s"
+
+msgid "Text Button: %s"
+msgstr "Texte Bouton: %s"
+
+msgid "Link / anchor to: %s"
+msgstr "Lien / ancrage vers: %s"
+
+msgid "hi everyone"
+msgstr "salut &agrave; tous"
+
+msgid "Global Text Button: %s"
+msgstr "Bouton de texte global: %s"
+
+msgid "Global Link / anchor to: %s"
+msgstr "Lien global / ancrage &agrave;: %s"
+
+msgid "Choose an icon:"
+msgstr "Choisissez un ic&ocirc;ne:"
+
+msgid "it has priority over the icon"
+msgstr "il a priorit&eacute; sur l'ic&ocirc;ne"
+
+msgid "Title below icon / image: %s"
+msgstr "Titre ci-dessous ic&ocirc;ne / image: %s"
+
+msgid "Single Text Button: %s"
+msgstr "Bouton de texte unique: %s"
+
+msgid "check it out"
+msgstr "regardez"
+
+msgid "Or stick an image:"
+msgstr "Ou mettez une image:"
+
+msgid "1st %s"
+msgstr "1er %s"
+
+msgid "2nd %s"
+msgstr "2e %s"
+
+msgid "3rd %s"
+msgstr "3e %s"
+
+msgid "4th %s"
+msgstr "4&egrave;me %s"
+
+msgid "Invalid URL: %s"
+msgstr "URL non valide: %s"
+
+msgid "Options file sets list"
+msgstr "Liste des jeux de fichiers d'options"
+
+msgid "URL How to add a file set"
+msgstr "URL Comment ajouter un jeu de fichiers"
+
+msgid "Custom template name"
+msgstr "Nom du mod&egrave;le personnalis&eacute;"
+
+msgid "Custom Foreground image"
+msgstr "Image de premier plan personnalis&eacute;e"
+
+msgid "Content"
+msgstr "Contenu"
+
+msgid "see how"
+msgstr "regarde comment"
+
+msgid "Global Link: %s"
+msgstr "Lien global: %s"
+
+msgid "Item %s"
+msgstr "Article %s"
+
+msgid "How to choose a %s"
+msgstr "Comment choisir un %s"
+
+msgid "available"
+msgstr "disponible"
+
+msgid "I got the skills"
+msgstr "J'ai les habilet&eacute;s"
+
+msgid "find out who I am"
+msgstr "d&eacute;couvrez qui je suis"
+
+msgid "check me out"
+msgstr "v&eacute;rifiez-moi"
+
+msgid "ask me more"
+msgstr "demande moi plus"
+
+msgid "1st"
+msgstr "1er"
+
+msgid "2nd"
+msgstr "2&egrave;me"
+
+msgid "3rd"
+msgstr "3&egrave;me"
+
+msgid "4th"
+msgstr "4e"
+
+msgid "5th"
+msgstr "5&egrave;me"
+
+msgid "6th"
+msgstr "6&egrave;me"
+
+msgid "7th"
+msgstr "7&egrave;me"
+
+msgid "8th"
+msgstr "8&egrave;me"
+
+msgid "9th"
+msgstr "9&egrave;me"
+
+msgid "what I do"
+msgstr "ce que je fais"
+
+msgid "What I do"
+msgstr "Ce que je fais"
+
+msgid "Prices"
+msgstr "Les prix"
+
+msgid "prices"
+msgstr "les prix"
+
+msgid "contacts"
+msgstr "contacts"
+
+msgid "subtitle goes here"
+msgstr "les sous-titres vont ici"
+
+msgid "text: %s"
+msgstr "texte: %s"
+
+msgid "Link to text: %s"
+msgstr "Lien vers le texte: %s"
+
+msgid "background colour %s"
+msgstr "couleur de fond %s"
+
+msgid "with or without transparency"
+msgstr "avec ou sans transparence"
+
+msgid "Page: %s"
+msgstr "Page: %s"
+
+msgid "it has priority over the link"
+msgstr "il a la priorit&eacute; sur le lien"
+
+msgid "Choose File"
+msgstr "Choisir le fichier"
+
+msgid "File type required: PDF, ODT or DOC"
+msgstr "Type de fichier requis: PDF, ODT ou DOC"
+
+msgid "File extension required: PDF, ODT or DOC"
+msgstr "Extension de fichier requise: PDF, ODT ou DOC"
+
+msgid "File is invalid"
+msgstr "Le fichier est invalide"
+
+msgid "new"
+msgstr "nouveau"
+
+msgid "Title below / over image: %s"
+msgstr "Titre ci-dessous / sur l'image: %s"
+
+msgid "And now Choose"
+msgstr "Et maintenant choisissez"
+
+msgid "Pop Up image?"
+msgstr "Pop-up image?"
+
+msgid "it has priority over Single Link"
+msgstr "il a la priorit&eacute; sur le Lien unique"
+
+msgid "Link type"
+msgstr "Type de lien"
+
+msgid "Select a Page"
+msgstr "S&eacute;lectionnez une page"
+
+msgid "Autoscroll to"
+msgstr "Autoscroll &agrave;"
+
+msgid "Custom anchor"
+msgstr "Ancre personnalis&eacute;e"
+
+msgid "if you have not installed it yet"
+msgstr "si vous ne l'avez pas encore install&eacute;"
+
+msgid "OK good"
+msgstr "OK bien"
+
+msgid "Menu item"
+msgstr "&Eacute;l&eacute;ment du menu"
+
+msgid "Add menu item"
+msgstr "Ajoutez un &eacute;l&eacute;ment de menu"
+
+msgid "Link to a web page"
+msgstr "Lien vers une page Web"
+
+msgid "NO auto scrolling"
+msgstr "PAS de d&eacute;filement automatique"
+
+msgid "Same window"
+msgstr "M&ecirc;me fen&ecirc;tre"
+
+msgid "New window"
+msgstr "Nouvelle fenetre"
+
+msgid "Target of link"
+msgstr "Destination du lien"
+
+msgid "anchor-name"
+msgstr "nom-de-l-ancre"
+
+msgid "visit:"
+msgstr "visitez:"
+
+msgid "See them All"
+msgstr "Voyez tous"
+
+msgid "See more"
+msgstr "Voyez plus"
+
+msgid "Same Page"
+msgstr "M&ecirc;me page"
+
+msgid "New Page"
+msgstr "Nouvelle page"
+
+msgid "Type a URL"
+msgstr "Entrez une URL"
+
+msgid "Profile icon"
+msgstr "Ic&ocirc;ne de profil"
+
+msgid "Profile URL"
+msgstr "Profil URL"
+
+msgid "Link types list"
+msgstr "Liste des types de liens"
+
+msgid "Link targets list"
+msgstr "Lier la liste des cibles"
+
+msgid "Or stick a custom logo:"
+msgstr "Ou mettre un logo personnalis&eacute;:"
+
+msgid "Global Link"
+msgstr "Lien global"
+
+msgid "Single Link to Page or URL"
+msgstr "Lien unique vers une page ou une URL"
+
+msgid "Title below / over image"
+msgstr "Titre ci-dessous / sur l'image"
+
+msgid "Global URL"
+msgstr "URL globale"
+
+msgid "Profile"
+msgstr "Profil"
+
+msgid "Custom image"
+msgstr "Image personnalis&eacute;e"
+
+msgid "Text"
+msgstr "Texte"
+
+msgid "page"
+msgstr "page"
+
+msgid "Button Text"
+msgstr "Texte du bouton"
+
+msgid "Text Link: %s"
+msgstr "Lien texte: %s"
+
+msgid "Action Link"
+msgstr "Lien d'action"
+
+msgid "Link Name: %s"
+msgstr "Nom du lien: %s"
+
+msgid "Link name"
+msgstr "Nom du lien"
+
+msgid "all your items are listed below"
+msgstr "tous vos articles sont &eacute;num&eacute;r&eacute;s ci-dessous"
+
+msgid "templates"
+msgstr "des mod&egrave;les"
+
+msgid "Link to Page or URL"
+msgstr "Lien vers la Page ou L'URL"
+
+msgid "it has priority over Link to Page or URL"
+msgstr "il a la priorit&eacute; sur le lien vers la Page ou L'URL"
+
+msgid "item Title: %s"
+msgstr "titre de l'&eacute;l&eacute;ment: %s"
+
+msgid "Name: %s"
+msgstr "Nom: %s"
+
+msgid "all your %s are listed below"
+msgstr "tous vos %s sont &eacute;num&eacute;r&eacute;s ci-dessous"
+
+msgid "items"
+msgstr "article"
+
+msgid "item Title"
+msgstr "titre de l'&eacute;l&eacute;ment de"
+
+msgid "single image here"
+msgstr "une seule image ici"
+
+msgid "random image from: %s"
+msgstr "image al&eacute;atoire &agrave; partir de: %s"
+
+msgid "Choose this item's icon"
+msgstr "Choisissez l'ic&ocirc;ne de cet article"
+
+msgid "template"
+msgstr "mod&egrave;le"
+
+msgid "Here you define:"
+msgstr "Ici vous d&eacute;finissez:"
+
+msgid "link to a %1$s URL %2$s or to a %1$s Page %2$s"
+msgstr "lien pour %1$s URL %2$s %1$s %2$s"
+
+msgid "add an %1$s anchor %2$s to scroll to a %1$s section %2$s of a page"
+msgstr "ajouter un %1$s ancre %2$s pour faire d&eacute;filer jusqu'&agrave; %1$s section %2$s d'une page"
+
+msgid "open up to a %1$s new page %2$s or on the %1$s same page %2$s"
+msgstr "ouverez jusqu'&agrave; %1$s nouvelle page %2$s ou sur %1$s m&ecirc;me page %2$s"
+
+msgid "Leave it empty to hide it"
+msgstr "Laissez vide pour le cacher"
+
+msgid "documentation:"
+msgstr "documentation:"
+
+msgid "an %1$s anchor %2$s to scroll to a %1$s section %2$s of a page"
+msgstr "un %1$s ancre %2$s pour faire d&eacute;filer jusqu'&agrave; %1$s section %2$s d'une page"

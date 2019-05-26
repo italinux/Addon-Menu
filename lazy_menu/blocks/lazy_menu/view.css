@@ -1,0 +1,560 @@
+/**
+.---------------------------------------------------------------------.
+|  @package: Lazy Menu (a.k.a. add-on Menu)
+|  @version: v1.0.9 (20 May 2019)
+|  @link:    http://italinux.com/addon-menu
+|  @docs:    http://italinux.com/addon-menu/docs
+|
+|  @author: Matteo Montanari <matteo@italinux.com>
+|  @link:   http://matteo-montanari.com
+'---------------------------------------------------------------------'
+.---------------------------------------------------------------------------.
+| @copyright (c) 2019                                                       |
+| ------------------------------------------------------------------------- |
+| @license: Concrete5.org Marketplace Commercial Add-Ons & Themes License   |
+|           http://concrete5.org/help/legal/commercial_add-on_license       |
+|           or just: file://lazy_menu/LICENSE.TXT                           |
+|                                                                           |
+| This program is distributed in the hope that it will be useful - WITHOUT  |
+| ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or     |
+| FITNESS FOR A PARTICULAR PURPOSE.                                         |
+'---------------------------------------------------------------------------'
+*/
+.single-space-bottom > section.menu.page-block,
+.double-space-bottom > section.menu.page-block,
+.no-spaces > section.menu.page-block,
+.no-space-bottom > section.menu.page-block {
+  padding-bottom: 0 !important;
+}
+.single-space-top > section.menu.page-block,
+.double-space-top > section.menu.page-block,
+.no-spaces > section.menu.page-block,
+.no-space-top > section.menu.page-block {
+  padding-top: 0 !important;
+}
+.no-sides-spaces > section.menu.page-block {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+section.menu {
+  position: relative;
+  overflow: hidden;
+}
+section.menu a:not(.CTA-clean).info::after,
+section.menu a:not(.CTA-clean).goto::after {
+  margin-top: 0px;
+  font-family: "FontAwesome";
+  font-size: 0.8em;
+  text-decoration: none;
+}
+section.menu a:not(.CTA-clean).info > span,
+section.menu a:not(.CTA-clean).goto > span {
+  align-self: center;
+}
+section.menu a:not(.CTA-clean).info::after {
+  content: "\f05a";
+  margin-right: 5px;
+  margin-left: 5px;
+}
+section.menu a:not(.CTA-clean).goto::after {
+  content: "\f08e";
+  margin-left: 6px;
+  margin-right: 10px;
+}
+section.menu div.global-cta {
+  margin-top: 4em;
+  margin-bottom: 2em;
+  font-size: 120%;
+  text-align: center;
+}
+section.menu div.global-cta a.btn {
+  width: 30%;
+}
+section.menu .btn {
+  max-width: 460px;
+}
+section.menu .btn.btn-primary[disabled] {
+  cursor: default;
+}
+section.menu.editMode {
+  border: 1px dashed #bbb;
+}
+section.menu.page-block {
+  margin: 0px auto;
+  padding: 6em 8%;
+}
+section.menu.over-image::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  content: "";
+}
+section.menu.over-image {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-size: auto;
+  background-position: center center;
+}
+section.menu.over-image.cfg-color h1 {
+  color: inherit;
+}
+section.menu.over-image.cfg-color h2 {
+  color: inherit;
+}
+section.menu.over-image.cfg-color h3 {
+  color: inherit;
+}
+section.menu.over-image.cfg-color h4 {
+  color: inherit;
+}
+section.menu.over-image.cfg-color h5 {
+  color: inherit;
+}
+section.menu.over-image.cfg-color h6 {
+  color: inherit;
+}
+section.menu.over-image.cfg-color p {
+  color: inherit;
+}
+section.menu.over-image.cfg-color a:not(.btn) {
+  color: inherit;
+}
+section.menu div.block-header {
+  position: relative;
+  padding: 0 0 3em;
+  text-align: center;
+  border: none;
+}
+section.menu .hide {
+  display: none;
+  visibility: hidden;
+}
+section.menu .show {
+  display: block;
+  visibility: visible;
+}
+section.menu .single-space-bottom {
+  padding-bottom: 1.8em;
+}
+section.menu .double-space-bottom {
+  padding-bottom: 3.2em;
+}
+section.menu .single-space-top {
+  padding-top: 1.8em;
+}
+section.menu .double-space-top {
+  padding-top: 3.2em;
+}
+section.menu .no-margins {
+  margin: 0 !important;
+}
+section.menu .no-paddings {
+  padding: 0 !important;
+}
+section.menu .no-spaces {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+section.menu .no-sides-margins {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+section.menu .no-sides-paddings {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+section.menu .no-space-bottom {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+section.menu .no-space-top {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+section.menu .no-margin-bottom {
+  margin-bottom: 0 !important;
+}
+section.menu .no-margin-top {
+  margin-top: 0 !important;
+}
+section.menu .nopaque {
+  opacity: 0;
+}
+section.menu .opaque {
+  opacity: 1;
+}
+@media screen and (max-width: 1600px) {
+  section.menu.page-block {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  section.menu.page-block {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  section.menu.page-block {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+section.menu[class^="mobile_view"].page-block {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+@media screen and (max-width: 500px) {
+  section.menu.page-block {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+section.menu nav div.navbar-center div.menu-wrapper.fixed ul.nav a {
+  font-size: 3em;
+  line-height: 1em;
+}
+@media screen and (max-width: 1024px) {
+  section.menu nav div.navbar-center div.menu-wrapper.fixed ul.nav a {
+    font-size: 2.4em;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.menu nav div.navbar-center div.menu-wrapper.fixed ul.nav a {
+    font-size: 2em;
+  }
+}
+section.menu {
+  width: 100%;
+  overflow: visible;
+  z-index: 4;
+}
+section.menu.over-image::before,
+section.menu div.menu-wrapper.fixed {
+  background-color: rgba(200, 200, 200, 0.6);
+}
+section.menu.editMode {
+  position: relative !important;
+  background-color: #eee;
+  border: none !important;
+}
+section.menu.over-image::before {
+  -webkit-transition: opacity 0.5s ease-in-out 0s;
+     -moz-transition: opacity 0.5s ease-in-out 0s;
+      -ms-transition: opacity 0.5s ease-in-out 0s;
+       -o-transition: opacity 0.5s ease-in-out 0s;
+          transition: opacity 0.5s ease-in-out 0s;
+}
+section.menu.over-image.with-fade::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  content: "";
+  opacity: 1 !important;
+}
+section.menu nav.navbar {
+  position: relative;
+  min-height: 70px;
+  margin: 0px;
+}
+section.menu nav.navbar div.navbar-header {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+section.menu nav.navbar div.navbar-header div.navbar-toggle {
+  position: absolute;
+  min-width: 50px;
+  width: 10%;
+  top: 50%;
+  left: 0;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  transform: translate(0%, -50%);
+  display: none;
+}
+section.menu nav.navbar div.navbar-header div.navbar-toggle div.hamburger {
+  padding: 0.7em;
+}
+section.menu nav.navbar div.navbar-header div.navbar-toggle div.hamburger .hamburger-inner,
+section.menu nav.navbar div.navbar-header div.navbar-toggle div.hamburger .hamburger-inner::before,
+section.menu nav.navbar div.navbar-header div.navbar-toggle div.hamburger .hamburger-inner::after {
+  left: 0px;
+  right: 0px;
+  height: 2px;
+  margin: 0px auto;
+}
+section.menu nav.navbar div.navbar-header div.navbar-left,
+section.menu nav.navbar div.navbar-header div.navbar-right {
+  position: absolute;
+  min-width: 50px;
+  width: 10%;
+  top: 50%;
+  margin: 0 auto;
+  text-align: center;
+  transform: translate(0%, -50%);
+}
+section.menu nav.navbar div.navbar-header div.navbar-left {
+  left: 0;
+}
+section.menu nav.navbar div.navbar-header div.navbar-right {
+  right: 0px;
+  margin-top: 2px;
+}
+section.menu nav.navbar div.navbar-header div.title-wrapper {
+  position: relative;
+  width: auto;
+  min-height: 48px;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 90%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+section.menu nav.navbar div.navbar-header div.title-wrapper .nav-title {
+  margin: 3px 0px 0px 0px;
+  padding: 0px;
+  vertical-align: middle;
+  display: none;
+}
+section.menu nav.navbar div.navbar-header div.title-wrapper .nav-title a {
+  text-decoration: none;
+}
+section.menu nav.navbar div.navbar-center {
+  position: relative;
+  width: auto;
+  min-height: 50px;
+  margin: 10px 10%;
+  align-items: center;
+  display: flex;
+  z-index: -1;
+}
+section.menu nav.navbar div.navbar-center div.menu-wrapper {
+  position: relative;
+  width: auto;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  margin: 0px auto;
+  text-align: center;
+}
+section.menu nav.navbar div.navbar-center div.menu-wrapper ul {
+  position: relative;
+  width: auto;
+  margin: 0 auto;
+  align-self: center;
+  vertical-align: middle;
+  text-align: center;
+  float: none;
+}
+section.menu nav.navbar div.navbar-center div.menu-wrapper ul li {
+  float: none;
+  display: inline-block;
+}
+section.menu nav.navbar div.navbar-center div.menu-wrapper.fixed {
+  position: fixed;
+  width: 100%;
+  display: block !important;
+}
+section.menu nav.navbar div.navbar-center div.menu-wrapper.fixed ul {
+  position: absolute;
+  max-width: 600px;
+  width: 96%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+}
+section.menu nav.navbar div.navbar-center div.menu-wrapper.fixed ul li {
+  width: 100%;
+  margin-bottom: 10px;
+  display: block;
+  clear: both;
+}
+section.menu nav.navbar div.navbar-center div.menu-wrapper.fixed ul li.highlight {
+  margin-top: 10px;
+}
+section.menu nav.navbar img {
+  max-height: 50px;
+  width: auto;
+  vertical-align: middle;
+}
+section.menu nav.navbar li:hover,
+section.menu nav.navbar li:focus,
+section.menu nav.navbar li:active,
+section.menu nav.navbar li.active,
+section.menu nav.navbar li.active:focus {
+  opacity: 0.9;
+}
+section.menu nav.navbar li a {
+  padding-left: 1em;
+  padding-right: 1em;
+  text-decoration: none;
+}
+section.menu nav.navbar li a:hover,
+section.menu nav.navbar li a:focus,
+section.menu nav.navbar li a:active {
+  background-color: transparent;
+}
+section.menu div.lang-switch {
+  top: 0px;
+}
+section.menu div.lang-switch select,
+section.menu div.lang-switch select option {
+  position: relative;
+  width: 100%;
+  margin: 0px auto;
+  outline: 0px !important;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+      -ms-appearance: none;
+       -o-appearance: none;
+          appearance: none;
+  line-height: 1.2em;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-box-shadow: none !important;
+     -moz-box-shadow: none !important;
+      -ms-box-shadow: none !important;
+       -o-box-shadow: none !important;
+          box-shadow: none !important;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  background-size: 48px 32px;
+  border: none !important;
+  cursor: pointer;
+  display: block;
+}
+section.menu div.lang-switch select:hover,
+section.menu div.lang-switch select option:hover {
+  color: #222 !important;
+}
+section.menu div.lang-switch select {
+  width: 60px;
+  height: 40px;
+  font-size: 0px;
+  text-overflow: "";
+  text-indent: 0.01px;
+  content: " ";
+  color: transparent;
+  background-color: transparent;
+  border-radius: 5px;
+  direction: rtl;
+}
+section.menu div.lang-switch select:hover {
+  color: transparent;
+}
+section.menu div.lang-switch select option {
+  width: auto;
+  height: 40px;
+  font-size: 22px;
+  text-indent: 5px;
+  direction: ltr;
+  color: #222;
+  background-color: #fff;
+  background-position: 15px center;
+  background-size: 40px 30px;
+}
+@media screen and (max-width: 1024px) {
+  section.menu nav.navbar div.navbar-header div.navbar-toggle {
+    display: block;
+  }
+  section.menu nav.navbar div.navbar-header div.title-wrapper {
+    display: flex;
+  }
+  section.menu nav.navbar div.navbar-header .nav-logo {
+    display: none;
+  }
+  section.menu nav.navbar div.navbar-center div.menu-wrapper {
+    display: none;
+  }
+  section.menu nav.navbar div.lang-switch select option {
+    height: 30px;
+    font-size: 18px;
+    text-indent: 2px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.menu.over-image.with-fade::before {
+    opacity: 0.85 !important;
+  }
+  section.menu nav.navbar {
+    min-height: 60px !important;
+  }
+  section.menu nav.navbar div.navbar-header div.navbar-toggle {
+    width: 65px !important;
+    margin-top: 3px;
+  }
+  section.menu nav.navbar div.navbar-header div.navbar-toggle div.hamburger .hamburger-inner,
+  section.menu nav.navbar div.navbar-header div.navbar-toggle div.hamburger .hamburger-inner::before,
+  section.menu nav.navbar div.navbar-header div.navbar-toggle div.hamburger .hamburger-inner::after {
+    width: 32px;
+  }
+  section.menu nav.navbar div.navbar-header div[data-animation="toggle"] {
+    -webkit-animation: 0s ease 0s normal none 1 running none;
+       -moz-animation: 0s ease 0s normal none 1 running none;
+         -o-animation: 0s ease 0s normal none 1 running none;
+            animation: 0s ease 0s normal none 1 running none;
+    -webkit-transition-property: none;
+       -moz-transition-property: none;
+         -o-transition-property: none;
+            transition-property: none;
+  }
+  section.menu nav.navbar div.navbar-header div.title-wrapper {
+    padding-top: 2px;
+  }
+  section.menu nav.navbar div.navbar-center {
+    min-height: 50px !important;
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+  }
+  section.menu nav.navbar div.navbar-center div.menu-wrapper.fixed ul {
+    margin-top: 25px;
+  }
+  section.menu nav.navbar div.navbar-right {
+    width: 65px !important;
+    margin-top: 1px !important;
+  }
+  section.menu nav.navbar div.navbar-right div[data-animation="languages"] {
+    -webkit-animation: 0s ease 0s normal none 1 running none;
+       -moz-animation: 0s ease 0s normal none 1 running none;
+         -o-animation: 0s ease 0s normal none 1 running none;
+            animation: 0s ease 0s normal none 1 running none;
+    -webkit-transform: none;
+       -moz-transform: none;
+         -o-transform: none;
+            transform: none;
+    -webkit-transition-property: none;
+       -moz-transition-property: none;
+         -o-transition-property: none;
+            transition-property: none;
+  }
+  section.menu nav.navbar div.navbar-right div.lang-switch {
+    width: 62px;
+    padding: 10px !important;
+  }
+  section.menu nav.navbar div.navbar-right div.lang-switch select,
+  section.menu nav.navbar div.navbar-right div.lang-switch select option {
+    background-size: 32px 21px;
+  }
+  section.menu nav.navbar div.navbar-right div.lang-switch select option {
+    height: 25px;
+    font-size: 14px;
+    text-indent: 1px;
+  }
+}

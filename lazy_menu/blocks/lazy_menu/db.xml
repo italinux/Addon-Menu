@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.concrete5.org/doctrine-xml/0.5">
+  <table name="btLazyMenu">
+    <field name="bID" type="integer">
+      <unsigned/>
+      <autoincrement/>
+      <key/>
+    </field>
+    <field name="title" type="string" size="50">
+      <default value=""/>
+    </field>
+    <field name="showLogo" type="boolean">
+      <unsigned/>
+      <default value="0"/>
+    </field>
+    <field name="o1_fID" type="smallint">
+      <unsigned/>
+      <default value="0"/>
+    </field>
+    <field name="showLanguage" type="boolean">
+      <unsigned/>
+      <default value="0"/>
+    </field>
+   <field name="bgColorRGBA" type="string" size="30">
+      <default value=""/>
+    </field>
+    <field name="bgColorOpacity" type="float" size="3.2">
+      <default value="1.00"/>
+    </field>
+    <field name="bgFID" type="smallint">
+      <unsigned/>
+      <default value="0"/>
+    </field>
+    <field name="fgColorRGB" type="string" size="30">
+      <default value=""/>
+    </field>
+    <field name="isAnimated" type="boolean">
+      <unsigned/>
+      <default value="0"/>
+    </field>
+    <index name="bgFID">
+      <col>bgFID</col>
+    </index>
+    <index name="o1_fID">
+      <col>o1_fID</col>
+    </index>
+  </table>
+  <table name="btLazyMenuItem">
+    <field name="id" type="integer">
+      <unsigned/>
+      <autoincrement/>
+      <key/>
+    </field>
+    <field name="bID" type="integer">
+      <unsigned/>
+    </field>
+    <field name="name" type="string" size="50">
+      <default value=""/>
+    </field>
+    <field name="target" type="string" size="10">
+      <default value="self"/>
+    </field>
+    <field name="pageID" type="string" size="15">
+      <default value=""/>
+    </field>
+    <field name="url" type="string" size="255">
+      <default value=""/>
+    </field>
+    <field name="anchor" type="string" size="10">
+      <default value="hash"/>
+    </field>
+    <field name="hash" type="string" size="80">
+      <default value=""/>
+    </field>
+    <field name="addon" type="string" size="30">
+      <default value=""/>
+    </field>
+    <field name="sort" type="boolean">
+      <unsigned/>
+      <default value="0"/>
+    </field>
+  </table>
+</schema>

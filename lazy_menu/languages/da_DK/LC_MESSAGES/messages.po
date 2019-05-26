@@ -1,0 +1,577 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2015-10-02T21:29:47+02:00\n"
+"PO-Revision-Date: 2015-10-02T21:29:58+02:00\n"
+"Language: da_DK\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# - - - - - - - - - - - - - - - - - - - 
+# add-on Menu
+# next entry is Editable in-place
+msgid "Add Lazy Menu to your website"
+msgstr "Tilf&oslash;j Lazy Menu til din hjemmeside"
+
+# - - - - - - - - - - - - - - - - - - -
+# block Menu
+msgid "Delete this Menu item"
+msgstr "Slet dette menupunkt"
+
+msgid "You can leave this blank if you want to link to this same page"
+msgstr "Du kan lade dette v&aelig;re tomt, hvis du vil linke til denne samme side"
+
+msgid "Title displays only on mobile view"
+msgstr "Titel vises kun i mobilvisning"
+
+msgid "Logo"
+msgstr "Logo"
+
+msgid "site name"
+msgstr "side navn"
+
+msgid "List of Add-ons"
+msgstr "Liste over tilf&oslash;jelser"
+
+msgid "Dedicated Add-on"
+msgstr "Dedikeret tilf&oslash;jelse"
+
+msgid "all your menu items are listed below"
+msgstr "alle dine menupunkter, der er anf&oslash;rt nedenfor"
+
+msgid "menu items"
+msgstr "menupunkter"
+
+msgid "show logo?"
+msgstr "vis logo?"
+
+msgid "show language switch?"
+msgstr "vis sprog skifte?"
+
+# block shared
+msgid "File type required: JPG or PNG"
+msgstr "Filtype kr&aelig;ves: JPG eller PNG"
+
+msgid "File extension required: JPG or PNG"
+msgstr "File extension kr&aelig;ves: JPG eller PNG"
+
+msgid "File image is invalid"
+msgstr "File billede er ugyldig"
+
+msgid "Cannot be empty"
+msgstr "Kan ikke v&aelig;re tom"
+
+msgid "Title"
+msgstr "Titel"
+
+msgid "Subtitle"
+msgstr "Undertekst"
+
+msgid "Customise Style"
+msgstr "Tilpas Style"
+
+msgid "background image"
+msgstr "baggrundsbillede"
+
+msgid "font colour"
+msgstr "skriftfarve"
+
+msgid "with Animation"
+msgstr "med Animation"
+
+msgid "a title goes here"
+msgstr "en titel g&aring;r her"
+
+msgid "and subtitle here"
+msgstr "og undertekster her"
+
+msgid "contact us"
+msgstr "kontakt os"
+
+msgid "name"
+msgstr "navn"
+
+msgid "Required"
+msgstr "N&oslash;dvendig"
+
+msgid "your"
+msgstr "din"
+
+msgid "Your"
+msgstr "Din"
+
+msgid "Page"
+msgstr "Side"
+
+msgid "here"
+msgstr "her"
+
+msgid "click here"
+msgstr "klik her"
+
+msgid "Contacts"
+msgstr "Kontakter"
+
+msgid "contact me"
+msgstr "kontakt mig"
+
+msgid "yeah, go ahead"
+msgstr "ja, g&aring; videre"
+
+msgid "Title: %s"
+msgstr "Titel: %s"
+
+msgid "Subtitle: %s"
+msgstr "Undertitel: %s"
+
+msgid "Email: %s"
+msgstr "E-mail: %s"
+
+msgid "%1$s Page %2$s: %3$s"
+msgstr "%1$s Side %2$s: %3$s"
+
+msgid "my"
+msgstr "min"
+
+msgid "File size exceeded: Max %s"
+msgstr "Fil st&oslash;rrelse exceded: Max %s"
+
+msgid "Cannot be empty: %s"
+msgstr "Kan ikke v&aelig;re tom: %s"
+
+msgid "name: %s"
+msgstr "navn: %s"
+
+msgid "and"
+msgstr "og"
+
+msgid "Here"
+msgstr "Her"
+
+msgid "Invalid link: %s"
+msgstr "Ugyldigt link: %s"
+
+msgid "Visible?"
+msgstr "Synlig?"
+
+msgid "Background Colour"
+msgstr "Baggrund Farve"
+
+msgid "Adjust Background Opacity"
+msgstr "Juster Baggrund Opacity"
+
+msgid "Background Image"
+msgstr "Baggrundsbillede"
+
+msgid "Foreground Colour"
+msgstr "Forgrund Farve"
+
+msgid "Animation / Transition"
+msgstr "Animation / Transition"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "No"
+msgstr "Ingen"
+
+msgid "Choose Image"
+msgstr "V&aelig;lg billede"
+
+msgid "default"
+msgstr "standard"
+
+msgid "adjust top opacity"
+msgstr "justere top opacitet"
+
+msgid "find out more"
+msgstr "find ud af mere"
+
+msgid "Random image from: %s"
+msgstr "Tilf&aelig;ldigt billede fra: %s"
+
+msgid "File Sets"
+msgstr "Fil Sets"
+
+msgid "Choose"
+msgstr "V&aelig;lge"
+
+msgid "Otherwise"
+msgstr "Ellers"
+
+msgid "stick a single image here"
+msgstr "s&aelig;tte et enkelt billede her"
+
+msgid "it has priority over single image"
+msgstr "det har prioritet over enkelt billede"
+
+msgid "%1$s Select a %2$s %1$s"
+msgstr "%1$s V&aelig;lg en %2$s %1$s"
+
+msgid "File Set"
+msgstr "Fil Set"
+
+msgid "How to add a %s"
+msgstr "Hvordan at tilf&oslash;je en %s"
+
+msgid "Content: %s"
+msgstr "Indhold"
+
+msgid "Text Button: %s"
+msgstr "Tekst knap: %s"
+
+msgid "Link / anchor to: %s"
+msgstr "Link / anker til: %s"
+
+msgid "hi everyone"
+msgstr "hej allesammen"
+
+msgid "Global Text Button: %s"
+msgstr "Global Tekst knap: %s"
+
+msgid "Global Link / anchor to: %s"
+msgstr "Global Link / anker til: %s"
+
+msgid "Choose an icon:"
+msgstr "V&aelig;lg et ikon:"
+
+msgid "it has priority over the icon"
+msgstr "det har prioritet over ikonet"
+
+msgid "Title below icon / image: %s"
+msgstr "Titel nedenfor ikon / billede: %s"
+
+msgid "Single Text Button: %s"
+msgstr "Enkelt Tekst knap: %s"
+
+msgid "check it out"
+msgstr "tjek det ud"
+
+msgid "Or stick an image:"
+msgstr "Eller s&aelig;tte et billede:"
+
+msgid "1st %s"
+msgstr "1st %s"
+
+msgid "2nd %s"
+msgstr "2nd %s"
+
+msgid "3rd %s"
+msgstr "3rd %s"
+
+msgid "4th %s"
+msgstr "4th %s"
+
+msgid "Invalid URL: %s"
+msgstr "Ugyldig webadresse: %s"
+
+msgid "Options file sets list"
+msgstr "Indstillinger fil s&aelig;t liste"
+
+msgid "URL How to add a file set"
+msgstr "URL Hvordan at tilf&oslash;je en fil s&aelig;t"
+
+msgid "Custom template name"
+msgstr "Tilpasset skabelon navn"
+
+msgid "Custom Foreground image"
+msgstr "Tilpasset Forgrund billede"
+
+msgid "Content"
+msgstr "Indhold"
+
+msgid "see how"
+msgstr "se, hvordan"
+
+msgid "Global Link: %s"
+msgstr "Global Link: %s"
+
+msgid "Item %s"
+msgstr "Element %s"
+
+msgid "How to choose a %s"
+msgstr "S&aring;dan v&aelig;lges en %s"
+
+msgid "available"
+msgstr "ledig"
+
+msgid "I got the skills"
+msgstr "Jeg har de f&aelig;rdigheder"
+
+msgid "find out who I am"
+msgstr "find ud af, hvem jeg er"
+
+msgid "check me out"
+msgstr "tjek mig ud"
+
+msgid "ask me more"
+msgstr "sp&oslash;rg mig mere"
+
+msgid "1st"
+msgstr "1st"
+
+msgid "2nd"
+msgstr "2nd"
+
+msgid "3rd"
+msgstr "3."
+
+msgid "4th"
+msgstr "4."
+
+msgid "5th"
+msgstr "5."
+
+msgid "6th"
+msgstr "6th"
+
+msgid "7th"
+msgstr "7th"
+
+msgid "8th"
+msgstr "8."
+
+msgid "9th"
+msgstr "9th"
+
+msgid "what I do"
+msgstr "hvad jeg g&oslash;r"
+
+msgid "What I do"
+msgstr "Hvad jeg g&oslash;r"
+
+msgid "Prices"
+msgstr "Priserne"
+
+msgid "prices"
+msgstr "priser"
+
+msgid "contacts"
+msgstr "kontakter"
+
+msgid "subtitle goes here"
+msgstr "undertekst g&aring;r her"
+
+msgid "text: %s"
+msgstr "tekst: %s"
+
+msgid "Link to text: %s"
+msgstr "Link til tekst: %s"
+
+msgid "background colour %s"
+msgstr "baggrundsfarve %s"
+
+msgid "with or without transparency"
+msgstr "med eller uden gennemsigtighed"
+
+msgid "Page: %s"
+msgstr "Sider"
+
+msgid "it has priority over the link"
+msgstr "den har prioritet over linket"
+
+msgid "Choose File"
+msgstr "V&aelig;lg fil"
+
+msgid "File type required: PDF, ODT or DOC"
+msgstr "Filtype kr&aelig;ves: PDF, ODT eller DOC"
+
+msgid "File extension required: PDF, ODT or DOC"
+msgstr "Filforl&aelig;ngelse kr&aelig;ves: PDF, ODT eller DOC"
+
+msgid "File is invalid"
+msgstr "Filen er ugyldig"
+
+msgid "new"
+msgstr "ny"
+
+msgid "Title below / over image: %s"
+msgstr "Titel nedenfor / over billede: %s"
+
+msgid "And now Choose"
+msgstr "Og nu V&aelig;lg"
+
+msgid "Pop Up image?"
+msgstr "Pop up billede?"
+
+msgid "it has priority over Single Link"
+msgstr "den har prioritet over single link"
+
+msgid "Link type"
+msgstr "Link type"
+
+msgid "Select a Page"
+msgstr "V&aelig;lg en side"
+
+msgid "Autoscroll to"
+msgstr "Autoscroll til"
+
+msgid "Custom anchor"
+msgstr "Brugerdefineret anker"
+
+msgid "if you have not installed it yet"
+msgstr "hvis du ikke har installeret det endnu"
+
+msgid "OK good"
+msgstr "Ok godt"
+
+msgid "Menu item"
+msgstr "Menupunkt"
+
+msgid "Add menu item"
+msgstr "Tilf&oslash;j menupunkt"
+
+msgid "Link to a web page"
+msgstr "Link til en webside"
+
+msgid "NO auto scrolling"
+msgstr "Ingen automatisk scrolling"
+
+msgid "Same window"
+msgstr "Samme vindue"
+
+msgid "New window"
+msgstr "Nyt vindue"
+
+msgid "Target of link"
+msgstr "M&aring;l for link"
+
+msgid "anchor-name"
+msgstr "anker-navn"
+
+msgid "visit:"
+msgstr "bes&oslash;g:"
+
+msgid "See them All"
+msgstr "Se dem alle"
+
+msgid "See more"
+msgstr "Se mere"
+
+msgid "Same Page"
+msgstr "Samme side"
+
+msgid "New Page"
+msgstr "Ny side"
+
+msgid "Type a URL"
+msgstr "Indtast en URL"
+
+msgid "Profile icon"
+msgstr "Profilikon"
+
+msgid "Profile URL"
+msgstr "Profil URL"
+
+msgid "Link types list"
+msgstr "Liste over linktyper"
+
+msgid "Link targets list"
+msgstr "Link m&aring;l liste"
+
+msgid "Or stick a custom logo:"
+msgstr "Eller s&aelig;t et brugerdefineret logo:"
+
+msgid "Global Link"
+msgstr "Global Link"
+
+msgid "Single Link to Page or URL"
+msgstr "Enkelt link til side eller URL"
+
+msgid "Title below / over image"
+msgstr "Titel nedenfor / over billede"
+
+msgid "Global URL"
+msgstr "Global URL"
+
+msgid "Profile"
+msgstr "Profil"
+
+msgid "Custom image"
+msgstr "Brugerdefineret billede"
+
+msgid "Text"
+msgstr "Tekst"
+
+msgid "page"
+msgstr "side"
+
+msgid "Button Text"
+msgstr "Knappen Tekst"
+
+msgid "Text Link: %s"
+msgstr "Tekstlink: %s"
+
+msgid "Action Link"
+msgstr "Action Link"
+
+msgid "Link Name: %s"
+msgstr "Link navn: %s"
+
+msgid "Link name"
+msgstr "Link navn"
+
+msgid "all your items are listed below"
+msgstr "alle dine varer er angivet nedenfor"
+
+msgid "templates"
+msgstr "skabeloner"
+
+msgid "Link to Page or URL"
+msgstr "Link til Side eller WEBADRESSE"
+
+msgid "it has priority over Link to Page or URL"
+msgstr "det har prioritet over Link til Side eller WEBADRESSE"
+
+msgid "item Title: %s"
+msgstr "menu-Titel: %s"
+
+msgid "Name: %s"
+msgstr "Navn: %s"
+
+msgid "all your %s are listed below"
+msgstr "alle dine %s er anf&oslash;rt nedenfor"
+
+msgid "items"
+msgstr "emner"
+
+msgid "item Title"
+msgstr "emne Titel"
+
+msgid "single image here"
+msgstr "enkelt billede her"
+
+msgid "random image from: %s"
+msgstr "tilf&aelig;ldigt billede fra: %s"
+
+msgid "Choose this item's icon"
+msgstr "V&aelig;lg dette punkt ikon"
+
+msgid "template"
+msgstr "skabelon"
+
+msgid "Here you define:"
+msgstr "Her kan du definere:"
+
+msgid "link to a %1$s URL %2$s or to a %1$s Page %2$s"
+msgstr "link til %1$s URL ' %2$s eller %1$s Side %2$s"
+
+msgid "add an %1$s anchor %2$s to scroll to a %1$s section %2$s of a page"
+msgstr "f&oslash;j en %1$s anker %2$s for at rulle til %1$s afsnit %2$s af en side"
+
+msgid "open up to a %1$s new page %2$s or on the %1$s same page %2$s"
+msgstr "&aring;ben op til %1$s nye side med '%2$s eller %1$s samme side %2$s"
+
+msgid "Leave it empty to hide it"
+msgstr "Efterlade den tom for at skjule det"
+
+msgid "documentation:"
+msgstr "dokumentation:"
+
+msgid "an %1$s anchor %2$s to scroll to a %1$s section %2$s of a page"
+msgstr "en %1$s anker %2$s for at rulle til %1$s afsnit %2$s af en side"
