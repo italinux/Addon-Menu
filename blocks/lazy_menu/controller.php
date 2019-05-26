@@ -629,3 +629,576 @@ class Controller extends BlockController
 
             <style>
               <?php
+                if (BlockUtils::isValidColor($this->bgColorRGBA) ||
+                    $this->isCustomOverImageOpacity($this->bgColorOpacity)) {
+                ?>
+                  section<?php echo $this->getStyleSelector()?>.over-image::before {
+                    <?php
+                      if (BlockUtils::isValidColor($this->bgColorRGBA)) { ?>
+                          background-color: <?php echo $this->getOverImageBgColor()?> !important;
+                    <?php } ?>
+                    <?php
+                      if ($this->isCustomOverImageOpacity($this->bgColorOpacity)) { ?>
+                          opacity: <?php echo $this->bgColorOpacity?>;
+                    <?php } ?>
+                  }
+              <?php } ?>
+
+              <?php
+                if (BlockUtils::isValidColor($this->bgColorRGBA)) {
+                ?>
+                  section<?php echo $this->getStyleSelector()?> nav div.menu-wrapper.fixed {
+                      background-color: <?php echo $this->getOverImageBgColor()?> !important;
+                  }
+              <?php } ?>
+
+              <?php
+                if (BlockUtils::isValidImage($this->getBgFID()) ||
+                    BlockUtils::isValidColor($this->fgColorRGB)) {
+                ?>
+                  section<?php echo $this->getStyleSelector()?>.over-image {
+                    <?php
+                      if (BlockUtils::isValidImage($this->getBgFID())) { ?>
+                          background-image: url('<?php echo $this->getCustomStyleImagePath()?>') !important;
+                    <?php } ?>
+
+                    <?php
+                      if (BlockUtils::isValidColor($this->fgColorRGB)) { ?>
+                          color: <?php echo $this->fgColorRGB?> !important;
+                    <?php } ?>
+                  }
+               <?php } ?>
+
+               <?php
+                 if (BlockUtils::isValidColor($this->fgColorRGB)) { ?>
+                   section<?php echo $this->getStyleSelector()?> .hamburger .hamburger-inner,
+                   section<?php echo $this->getStyleSelector()?> .hamburger .hamburger-inner::before,
+                   section<?php echo $this->getStyleSelector()?> .hamburger .hamburger-inner::after {
+                       background-color: <?php echo $this->fgColorRGB?> !important;
+                       }
+               <?php } ?>
+            </style>
+
+            <?php
+            $o = ob_get_contents();
+
+            ob_end_clean();
+
+            $o = BlockUtils::getCustomStyleSanitised($o);
+        }
+
+        return $o;
+    }
+
+    /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    * Main Validate
+    */ 
+    public function validate($args)
+    {
+        $e = BlockUtils::getThisApp()->make('error');
+
+        // Validate Table Item
+        foreach (self::get_btTableItems() as $key => $value) {
+
+            // Field is Empty
+            if (isset($value['allowEmpty']) && ($value['allowEmpty'] === false)) {
+
+                if (is_array($args[$key])) {
+                    foreach (array_keys($args[$key]) as $k) {
+                        if (empty($args[$key][$k])) {
+                            $e->add(t('Cannot be empty: %s', $value['label'] . ' ' . ($k+1)));
+                        }
+                    }
+                } else {
+                    $e->add(t('Cannot be empty: %s', t('Menu')));
+                    break 1;
+                }
+            }
+        }
+
+        // Validate Styles
+        foreach (array_keys(self::get_btStyles()) as $key) {
+
+            switch ($key) {
+            case (lcfirst(substr($key, -3)) == 'fID'):
+
+                if (!empty($args[$key])) {
+                    $f = BlockUtils::getFileObject($args[$key]);
+
+                    if (is_object($f)) {
+                        switch ($f->getMimeType()) {
+                        case 'image/jpeg':
+                        case 'image/jpg':
+                        case 'image/png':
+                            break;
+                        default:
+                            $e->add(t('File type required: JPG or PNG'));
+                            break;
+                        }
+
+                        switch (strtolower($f->getExtension())) {
+                        case 'jpeg':
+                        case 'jpg':
+                        case 'png':
+                            break;
+                        default:
+                            $e->add(t('File extension required: JPG or PNG'));
+                            break;
+                        }
+
+                        $uploadImageSize = BlockUtils::getUploadImageSize(self::$btStyleUploadImageSize);
+
+                        if ($f->getFullSize() > $uploadImageSize) {
+                            $e->add(t('File size exceeded: Max %s', BlockUtils::getHumanReadUploadImageSize($uploadImageSize)));
+                        }
+
+                        if ($f->isError()) {
+                            $e->add(t('File image is invalid'));
+                        }
+                    } else {
+                        $e->add(t('File image is invalid'));
+                    }
+                }
+                break;
+            }
+        }
+
+        // Validate Fields
+        foreach (self::get_btFields() as $value) {
+
+            // Field is Empty
+            if (isset($value['allowEmpty']) && ($value['allowEmpty'] === false)) {
+
+                if (empty($args[$key])) {
+                    $e->add(t('Cannot be empty: %s', $value['label']));
+                }
+            }
+        }
+
+        return $e;
+    }
+
+    public function duplicate($newBID) {
+
+        $rows = array();
+
+        parent::duplicate($newBID);
+
+        $res = $this->getMenuItemsAll();
+
+        // Duplicate:
+        // Convert array structure to use existing values on a new bID
+        for ($i=0; $i < count($res); $i++) {
+            if (is_array($res[$i])) {
+                foreach($res[$i] as $key => $value) {
+                    $rows[$key][] = $value;
+                }
+            }
+        }
+
+        $args = count($rows) > 0 ? $rows : $args;
+
+        $this->insertMenuItems($newBID, count($res), $args);
+    }
+
+    public function delete()
+    {
+        $db = BlockUtils::getThisApp()->make('database')->connection();
+
+        $db->delete($this->btTable . 'Item', array('bID' => $this->bID));
+
+        parent::delete();
+    }
+ 
+    public function save($args)
+    {
+
+        // Save entries in Menu & Menu Items Tables
+        $db = BlockUtils::getThisApp()->make('database')->connection();
+
+        $db->executeQuery('DELETE from ' . $this->btTable . 'Item WHERE bID = ?', array($this->bID));
+
+        $this->insertMenuItems($this->bID, count((array)$args['sort']), $args);
+
+        // Update custom Styles for all pages 
+        foreach (array_keys(self::get_btStyles()) as $key) {
+
+            switch ($key) {
+            case (lcfirst(substr($key, -3)) == 'fID'):
+                if (empty($args[$key])) {
+                    $args[$key] = 0;
+                }
+                break;
+            case 'bgColorRGBA':
+                if (empty($args[$key])) {
+                    $args[$key] = 'transparent';
+                }
+                break;
+            case 'fgColorRGB':
+                if (empty($args[$key])) {
+                    $args[$key] = 'transparent';
+                }
+                break;
+            }
+        }
+
+        // Sanitize input for DB
+        foreach (array_keys(self::get_btFields()) as $key) {
+
+            // Prevent Default Value from setting
+            if (empty($args[$key])) {
+                $args[$key] = ' ';
+            }
+        }
+
+        parent::save($args);
+    }
+ 
+    /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    * Block Handlers Design Methods
+    */
+    protected static function getViewPointId()
+    {
+        return self::$btHandlerId;
+    }
+
+    protected function getSectionId()
+    {
+        return 's' . $this->bID;
+    }
+
+    protected function getStyleSelector()
+    {
+        return '#' . $this->getSectionId() . '.' . self::$btHandlerId;
+    }
+
+    protected function getJSelectorId()
+    {
+        return $this->getSectionId() . '.' . self::$btHandlerId;
+    }
+
+    protected function getCustomTemplateName()
+    {
+        $tName = 'no_template';
+        $block = $this->getBlockObject();
+
+        if (is_object($block)) {
+          $tName = ($block->getBlockFilename() == true ? $block->getBlockFilename() : $tName);
+        } 
+
+        return $tName;
+    }
+
+    protected function getCustomFgColorClassName()
+    {
+        return (BlockUtils::isValidColor($this->fgColorRGB) ? 'cfg-color' : null);
+    }
+
+    public static function getBlockHandle()
+    {
+        return strtolower(basename(dirname(__FILE__)));
+    }
+
+    /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    * Template & Block - Default & Background Images URLs
+    *
+    * @return image URL (for HTML src attribute)
+    */
+    protected function getBlockDefaultImageURL()
+    {
+        $image = $this->getDefaultImageFullSrc();
+
+        return $image['url'];
+    }
+
+    /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    * Template & Block - Default & Background Images PATHs
+    *
+    * @return image full Path (file system)
+    */
+    protected function getBlockDefaultImagePath()
+    {
+        $image = $this->getDefaultImageFullSrc();
+
+        return $image['path'];
+    }
+
+    /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    * Template & Block - Default Images Width & Height
+    *
+    * @return image full Path (file system)
+    */
+    protected function getBlockDefaultImageWidth()
+    {
+        $size = @getimagesize($this->getBlockDefaultImagePath());
+
+        // get default image width
+        return $size[0];
+    }
+
+    protected function getBlockDefaultImageHeight()
+    {
+        $size = @getimagesize($this->getBlockDefaultImagePath());
+
+        // get default image height
+        return $size[1];
+    }
+
+    /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    * Template & Block - Paths & URLs
+    *
+    * @param true / false
+    * @return image base Path and URL (Template / Block)
+    */
+    protected function getBlockImagesBaseURL($tPath=false)
+    {
+        return $this->getBlockAssetsURL() . ($tPath !== false ? $this->getBlockTemplateRelativePath() : null) . '/images';
+    }
+
+    protected function getBlockImagesBasePath($tPath=false)
+    {
+        return __DIR__ . ($tPath !== false ? $this->getBlockTemplateRelativePath() : null) . '/images';
+    }
+
+    /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    * Template - Paths & URLs
+    *
+    * @return image base Path and URL for a Template
+    */
+    protected function getBlockImagesBaseTemplateURL()
+    {
+        return $this->getBlockImagesBaseURL(true);
+    }
+
+    protected function getBlockImagesBaseTemplatePath()
+    {
+        return $this->getBlockImagesBasePath(true);
+    }
+
+    /** Get Template relative Path */
+    protected function getBlockTemplateRelativePath()
+    {
+        return ($this->getCustomTemplateName() == false ? null : '/templates/' . $this->getCustomTemplateName());
+    }
+
+    /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    * get Template or Block images Paths & URLs
+    * IMPORTANT: it uses inheritance
+    * Returns image from Template or Block folders
+    *
+    * @param default / background
+    * @return array (path, url)
+    */
+    private function getDefaultImageFullSrc($file='default')
+    {
+        $image = null;
+        $ext = array('png', 'jpg');
+
+        // check if Template Image folder has images
+        if (is_dir($this->getBlockImagesBaseTemplatePath())) {
+            foreach ($ext as $value) {
+                $imgPath = $this->getBlockImagesBaseTemplatePath() . '/' . $file . '.' . $value;
+
+                if (is_file($imgPath)) {
+                    $image = array('path' => $imgPath,
+                                   'url' => $this->getBlockImagesBaseTemplateURL() . '/' . $file . '.' . $value);
+                }
+            }
+        }
+
+        // otherwise use images within Block
+        if ($image == false) {
+            foreach ($ext as $value) {
+                $imgPath = $this->getBlockImagesBasePath() . '/' . $file . '.' . $value;
+
+                if (is_file($imgPath)) {
+                    $image = array('path' => $imgPath,
+                                   'url' => $this->getBlockImagesBaseURL() . '/' . $file . '.' . $value);
+                }
+            }
+        }
+
+        return (array) $image;
+    }
+
+    /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    * Custom inline Style Methods
+    * Background inline Styles Methods
+    */
+    public function getBgFID()
+    {
+        if ($this->bgFID > 0) {
+            $fObj = BlockUtils::getFileObject($this->bgFID);
+        }
+
+        return (isset($fObj) && is_object($fObj)) ? $fObj : null;
+    }
+
+    /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    * Check if Animation is enabled (ideal for JS variables)
+    */
+    public function getIsAnimationEnabled()
+    {        
+        return ($this->getIsAnimated() === true && Page::getCurrentPage()->isEditMode() == false) ? 'true' : 'false';
+    }
+
+    public function getIsEditMode()
+    {
+        return (Page::getCurrentPage()->isEditMode() == false) ? 0 : 1;
+    }
+
+    /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    * Custom Animation / Transition
+    */
+    public function getIsAnimated()
+    {
+        $cName  = 'isAnimated';
+        $config = self::$btHandlerId . '.' . $cName;
+        $dValue = true;
+
+        return filter_var(BlockUtils::getDefaultValue($config, $dValue, $this->{$cName}), FILTER_VALIDATE_BOOLEAN);
+    }
+
+    /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    * Background Opacity Over Image
+    */
+    public function getBgColorOpacity()
+    {
+        $cName  = 'bgColorOpacity';
+        $config = self::$btHandlerId . '.' . $cName;
+        $dValue = self::$bgOverImageOpacity;
+
+        return BlockUtils::getDefaultValue($config, $dValue, $this->{$cName});
+    }
+
+    /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    * Background Opacity Over Image Options
+    */
+    public function getBgColorOpacityOptions()
+    {
+        return array(
+            '-75%' => 0.25,
+            '-50%' => 0.5,
+            '-25%' => 0.75,
+            'default' => 1
+        );
+    }
+
+    protected function getCustomStyleImagePath()
+    {
+        return BlockUtils::getThisApp()->make('helper/image')->getThumbnail($this->getBgFID(), self::$btStyleUploadThumbWidth, self::$btStyleUploadThumbHeight, false)->src;
+    }
+
+    /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    * Custom inline Style Methods
+    */
+    protected function isCustomOverImageOpacity($value)
+    {
+        return ($value == true && (self::$bgOverImageOpacity != $this->getBgColorOpacity())) === true ? true : false;
+    }
+
+    protected function getOverImageBgColor()
+    {
+        return $this->bgColorRGBA;
+    }
+
+    /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    * Form Overlay (Edit/Add) Methods
+    */
+    public function getBlockAssetsURL()
+    {
+        $bt = BlockType::getByHandle(self::getBlockHandle());
+        $bPath = BlockUtils::getThisApp()->make('helper/concrete/urls')->getBlockTypeAssetsURL($bt);
+
+        return $bPath;
+    }
+
+    protected function addLocalAssets($path, $type = 'css')
+    {
+        $this->addHeaderItem(BlockUtils::getThisApp()->make('helper/html')->{$type}($this->getBlockAssetsURL() . $path));
+    }
+
+    /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    * Add Form (Window Overlay) - default Values
+    */
+    protected function addFormDefaultValues()
+    {
+        // Retrieve defaults Values
+        if (method_exists(__CLASS__, 'get_btFields')) {
+
+            foreach (array_keys(self::get_btFields()) as $key) {
+
+                if (method_exists($this, 'get' . ucfirst($key))) {
+
+                    $o = $this->{'get' . ucfirst($key)}();
+
+                    $o = is_array($o) ? $o : trim($o);
+
+                    $this->set($key, $o);
+                }
+            }
+        }
+    }
+
+    /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    * Add Form (Window Overlay) - extra Values
+    */
+    protected function addFormExtraValues()
+    {
+        // Retrieve defaults Values
+        if (method_exists(__CLASS__, 'get_btStyles')) {
+            foreach (array_keys(self::get_btStyles()) as $key) {
+                if (method_exists($this, 'get' . ucfirst($key))) {
+                    $this->set($key, $this->{'get' . ucfirst($key)}());
+                }
+            }
+        }
+
+        // Retrieve extra Values
+        if (method_exists(__CLASS__, 'get_btFormExtraValues')) {
+            foreach (array_keys(self::get_btFormExtraValues()) as $key) {
+                if (method_exists($this, 'get' . ucfirst($key))) {
+                    $this->set($key, $this->{'get' . ucfirst($key)}());
+                }
+            }
+        }
+    }
+
+    /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    * Add Form (Window Overlay)
+    */
+    protected function add()
+    {
+        // Custom Styles Palettes
+        $this->set('color', BlockUtils::getThisApp()->make('helper/form/color'));
+        $this->set('asset', BlockUtils::getThisApp()->make('helper/concrete/asset_library'));
+
+        $this->set('fgColorPalette', BlockUtils::getFgColorPalette(false, true));
+        $this->set('bgColorPalette', BlockUtils::getBgColorPalette(true, true, self::$btStyleOpacity));
+
+        $this->set('btWrapperForm', $this->btWrapperForm);
+
+        // Add Assets Site-Map
+        $this->requireAsset('core/sitemap');
+
+        // Page Selector
+        $this->set('pageSelector', BlockUtils::getThisApp()->make('helper/form/page_selector'));
+
+        // Urls
+        $this->set('hUrl', BlockUtils::getThisApp()->make('helper/concrete/urls'));
+
+        $this->addFormDefaultValues();
+        $this->addFormExtraValues();
+
+        // Add Assets to Window Overlay
+        $this->addLocalAssets('/css/tools/lazy-global-ui.css', 'css');
+    }
+
+    /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    * Edit Form (Window Overlay)
+    */
+    protected function edit() 
+    {
+        $this->add();
+    }
+}
