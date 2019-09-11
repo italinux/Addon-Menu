@@ -57,7 +57,7 @@ class Utils {
             $config = (current(explode(".", $key)) == 'concrete' ? null : 'app.') . $key;
             $o = Config::get(trim($config));
 
-            $o = (is_bool($o) === true ? (int) $o : (empty($o) === true ? $value : t($o)));
+            $o = (is_bool($o) === true ? (int) $o : ((empty($o) === true) || is_numeric($o)) ? $value : t($o));
         }
 
         return $o;
