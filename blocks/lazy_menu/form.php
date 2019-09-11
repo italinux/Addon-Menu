@@ -32,26 +32,25 @@ defined('C5_EXECUTE') or die("Access Denied.");
           <div class="container-fluid">
             <div class="col-lg-4 col-lg-offset-0 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
               <div class="form-group center double-space-top no-space-bottom">
-                <?php echo $form->label('o1_fID', t('Logo'))?>
-                <div class="input-group center p90">
-                  <?php echo $asset->image('ccm-b-image-o1_fID', 'o1_fID', t('Choose Image'), $o1_fID, array())?>
-                </div>
-              </div>
-              <div class="form-group center double-space-top">
                 <?php echo $form->label('showLogo', t('show logo?'))?>
                 <div class="input-group center">
                   <div class="radio">
                     <label>
                       <?php echo $form->radio('showLogo', 1, (int) $showLogo)?>
-                      <span><?php echo t('Yes')?></span>
+                       <span class="on"><?php echo t('Yes')?></span>
                     </label>
                   </div>
                   <div class="radio">
                     <label>
                       <?php echo $form->radio('showLogo', 0, (int) $showLogo)?>
-                      <span><?php echo t('No')?></span>
+                      <span class="off"><?php echo t('No')?></span>
                     </label>
                   </div>
+                </div>
+              </div>
+              <div class="form-group center single-space-top">
+                <div class="input-group center p90">
+                  <?php echo $asset->image('ccm-b-image-o1_fID', 'o1_fID', t('Choose Image') . ' logo', $o1_fID, array())?>
                 </div>
               </div>
             </div>
@@ -73,13 +72,13 @@ defined('C5_EXECUTE') or die("Access Denied.");
                   <div class="radio">
                     <label>
                       <?php echo $form->radio('showLanguage', 1, (int) $showLanguage)?>
-                      <span><?php echo t('Yes')?></span>
+                       <span class="on"><?php echo t('Yes')?></span>
                     </label>
                   </div>
                   <div class="radio">
                     <label>
                       <?php echo $form->radio('showLanguage', 0, (int) $showLanguage)?>
-                      <span><?php echo t('No')?></span>
+                       <span class="off"><?php echo t('No')?></span>
                     </label>
                   </div>
                 </div>
