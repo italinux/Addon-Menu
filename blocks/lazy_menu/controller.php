@@ -472,7 +472,7 @@ class Controller extends BlockController
         // Import Bootstrap CSS framework
         $this->requireAsset('css', 'bootstrap/*');
 
-        if ($this->getIsAnimated() === true && Page::getCurrentPage()->isEditMode() == false) {
+        if ($this->getIsAnimationEnabled() === true) {
             // Import Animations Assets CSS & JS
             $this->requireAsset('jst.animate.assets');
 
@@ -501,7 +501,7 @@ class Controller extends BlockController
     public function view()
     {
 
-        if ($this->getIsAnimated() === true && Page::getCurrentPage()->isEditMode() == false) {
+        if ($this->getIsAnimationEnabled() === true) {
             // class which master animation at its best
             $this->set('nopaque', 'nopaque');
         } else {
