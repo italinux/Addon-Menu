@@ -219,7 +219,7 @@ section.menu[class^="mobile_view"].page-block {
 }
 section.menu nav div.navbar-center div.menu-wrapper.fixed ul.nav a {
   font-size: 3em;
-  line-height: 1em;
+  line-height: 1.2em;
 }
 @media screen and (max-width: 1024px) {
   section.menu nav div.navbar-center div.menu-wrapper.fixed ul.nav a {
@@ -401,8 +401,8 @@ section.menu nav.navbar li.active:focus {
   opacity: 0.9;
 }
 section.menu nav.navbar li a {
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
   text-decoration: none;
 }
 section.menu nav.navbar li a:hover,
