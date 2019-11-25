@@ -250,11 +250,20 @@ defined('C5_EXECUTE') or die("Access Denied.");
                   <?php echo t('Customise Style')?>
                 </div>
                 <div class="col-lg-12">
-                  <div class="form-group center light-title single-space-top no-sides-paddings single-space-bottom">
+                  <div class="form-group center light-title no-margins no-sides-paddings double-space-bottom single-space-top">
                     <?php echo $form->label('bgColorRGBA', t('background colour %s', '<br /><span>(' . t('with or without transparency') . ')</span>'))?>
                     <div class="input-group">
                       <!-- Show a Color Palette in RGB Color Format with Transparency Slider (RGBA) -->
                       <?php $color->output('bgColorRGBA', $bgColorRGBA, $bgColorPalette)?>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12 separator-top separator-bottom">
+                  <div class="form-group center light-title double-space-top">
+                    <?php echo $form->label('bgFID', t('background image'))?>
+                    <div class="input-group">
+                      <?php echo $asset->image('ccm-b-image-bgFID', 'bgFID', t('Choose Image'), $bgFID, array())?>
                     </div>
                   </div>
                   <div class="form-group center light-title no-margins no-sides-paddings single-space-bottom">
@@ -283,15 +292,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
                 </div>
 
                 <div class="col-lg-12">
-                  <div class="form-group center light-title single-space-top single-space-bottom">
-                    <?php echo $form->label('bgFID', t('background image'))?>
-                    <div class="input-group">
-                      <?php echo $asset->image('ccm-b-image-bgFID', 'bgFID', t('Choose Image'), $bgFID, array())?>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="form-group center light-title single-space-bottom">
+                  <div class="form-group center light-title single-space-bottom double-space-top">
                     <?php echo $form->label('fgColorRGB', t('font colour'))?>
                     <div class="input-group">
                       <!-- Show a Color Palette in RGB Color Format -->

@@ -439,6 +439,15 @@ div.lazy-ui section.style .double-space-bottom {
   padding-bottom: 20px;
 }
 
+/* Custom Style Separator
+---------------------------------------------------------*/
+div.lazy-ui section.style .separator-top {
+  border-top: 1px dashed #69c376;
+}
+div.lazy-ui section.style .separator-bottom {
+  border-bottom: 1px dashed #69c376;
+}
+
 /* Main */
 div.lazy-ui section .little-space-bottom {
   padding-bottom: 5px;
