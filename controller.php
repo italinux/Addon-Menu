@@ -10,7 +10,7 @@
 |  @link:   http://matteo-montanari.com
 '---------------------------------------------------------------------'
 .---------------------------------------------------------------------------.
-| @copyright (c) 2019                                                       |
+| @copyright (c) 2020                                                       |
 | ------------------------------------------------------------------------- |
 | @license: Concrete5.org Marketplace Commercial Add-Ons & Themes License   |
 |           http://concrete5.org/help/legal/commercial_add-on_license       |
@@ -34,7 +34,7 @@ class Controller extends Package
 {
 
     protected $pkgHandle = 'lazy_menu';
-    protected $pkgVersion = '1.1';
+    protected $pkgVersion = '1.1.1';
 
     protected $appVersionRequired = '5.7.4.2';
 
