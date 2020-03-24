@@ -386,7 +386,7 @@ class Controller extends BlockController
                 $page = $value['pageID'] == true ? Page::getByID($value['pageID']) : null;
 
                 // link for self
-                $items[$key]['link'] = is_object($page) == true ? BlockUtils::getThisApp()->make('helper/navigation')->getLinkToCollection($page) : null;
+                $items[$key]['link'] = is_object($page) == true ? parse_url(BlockUtils::getThisApp()->make('helper/navigation')->getLinkToCollection($page), PHP_URL_PATH) : null;
 
                 // a class for self
                 $items[$key]['a-class'] = (is_object($page) == false && $anchor == true) ? 'scroll' : null;
@@ -681,7 +681,7 @@ class Controller extends BlockController
                   section<?php echo $this->getStyleSelector()?>.over-image {
                     <?php
                       if (BlockUtils::isValidImage($this->getBgFID())) { ?>
-                          background-image: url('<?php echo $this->getCustomStyleImagePath()?>') !important;
+                          background-image: url('<?php echo parse_url($this->getCustomStyleImagePath(), PHP_URL_PATH)?>') !important;
                     <?php } ?>
 
                     <?php
