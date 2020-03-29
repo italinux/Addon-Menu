@@ -1121,7 +1121,7 @@ class Controller extends BlockController
     */
     protected function isCustomOverImageOpacity($value)
     {
-        return ($value == true && ($this->getBgColorOpacity() !== 1)) === true ? true : false;
+        return ($value == true && ($this->getBgColorOpacity() != 1)) === true ? true : false;
     }
 
     protected function getOverImageBgColor()
