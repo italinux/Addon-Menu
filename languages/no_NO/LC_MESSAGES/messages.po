@@ -575,3 +575,6 @@ msgstr "dokumentasjon:"
 
 msgid "an %1$s anchor %2$s to scroll to a %1$s section %2$s of a page"
 msgstr "en av %1$s anchor %2$s for &aring; bla til en %1$s delen %2$s av en side"
+
+msgid "button text"
+msgstr "knappetekst"

@@ -352,25 +352,12 @@ section.menu nav.navbar div.navbar-center div.menu-wrapper {
   margin: 0px auto;
   text-align: center;
 }
-section.menu nav.navbar div.navbar-center div.menu-wrapper ul {
-  position: relative;
-  width: auto;
-  margin: 0 auto;
-  align-self: center;
-  vertical-align: middle;
-  text-align: center;
-  float: none;
-}
-section.menu nav.navbar div.navbar-center div.menu-wrapper ul li {
-  float: none;
-  display: inline-block;
-}
 section.menu nav.navbar div.navbar-center div.menu-wrapper.fixed {
   position: fixed;
   width: 100%;
   display: block !important;
 }
-section.menu nav.navbar div.navbar-center div.menu-wrapper.fixed ul {
+section.menu nav.navbar div.navbar-center div.menu-wrapper.fixed > ul.nav {
   position: absolute;
   max-width: 600px;
   width: 96%;
@@ -379,14 +366,99 @@ section.menu nav.navbar div.navbar-center div.menu-wrapper.fixed ul {
   transform: translate(-50%, -50%);
   display: grid;
 }
-section.menu nav.navbar div.navbar-center div.menu-wrapper.fixed ul li {
-  width: 100%;
+section.menu nav.navbar div.navbar-center div.menu-wrapper.fixed > ul.nav > li {
+  width: auto;
+  height: auto;
   margin-bottom: 10px;
   display: block;
   clear: both;
 }
-section.menu nav.navbar div.navbar-center div.menu-wrapper.fixed ul li.highlight {
+section.menu nav.navbar div.navbar-center div.menu-wrapper.fixed > ul.nav > li.highlight {
   margin-top: 10px;
+}
+section.menu nav.navbar div.navbar-center div.menu-wrapper.fixed > ul.nav > li > ol.dropdown-menu {
+  position: relative;
+  top: auto;
+  left: auto !important;
+  right: auto !important;
+  width: 80%;
+  margin: 10px auto 0px auto;
+  float: none;
+  clear: both !important;
+  box-shadow: none;
+  background-color: transparent;
+}
+section.menu nav.navbar div.navbar-center div.menu-wrapper.fixed > ul.nav > li > ol.dropdown-menu li {
+  top: 0px;
+  left: 00px;
+}
+section.menu nav.navbar div.navbar-center div.menu-wrapper.fixed > ul.nav > li > ol.dropdown-menu li a {
+  padding: 5px 20px !important;
+  margin: 0px !important;
+}
+section.menu nav.navbar div.navbar-center div.menu-wrapper.fixed > ul.nav > li.keep-it-open {
+  opacity: 1 !important;
+}
+section.menu nav.navbar div.navbar-center div.menu-wrapper.fixed > ul.nav > li.keep-it-open > ol.dropdown-menu {
+  display: block !important;
+}
+section.menu nav.navbar div.navbar-center div.menu-wrapper:not(.fixed) > ul.nav > li:hover > ol.dropdown-menu,
+section.menu nav.navbar div.navbar-center div.menu-wrapper:not(.fixed) > ul.nav > li:focus > ol.dropdown-menu,
+section.menu nav.navbar div.navbar-center div.menu-wrapper:not(.fixed) > ul.nav > li:active > ol.dropdown-menu,
+section.menu nav.navbar div.navbar-center div.menu-wrapper:not(.fixed) > ul.nav > li.active > ol.dropdown-menu {
+  margin-top: -18px;
+  display: block !important;
+}
+section.menu nav.navbar div.navbar-center div.menu-wrapper:not(.fixed) > ul.nav > li ol.dropdown-menu > li:nth-child(odd) {
+  margin-bottom: 2px;
+}
+section.menu nav.navbar div.navbar-center div.menu-wrapper:not(.fixed) > ul.nav > li ol.dropdown-menu > li:nth-child(odd) > a {
+  padding-top: 14px;
+  padding-bottom: 10px;
+}
+section.menu nav.navbar div.navbar-center div.menu-wrapper:not(.fixed) > ul.nav > li ol.dropdown-menu > li:nth-child(even) {
+  margin-top: 2px;
+}
+section.menu nav.navbar div.navbar-center div.menu-wrapper:not(.fixed) > ul.nav > li ol.dropdown-menu > li:nth-child(even) > a {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+section.menu nav.navbar div.navbar-center div.menu-wrapper:not(.fixed) > ul.nav > li ol.dropdown-menu > li > a {
+  padding-left: 1.6em;
+}
+section.menu nav.navbar div.navbar-center div.menu-wrapper ul.nav li.open {
+  opacity: 1;
+}
+section.menu nav.navbar div.navbar-center div.menu-wrapper ul.nav li.open ol.dropdown-menu {
+  display: none;
+}
+section.menu nav.navbar div.navbar-center div.menu-wrapper ul.nav li a {
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: transparent !important;
+}
+section.menu nav.navbar div.navbar-center div.menu-wrapper ul.nav li a.dropdown-toggle {
+  cursor: pointer;
+}
+section.menu nav.navbar div.navbar-center div.menu-wrapper ul.nav li a.dropdown-toggle::after {
+  width: 0px;
+  height: 0px;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0px;
+  border-left: 0.3em solid transparent;
+  display: inline-block;
+}
+section.menu nav.navbar div.navbar-center div.menu-wrapper ul.nav li ol.dropdown-menu {
+  background-color: rgba(68, 79, 139, 0.9);
+  border-radius: 0px 0px 6px 6px;
+}
+section.menu nav.navbar div.navbar-center div.menu-wrapper ul.nav li ol.dropdown-menu > li {
+  position: relative;
+  width: 100%;
 }
 section.menu nav.navbar img {
   max-height: 50px;

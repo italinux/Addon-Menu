@@ -575,3 +575,6 @@ msgstr "documenta&ccedil;&atilde;o:"
 
 msgid "an %1$s anchor %2$s to scroll to a %1$s section %2$s of a page"
 msgstr "um %1$s &acirc;ncora %2$s para ir para %1$s se&ccedil;&atilde;o de %2$s de uma p&aacute;gina"
+
+msgid "button text"
+msgstr "bot&atilde;o de texto"
