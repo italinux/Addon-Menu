@@ -169,7 +169,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
         var thisSelf = thisItem.find("div[data-id='target-self']");
        var thisBlank = thisItem.find("div[data-id='target-blank']");
 
-        switch($(this).val()) {
+        switch ($(this).val()) {
         case 'self':
             thisSelf.show(); thisBlank.hide();
             break;
@@ -192,7 +192,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
 
         var message = thisItem.find("div[data-id='anchor-message']");
 
-        switch($(this).val()) {
+        switch ($(this).val()) {
         case 'addon':
             addon.show(); hash.hide(); message.show();
             break;

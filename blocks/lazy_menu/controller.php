@@ -364,7 +364,7 @@ class Controller extends BlockController
     {
         $items = array();
 
-        foreach($this->getMenuItemsAll() as $key => $value){
+        foreach ($this->getMenuItemsAll() as $key => $value){
 
             // - - - - - - - - - - - - - - - - - - - - -
             // get Anchor (hash)
@@ -812,7 +812,7 @@ class Controller extends BlockController
         // Convert array structure to use existing values on a new bID
         for ($i=0; $i < count($res); $i++) {
             if (is_array($res[$i])) {
-                foreach($res[$i] as $key => $value) {
+                foreach ($res[$i] as $key => $value) {
                     $rows[$key][] = $value;
                 }
             }
