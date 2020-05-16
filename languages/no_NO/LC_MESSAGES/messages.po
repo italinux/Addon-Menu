@@ -578,3 +578,78 @@ msgstr "en av %1$s anchor %2$s for &aring; bla til en %1$s delen %2$s av en side
 
 msgid "button text"
 msgstr "knappetekst"
+
+msgid "Image type"
+msgstr "Bildetype"
+
+msgid "Image types list"
+msgstr "Liste over bilder"
+
+msgid "Stretch image"
+msgstr "Strekkbilde"
+
+msgid "Image width"
+msgstr "Bildebredde"
+
+msgid "Image height"
+msgstr "Bildeh&oslash;yde"
+
+msgid "Choose image"
+msgstr "Velg bilde"
+
+msgid "layout design"
+msgstr "layout design"
+
+msgid "%d Column"
+msgstr "%d Kolonne"
+
+msgid "%d Columns"
+msgstr "%d Kolonner"
+
+msgid "Layout Design"
+msgstr "Layout design"
+
+msgid "Options layout design columns"
+msgstr "Alternativer for utforming av kolonner"
+
+msgid "Image Size"
+msgstr "Bildest&oslash;rrelse"
+
+msgid "is Stretched?"
+msgstr "er strukket?"
+
+msgid "Stretched?"
+msgstr "Strukket?"
+
+msgid "stretched?"
+msgstr "strukket?"
+
+msgid "Single image"
+msgstr "Enkeltbilde"
+
+msgid "Multiple images"
+msgstr "Flere bilder"
+
+msgid "pop-up has priority over Link to Page or URL"
+msgstr "popup-vinduet har prioritet fremfor lenke til side eller URL"
+
+msgid "Choose the image link"
+msgstr "Velg bildelink"
+
+msgid "Invalid Image Size"
+msgstr "Ugyldig bildest&oslash;rrelse"
+
+msgid "Image width placeholder"
+msgstr "Bildebredde plassholder"
+
+msgid "Image height placeholder"
+msgstr "Plassholder for bildeh&oslash;yde"
+
+msgid "minimum: %s"
+msgstr "minimum: %s"
+
+msgid "Image size limit"
+msgstr "Grense for bildest&oslash;rrelse"
+
+msgid "Icon ready"
+msgstr "Ikonet er klart"

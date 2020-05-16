@@ -578,3 +578,78 @@ msgstr "un' %1$s ancora %2$s per scorrere ad una %1$s sezione %2$s di pagina"
 
 msgid "button text"
 msgstr "testo del pulsante"
+
+msgid "Image type"
+msgstr "Tipo di immagine"
+
+msgid "Image types list"
+msgstr "Elenco dei tipi di immagine"
+
+msgid "Stretch image"
+msgstr "Allunga l'immagine"
+
+msgid "Image width"
+msgstr "Larghezza dell'immagine"
+
+msgid "Image height"
+msgstr "Altezza dell'immagine"
+
+msgid "Choose image"
+msgstr "Scegli immagine"
+
+msgid "layout design"
+msgstr "progettazione del layout"
+
+msgid "%d Column"
+msgstr "%d colonna"
+
+msgid "%d Columns"
+msgstr "%d colonne"
+
+msgid "Layout Design"
+msgstr "Progettazione del layout"
+
+msgid "Options layout design columns"
+msgstr "Colonne di progettazione del layout delle opzioni"
+
+msgid "Image Size"
+msgstr "Dimensione dell'immagine"
+
+msgid "is Stretched?"
+msgstr "&egrave; allungata?"
+
+msgid "Stretched?"
+msgstr "Allungata?"
+
+msgid "stretched?"
+msgstr "allungata?"
+
+msgid "Single image"
+msgstr "Immagine singola"
+
+msgid "Multiple images"
+msgstr "Immagini multiple"
+
+msgid "pop-up has priority over Link to Page or URL"
+msgstr "il pop-up ha la priorit&agrave; sul collegamento alla pagina o all'URL"
+
+msgid "Choose the image link"
+msgstr "Scegli il collegamento dell'immagine"
+
+msgid "Invalid Image Size"
+msgstr "Dimensione immagine non valida"
+
+msgid "Image width placeholder"
+msgstr "Segnaposto larghezza immagine"
+
+msgid "Image height placeholder"
+msgstr "Segnaposto dell'altezza dell'immagine"
+
+msgid "minimum: %s"
+msgstr "minimo: %s"
+
+msgid "Image size limit"
+msgstr "Limite dimensioni immagine"
+
+msgid "Icon ready"
+msgstr "Icona pronta"

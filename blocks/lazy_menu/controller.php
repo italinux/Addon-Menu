@@ -852,10 +852,6 @@ class Controller extends BlockController
                 }
                 break;
             case 'bgColorRGBA':
-                if (empty($args[$key])) {
-                    $args[$key] = 'transparent';
-                }
-                break;
             case 'fgColorRGB':
                 if (empty($args[$key])) {
                     $args[$key] = 'transparent';

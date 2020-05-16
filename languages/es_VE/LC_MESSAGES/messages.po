@@ -578,3 +578,78 @@ msgstr "un ancla %1$s %2$s para desplazarse a una %1$s secci&oacute;n %2$s de un
 
 msgid "button text"
 msgstr "bot&oacute;n de texto"
+
+msgid "Image type"
+msgstr "Tipo de imagen"
+
+msgid "Image types list"
+msgstr "Lista de tipos de imagen"
+
+msgid "Stretch image"
+msgstr "Estirar la imagen"
+
+msgid "Image width"
+msgstr "Ancho de la imagen"
+
+msgid "Image height"
+msgstr "Altura de imagen"
+
+msgid "Choose image"
+msgstr "Elige imagen"
+
+msgid "layout design"
+msgstr "plano de dise&ntilde;o"
+
+msgid "%d Column"
+msgstr "%d columna"
+
+msgid "%d Columns"
+msgstr "%d columnas"
+
+msgid "Layout Design"
+msgstr "Plano de dise&ntilde;o"
+
+msgid "Options layout design columns"
+msgstr "Opciones de dise&ntilde;o de columnas de dise&ntilde;o"
+
+msgid "Image Size"
+msgstr "Tama&ntilde;o de la imagen"
+
+msgid "is Stretched?"
+msgstr "se estira?"
+
+msgid "Stretched?"
+msgstr "¿Estirado?"
+
+msgid "stretched?"
+msgstr "¿estirado?"
+
+msgid "Single image"
+msgstr "Imagen individual"
+
+msgid "Multiple images"
+msgstr "M&uacute;ltiples im&aacute;genes"
+
+msgid "pop-up has priority over Link to Page or URL"
+msgstr "la ventana emergente tiene prioridad sobre el enlace a la p&aacute;gina o URL"
+
+msgid "Choose the image link"
+msgstr "Elige el enlace de la imagen"
+
+msgid "Invalid Image Size"
+msgstr "Tama&ntilde;o de imagen inv&aacute;lido"
+
+msgid "Image width placeholder"
+msgstr "Marcador de posici&oacute;n de ancho de imagen"
+
+msgid "Image height placeholder"
+msgstr "Marcador de posici&oacute;n de altura de imagen"
+
+msgid "minimum: %s"
+msgstr "m&iacute;nimo: %s"
+
+msgid "Image size limit"
+msgstr ""
+
+msgid "Icon ready"
+msgstr "Icono listo"

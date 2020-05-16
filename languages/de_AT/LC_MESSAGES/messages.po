@@ -578,3 +578,78 @@ msgstr "ein %1$s-Anker % 2$s, um zu einem %1$s-Abschnitt %2$s einer Seite zu scr
 
 msgid "button text"
 msgstr "schaltfl&auml;chentext"
+
+msgid "Image type"
+msgstr "Bildtyp"
+
+msgid "Image types list"
+msgstr "Liste der Bildtypen"
+
+msgid "Stretch image"
+msgstr "Bild strecken"
+
+msgid "Image width"
+msgstr "Bild breite"
+
+msgid "Image height"
+msgstr "Bildh&ouml;he"
+
+msgid "Choose image"
+msgstr "Bild ausw&auml;hlen"
+
+msgid "layout design"
+msgstr "layout-Design"
+
+msgid "%d Column"
+msgstr "%d Spalte"
+
+msgid "%d Columns"
+msgstr "%d Spalten"
+
+msgid "Layout Design"
+msgstr "Layout-Design"
+
+msgid "Options layout design columns"
+msgstr "Optionen Layout Design Spalten"
+
+msgid "Image Size"
+msgstr "Bildgr&ouml;&szlig;e"
+
+msgid "is Stretched?"
+msgstr "ist gestreckt?"
+
+msgid "Stretched?"
+msgstr "Gestreckt?"
+
+msgid "stretched?"
+msgstr "gedehnt?"
+
+msgid "Single image"
+msgstr "Einzelbild"
+
+msgid "Multiple images"
+msgstr "Mehrere Bilder"
+
+msgid "pop-up has priority over Link to Page or URL"
+msgstr "popup hat Vorrang vor Link zu Seite oder URL"
+
+msgid "Choose the image link"
+msgstr "W&auml;hlen Sie den Bildlink"
+
+msgid "Invalid Image Size"
+msgstr "Ung&uuml;ltige Bildgr&ouml;&szlig;e"
+
+msgid "Image width placeholder"
+msgstr "Platzhalter f&uuml;r Bildbreite"
+
+msgid "Image height placeholder"
+msgstr "Platzhalter f&uuml;r Bildh&ouml;he"
+
+msgid "minimum: %s"
+msgstr "minimum: %s"
+
+msgid "Image size limit"
+msgstr ""
+
+msgid "Icon ready"
+msgstr "Symbol bereit"

@@ -417,10 +417,10 @@ div.lazy-ui a.info > span:hover {
 /* Separators
 ---------------------------------------------------------*/
 div.lazy-ui section .separator-top {
-  border-top: 2px dotted #ccc;
+  border-top: 2px dotted #ddd;
 }
 div.lazy-ui section .separator-bottom {
-  border-bottom: 2px dotted #ccc;
+  border-bottom: 2px dotted #ddd;
 }
 
 /* Spacings
@@ -819,9 +819,24 @@ div.lazy-ui section div.form-group span.label-checkbox {
   padding-right: 12px;
   font-weight: bold;
 }
-div.lazy-ui section div.form-group.align-center {
+
+div.lazy-ui section div.float-left {
+  float: left;
+}
+div.lazy-ui section div.float-right {
+  float: right;
+}
+
+div.lazy-ui section div.align-left {
+  text-align: left;
+}
+div.lazy-ui section div.align-center {
   text-align: center;
 }
+div.lazy-ui section div.align-right {
+  text-align: right;
+}
+
 div.lazy-ui section div.input-group {
   width: 100%;
   font-weight: normal;
@@ -883,36 +898,48 @@ div.lazy-ui section div.form-group > label .tooltip dd {
   white-space: pre;
 }
 
-/* * * * * * * * * * * * * *
-*  Select Page / URL
-* * * * * * * * * * * * * */
-div.lazy-ui section div[id$="_linkTypes"].input-group {
+/* * * * * * * * * * * * * * * * * * * * * * * * * * *
+*  Select Page / URL & Select File Set / Image
+* * * * * * * * * * * * * * * * * * * * * * * * * * */
+div.lazy-ui section div[id$="_linkTypes"].input-group,
+div.lazy-ui section div[id$="_imageTypes"].input-group {
   margin-left: 2%;
   margin-right: 2%;
+}
+div.lazy-ui section div[id$="_linkTypes"].input-group {
   text-align: left;
 }
-
 div.lazy-ui section div[id$="_linkType_url"].input-group > input[type="text"][id$="_url"] {
   width: 100% !important;
+}
+
+div.lazy-ui section div[id$="_imageTypes"].input-group {
+  text-align: center;
 }
 
 /* Media Tablets
 --------------------------------------------------------- */
 @media screen and (max-width: 991px) {
-  div.lazy-ui section div[id$="_linkTypes"].input-group {
+  div.lazy-ui section div[id$="_linkTypes"].input-group,
+  div.lazy-ui section div[id$="_imageTypes"].input-group {
     text-align: center;
   }
 }
 
-div.lazy-ui section div[id$="_linkTypes"].input-group div.radio {
+div.lazy-ui section div[id$="_linkTypes"].input-group div.radio,
+div.lazy-ui section div[id$="_imageTypes"].input-group div.radio {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-div.lazy-ui section div[id$="url"].input-group.current-pID {
+div.lazy-ui section div[id$="url"].input-group.current-pID,
+div.lazy-ui section div[id$="fID"].input-group.current-sID,
+div.lazy-ui section div[id$="fID"].input-group.current-icon {
   display: none;
 }
-div.lazy-ui section div[id$="pID"].input-group.current-url {
+div.lazy-ui section div[id$="pID"].input-group.current-url,
+div.lazy-ui section div[id$="sID"].input-group.current-fID,
+div.lazy-ui section div[id$="icon"].input-group.current-fID {
   display: none;
 }
 /**

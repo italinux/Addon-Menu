@@ -578,3 +578,78 @@ msgstr "una de %1$s &agrave;ncora %2$s per despla&ccedil;ar-vos a %1$s secci&oac
 
 msgid "button text"
 msgstr "text del bot&oacute;"
+
+msgid "Image type"
+msgstr "Tipus d’imatge"
+
+msgid "Image types list"
+msgstr "Llista de tipus d’imatges"
+
+msgid "Stretch image"
+msgstr "Imatge d'estirament"
+
+msgid "Image width"
+msgstr "Amplada de la imatge"
+
+msgid "Image height"
+msgstr "Al&ccedil;ada de la imatge"
+
+msgid "Choose image"
+msgstr "Tria la imatge"
+
+msgid "layout design"
+msgstr "disseny de disseny"
+
+msgid "%d Column"
+msgstr "%d Columna"
+
+msgid "%d Columns"
+msgstr "%d Columnes"
+
+msgid "Layout Design"
+msgstr "Disseny de maquetaci&oacute;"
+
+msgid "Options layout design columns"
+msgstr "Opcions de columnes de disseny de maquetaci&oacute;"
+
+msgid "Image Size"
+msgstr "Mida de la imatge"
+
+msgid "is Stretched?"
+msgstr "est&agrave; estirat?"
+
+msgid "Stretched?"
+msgstr "Est&egrave;s?"
+
+msgid "stretched?"
+msgstr "estirat?"
+
+msgid "Single image"
+msgstr "Imatge &uacute;nica"
+
+msgid "Multiple images"
+msgstr "M&uacute;ltiples imatges"
+
+msgid "pop-up has priority over Link to Page or URL"
+msgstr "el men&uacute; emergent t&eacute; prioritat sobre Enlla&ccedil; a p&agrave;gina o URL"
+
+msgid "Choose the image link"
+msgstr "Trieu l’enlla&ccedil; de la imatge"
+
+msgid "Invalid Image Size"
+msgstr "Mida d'imatge no v&agrave;lida"
+
+msgid "Image width placeholder"
+msgstr "Amplada la posici&oacute; de la imatge"
+
+msgid "Image height placeholder"
+msgstr "Marcatge d'al&ccedil;ada de la imatge"
+
+msgid "minimum: %s"
+msgstr "m&iacute;nim: %s"
+
+msgid "Image size limit"
+msgstr ""
+
+msgid "Icon ready"
+msgstr "Icona llesta"

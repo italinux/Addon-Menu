@@ -578,3 +578,78 @@ msgstr "%1$s kotevn&iacute; %2$s p&#345;ejd&#283;te na %1$s odd&iacute;lu %2$s n
 
 msgid "button text"
 msgstr "tla&#269;&iacute;tko text"
+
+msgid "Image type"
+msgstr "Typ obr&aacute;zku"
+
+msgid "Image types list"
+msgstr "Seznam typů obr&aacute;zků"
+
+msgid "Stretch image"
+msgstr "Rozt&aacute;hnout obr&aacute;zek"
+
+msgid "Image width"
+msgstr "Š&iacute;&#345;ka obr&aacute;zku"
+
+msgid "Image height"
+msgstr "V&yacute;&scaron;ka obr&aacute;zku"
+
+msgid "Choose image"
+msgstr "Vyberte obr&aacute;zek"
+
+msgid "layout design"
+msgstr "n&aacute;vrh rozlo&#382;en&iacute;"
+
+msgid "%d Column"
+msgstr "%d sloupec"
+
+msgid "%d Columns"
+msgstr "%d sloupce"
+
+msgid "Layout Design"
+msgstr "N&aacute;vrh rozvr&#382;en&iacute;"
+
+msgid "Options layout design columns"
+msgstr "Sloupce n&aacute;vrhu rozvr&#382;en&iacute; mo&#382;nost&iacute;"
+
+msgid "Image Size"
+msgstr "Velikost obr&aacute;zku"
+
+msgid "is Stretched?"
+msgstr "je nata&#382;en&eacute;?"
+
+msgid "Stretched?"
+msgstr "Nata&#382;en&eacute;?"
+
+msgid "stretched?"
+msgstr "nata&#382;en&eacute;?"
+
+msgid "Single image"
+msgstr "Jeden obr&aacute;zek"
+
+msgid "Multiple images"
+msgstr "V&iacute;ce obr&aacute;zků"
+
+msgid "pop-up has priority over Link to Page or URL"
+msgstr "vyskakovac&iacute; okno m&aacute; p&#345;ednost p&#345;ed odkazem na str&aacute;nku nebo URL"
+
+msgid "Choose the image link"
+msgstr "Vyberte odkaz na obr&aacute;zek"
+
+msgid "Invalid Image Size"
+msgstr "Neplatn&aacute; velikost obr&aacute;zku"
+
+msgid "Image width placeholder"
+msgstr "Z&aacute;stupn&yacute; symbol &scaron;&iacute;&#345;ky obr&aacute;zku"
+
+msgid "Image height placeholder"
+msgstr "Z&aacute;stupn&yacute; symbol pro v&yacute;&scaron;ku obr&aacute;zku"
+
+msgid "minimum: %s"
+msgstr "minimum: %s"
+
+msgid "Image size limit"
+msgstr ""
+
+msgid "Icon ready"
+msgstr "Ikona p&#345;ipravena"

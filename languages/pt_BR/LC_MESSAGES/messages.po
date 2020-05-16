@@ -578,3 +578,78 @@ msgstr "um %1$s &acirc;ncora %2$s para ir para %1$s se&ccedil;&atilde;o de %2$s 
 
 msgid "button text"
 msgstr "bot&atilde;o de texto"
+
+msgid "Image type"
+msgstr "Tipo de imagem"
+
+msgid "Image types list"
+msgstr "Lista de tipos de imagem"
+
+msgid "Stretch image"
+msgstr "Esticar imagem"
+
+msgid "Image width"
+msgstr "Largura da imagem"
+
+msgid "Image height"
+msgstr "Altura da imagem"
+
+msgid "Choose image"
+msgstr "Escolha a imagem"
+
+msgid "layout design"
+msgstr "projeto de layout"
+
+msgid "%d Column"
+msgstr "%d coluna"
+
+msgid "%d Columns"
+msgstr "%d colunas"
+
+msgid "Layout Design"
+msgstr "Layout Design"
+
+msgid "Options layout design columns"
+msgstr "Colunas de design do layout de op&ccedil;&otilde;es"
+
+msgid "Image Size"
+msgstr "Tamanho da imagem"
+
+msgid "is Stretched?"
+msgstr "&eacute; esticado?"
+
+msgid "Stretched?"
+msgstr "Esticado?"
+
+msgid "stretched?"
+msgstr "esticado?"
+
+msgid "Single image"
+msgstr "Imagem &uacute;nica"
+
+msgid "Multiple images"
+msgstr "Imagens m&uacute;ltiplas"
+
+msgid "pop-up has priority over Link to Page or URL"
+msgstr "pop-up tem prioridade sobre Vincular &agrave; p&aacute;gina ou URL"
+
+msgid "Choose the image link"
+msgstr "Escolha o link da imagem"
+
+msgid "Invalid Image Size"
+msgstr "Tamanho de imagem inv&aacute;lido"
+
+msgid "Image width placeholder"
+msgstr "Espa&ccedil;o reservado para a largura da imagem"
+
+msgid "Image height placeholder"
+msgstr "Espa&ccedil;o reservado para a altura da imagem"
+
+msgid "minimum: %s"
+msgstr "m&iacute;nimo: %s"
+
+msgid "Image size limit"
+msgstr "Limite de tamanho da imagem"
+
+msgid "Icon ready"
+msgstr "&Iacute;cone pronto"

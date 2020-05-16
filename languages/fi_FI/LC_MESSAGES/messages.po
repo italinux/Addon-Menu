@@ -578,3 +578,78 @@ msgstr "%1$s ankkuri %2$s selaa to %1$s-osiossa %2$s sivu"
 
 msgid "button text"
 msgstr "painikkeen teksti"
+
+msgid "Image type"
+msgstr "Kuvatyyppi"
+
+msgid "Image types list"
+msgstr "Kuvatyyppiluettelo"
+
+msgid "Stretch image"
+msgstr "Joustava kuva"
+
+msgid "Image width"
+msgstr "Kuvan leveys"
+
+msgid "Image height"
+msgstr "Kuvan korkeus"
+
+msgid "Choose image"
+msgstr "Valitse kuva"
+
+msgid "layout design"
+msgstr "ulkoasun suunnittelu"
+
+msgid "%d Column"
+msgstr "%d sarake"
+
+msgid "%d Columns"
+msgstr "%d saraketta"
+
+msgid "Layout Design"
+msgstr "Ulkoasun suunnittelu"
+
+msgid "Options layout design columns"
+msgstr "Asetukset asettelun sarakkeet"
+
+msgid "Image Size"
+msgstr "Kuvan koko"
+
+msgid "is Stretched?"
+msgstr "on venytetty?"
+
+msgid "Stretched?"
+msgstr "Venytetty?"
+
+msgid "stretched?"
+msgstr "venytetty?"
+
+msgid "Single image"
+msgstr "Yksi kuva"
+
+msgid "Multiple images"
+msgstr "Useita kuvia"
+
+msgid "pop-up has priority over Link to Page or URL"
+msgstr "ponnahdusikkunassa on etusija linkin kanssa sivulle tai URL-osoitteelle"
+
+msgid "Choose the image link"
+msgstr "Valitse kuvalinkki"
+
+msgid "Invalid Image Size"
+msgstr "Virheellinen kuvan koko"
+
+msgid "Image width placeholder"
+msgstr "Kuvan leveys paikkamerkki"
+
+msgid "Image height placeholder"
+msgstr "Kuvan korkeuden paikkamerkki"
+
+msgid "minimum: %s"
+msgstr "v&auml;hint&auml;&auml;n: %s"
+
+msgid "Image size limit"
+msgstr ""
+
+msgid "Icon ready"
+msgstr "Kuvake valmis"

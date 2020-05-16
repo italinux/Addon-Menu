@@ -58,7 +58,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
               <div class="form-group center double-space-top">
                 <?php echo $form->label('title', t('Title: %s', '<span>(' . t('site name') . ')</span>'))?>
                 <div class="input-group center p90">
-                  <?php echo $form->text('title', $title, array('maxlength' => '50'))?>
+                  <?php echo $form->text('title', $title, array('maxlength' => 50))?>
                 </div>
                 <label class="single-space-top">
                   <span class="nota-bene"><?php echo t('%1$sNB:%2$s ', '<strong>','</strong>') . t('Title displays only on mobile view')?></span>

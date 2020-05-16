@@ -54,9 +54,52 @@ class Utils {
 
         } else {
 
+            /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
+            * Detect base path config: concrete | app
+            */
             $config = (current(explode(".", $key)) == 'concrete' ? null : 'app.') . $key;
+
+            /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
+            * Retrieve DIRECT value (e.g. app.team.item.1.imageWidth)
+            */
             $o = Config::get(trim($config));
 
+            /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
+            * IF empty AND 'item' (CHILD) THEN Retrieve PARENT value
+            */
+            if (empty($o)) {
+
+              $full = explode(".", $config);
+
+              // Check IF it's 'item' (CHILD)
+              if ($full[2] == 'item') {
+
+                switch ($full[4]) {
+                /** - - - - - - - - - - - - - - - - - - - - - - - - -
+                * Add entries HERE to AVOID climbing up to PARENT value (e.g. title)
+                */
+                case 'title':
+                    break;
+                default:
+                  /** - - - - - - - - - - - - - - - - - - - - - - - - -
+                  * NOW climb up to PARENT value (e.g. app.team.imageWidth)
+                  */
+                  array_splice($full, 2, 2);
+                  $o = Config::get(trim(implode(".", $full)));
+
+                  /** - - - - - - - - - - - - - - - - - - - - - - - - -
+                  * Swap value if numeric
+                  */
+                  if (is_numeric($o) === true) {
+                    $value = $o;
+                  }
+                }
+              }
+            }
+
+            /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
+            * Retrieve VALUE
+            */
             $o = (is_bool($o) === true) ? ((int) $o) : (((empty($o) === true) || is_numeric($o)) ? $value : t($o));
         }
 
@@ -219,6 +262,16 @@ class Utils {
     {
 
         return ((substr($uri, 0, 4) == 'http' && filter_var($uri, FILTER_VALIDATE_URL, FILTER_FLAG_SCHEME_REQUIRED) !== false) ? true : false);
+    }
+
+    /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    * Check if is a valid image size
+    * @return boolean (true | false)
+    */
+    public static function getIsValidImageSize($value, $min, $max)
+    {
+
+        return (is_numeric($value) ? (filter_var($value, FILTER_VALIDATE_INT, array("options" => array("min_range" => $min, "max_range" => $max))) ? true : false) : false);
     }
 
     /** - - - - - - - - - - - - - - - - - - - - - - - - - - -

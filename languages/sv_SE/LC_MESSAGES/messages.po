@@ -578,3 +578,78 @@ msgstr "en %1$s ankare %2$s f&ouml;r att bl&auml;ddra till en %1$s Sektion %2$S 
 
 msgid "button text"
 msgstr "knapp-text"
+
+msgid "Image type"
+msgstr "Bildtyp"
+
+msgid "Image types list"
+msgstr "Lista &ouml;ver bildtyper"
+
+msgid "Stretch image"
+msgstr "Stretch image"
+
+msgid "Image width"
+msgstr "Bildbredd"
+
+msgid "Image height"
+msgstr "Bildh&ouml;jd"
+
+msgid "Choose image"
+msgstr "V&auml;lj bild"
+
+msgid "layout design"
+msgstr "layout design"
+
+msgid "%d Column"
+msgstr "%d kolumn"
+
+msgid "%d Columns"
+msgstr "%d kolumner"
+
+msgid "Layout Design"
+msgstr "Layout design"
+
+msgid "Options layout design columns"
+msgstr "Kolumner f&ouml;r designdesignalternativ"
+
+msgid "Image Size"
+msgstr "Bildstorlek"
+
+msgid "is Stretched?"
+msgstr "&auml;r str&auml;ckt?"
+
+msgid "Stretched?"
+msgstr "Str&auml;ckt?"
+
+msgid "stretched?"
+msgstr "str&auml;ckt?"
+
+msgid "Single image"
+msgstr "Enstaka bild"
+
+msgid "Multiple images"
+msgstr "Flera bilder"
+
+msgid "pop-up has priority over Link to Page or URL"
+msgstr "popup-f&ouml;nster har prioritet framf&ouml;r l&auml;nk till sida eller URL"
+
+msgid "Choose the image link"
+msgstr "V&auml;lj bildl&auml;nk"
+
+msgid "Invalid Image Size"
+msgstr "Ogiltig bildstorlek"
+
+msgid "Image width placeholder"
+msgstr "Platsh&aring;llare f&ouml;r bildbredd"
+
+msgid "Image height placeholder"
+msgstr "Platsh&aring;llare f&ouml;r bildh&ouml;jd"
+
+msgid "minimum: %s"
+msgstr "minimum: %s"
+
+msgid "Image size limit"
+msgstr "Gr&auml;ns u200bu200bf&ouml;r bildstorlek"
+
+msgid "Icon ready"
+msgstr "Ikon redo"

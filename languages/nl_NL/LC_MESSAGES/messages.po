@@ -578,3 +578,78 @@ msgstr "een %1$s anker %2$s om naar %1$s gedeelte %2$s van een pagina"
 
 msgid "button text"
 msgstr "knop tekst"
+
+msgid "Image type"
+msgstr "Beeldtype"
+
+msgid "Image types list"
+msgstr "Lijst met afbeeldingstypen"
+
+msgid "Stretch image"
+msgstr "Afbeelding uitrekken"
+
+msgid "Image width"
+msgstr "Beeldbreedte"
+
+msgid "Image height"
+msgstr "Hoogte van afbeelding"
+
+msgid "Choose image"
+msgstr "Kies afbeelding"
+
+msgid "layout design"
+msgstr "layout ontwerp"
+
+msgid "%d Column"
+msgstr "%d kolom"
+
+msgid "%d Columns"
+msgstr "%d kolommen"
+
+msgid "Layout Design"
+msgstr "Layout ontwerp"
+
+msgid "Options layout design columns"
+msgstr "Opties lay-out ontwerpkolommen"
+
+msgid "Image Size"
+msgstr "Afbeeldingsgrootte"
+
+msgid "is Stretched?"
+msgstr "is uitgerekt?"
+
+msgid "Stretched?"
+msgstr "Uitgerekt?"
+
+msgid "stretched?"
+msgstr "uitgerekt?"
+
+msgid "Single image"
+msgstr "Enkele afbeelding"
+
+msgid "Multiple images"
+msgstr "Meerdere afbeeldingen"
+
+msgid "pop-up has priority over Link to Page or URL"
+msgstr "pop-up heeft voorrang op Link naar pagina of URL"
+
+msgid "Choose the image link"
+msgstr "Kies de afbeeldingslink"
+
+msgid "Invalid Image Size"
+msgstr "Ongeldige afbeeldingsgrootte"
+
+msgid "Image width placeholder"
+msgstr "Tijdelijke aanduiding voor afbeeldingsbreedte"
+
+msgid "Image height placeholder"
+msgstr "Tijdelijke aanduiding voor hoogte van afbeelding"
+
+msgid "minimum: %s"
+msgstr "minimum: %s"
+
+msgid "Image size limit"
+msgstr "Limiet afbeeldingsgrootte"
+
+msgid "Icon ready"
+msgstr "Pictogram klaar"
