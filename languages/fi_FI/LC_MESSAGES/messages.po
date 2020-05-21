@@ -653,3 +653,9 @@ msgstr ""
 
 msgid "Icon ready"
 msgstr "Kuvake valmis"
+
+msgid "Choose an icon for this item"
+msgstr "Valitse t&auml;m&auml;n kohteen kuvake"
+
+msgid "min size: %s"
+msgstr "min koko: %s"

@@ -653,3 +653,9 @@ msgstr "Gr&auml;ns u200bu200bf&ouml;r bildstorlek"
 
 msgid "Icon ready"
 msgstr "Ikon redo"
+
+msgid "Choose an icon for this item"
+msgstr "V&auml;lj en ikon f&ouml;r det h&auml;r objektet"
+
+msgid "min size: %s"
+msgstr "min storlek: %s"

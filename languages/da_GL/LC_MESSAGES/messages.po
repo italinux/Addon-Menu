@@ -653,3 +653,9 @@ msgstr ""
 
 msgid "Icon ready"
 msgstr "Ikon klar"
+
+msgid "Choose an icon for this item"
+msgstr "V&aelig;lg et ikon for dette element"
+
+msgid "min size: %s"
+msgstr "min. st&oslash;rrelse: %s"

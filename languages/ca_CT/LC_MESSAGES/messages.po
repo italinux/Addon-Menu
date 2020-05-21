@@ -653,3 +653,9 @@ msgstr ""
 
 msgid "Icon ready"
 msgstr "Icona llesta"
+
+msgid "Choose an icon for this item"
+msgstr "Trieu una icona per a aquest element"
+
+msgid "min size: %s"
+msgstr "mida m&iacute;nima: %s"

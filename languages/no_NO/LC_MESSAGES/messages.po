@@ -653,3 +653,9 @@ msgstr "Grense for bildest&oslash;rrelse"
 
 msgid "Icon ready"
 msgstr "Ikonet er klart"
+
+msgid "Choose an icon for this item"
+msgstr "Velg et ikon for dette elementet"
+
+msgid "min size: %s"
+msgstr "min. st&oslash;rrelse: %s"

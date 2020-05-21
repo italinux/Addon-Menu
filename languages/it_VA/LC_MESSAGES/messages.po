@@ -653,3 +653,9 @@ msgstr "Limite dimensioni immagine"
 
 msgid "Icon ready"
 msgstr "Icona pronta"
+
+msgid "Choose an icon for this item"
+msgstr "Scegli un'icona per questo articolo"
+
+msgid "min size: %s"
+msgstr "dimensione minima: %s"

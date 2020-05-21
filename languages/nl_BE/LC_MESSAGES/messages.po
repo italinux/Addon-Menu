@@ -653,3 +653,9 @@ msgstr "Limiet afbeeldingsgrootte"
 
 msgid "Icon ready"
 msgstr "Pictogram klaar"
+
+msgid "Choose an icon for this item"
+msgstr "Kies een pictogram voor dit item"
+
+msgid "min size: %s"
+msgstr "min grootte: %s"

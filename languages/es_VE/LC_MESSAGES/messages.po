@@ -653,3 +653,9 @@ msgstr ""
 
 msgid "Icon ready"
 msgstr "Icono listo"
+
+msgid "Choose an icon for this item"
+msgstr "Elija un &iacute;cono para este art&iacute;culo"
+
+msgid "min size: %s"
+msgstr "tama&ntilde;o m&iacute;nimo: %s"

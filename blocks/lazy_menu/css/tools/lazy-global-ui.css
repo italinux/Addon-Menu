@@ -1080,7 +1080,7 @@ div.lazy-ui section div.is-it-visible > label {
 
 div.lazy-ui section div.input-group select[multiple="true"] {
   width: 100%;
-  padding-right: 10px;
+  padding-right: 5px;
 }
 div.lazy-ui section div.input-group select[multiple="true"] > option {
   padding-top: 2px;

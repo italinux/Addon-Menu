@@ -653,3 +653,9 @@ msgstr ""
 
 msgid "Icon ready"
 msgstr "Ikona p&#345;ipravena"
+
+msgid "Choose an icon for this item"
+msgstr "Vyberte ikonu t&eacute;to polo&#382;ky"
+
+msgid "min size: %s"
+msgstr "velikost min: %s"
