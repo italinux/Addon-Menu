@@ -146,6 +146,7 @@ class Controller extends BlockController
       'curriculum-vitae' => array('name' => 'Curriculum Vitae', 'installed' => false),
              'portfolio' => array('name' => 'Portfolio',        'installed' => false),
                 'prices' => array('name' => 'Prices',           'installed' => false),
+          'testimonials' => array('name' => 'Testimonials',     'installed' => false),
                'clients' => array('name' => 'Clients',          'installed' => false),
               'contacts' => array('name' => 'Contacts',         'installed' => false),
           'social-media' => array('name' => 'Social Media',     'installed' => false),
