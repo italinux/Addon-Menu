@@ -86,15 +86,15 @@ class Utils {
                   */
                   array_splice($full, 2, 2);
                   $o = Config::get(trim(implode(".", $full)));
-
-                  /** - - - - - - - - - - - - - - - - - - - - - - - - -
-                  * Swap value if numeric
-                  */
-                  if (is_numeric($o) === true) {
-                    $value = $o;
-                  }
                 }
               }
+            }
+
+            /** - - - - - - - - - - - - - - - - - - - - - - - - -
+            * Swap value if numeric
+            */
+            if (is_numeric($o) === true) {
+              $value = $o;
             }
 
             /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
