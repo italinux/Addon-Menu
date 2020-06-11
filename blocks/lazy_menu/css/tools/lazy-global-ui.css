@@ -12,7 +12,7 @@
 | @copyright (c) 2020                                                       |
 | ------------------------------------------------------------------------- |
 | @license: Concrete5.org Marketplace Commercial Add-Ons & Themes License   |
-|           http://concrete5.org/help/legal/commercial_add-on_license       |
+|           https://concrete5.org/help/legal/commercial_add-on_license       |
 |           or just: file://lazy_menu/LICENSE.TXT                           |
 |                                                                           |
 | This program is distributed in the hope that it will be useful - WITHOUT  |
@@ -158,24 +158,46 @@ div.lazy-ui section ul.nav-tabs > li {
   border: 1px solid #ddd;
   border-bottom: none;
   border-radius: 15px 15px 0px 0px;
-  overflow: hidden;
-  opacity: 0.65;
+  overflow: visible;
 }
-div.lazy-ui section ul.nav-tabs > li:hover {
+div.lazy-ui section ul.nav-tabs > li a:not(.btn):not(.goto) {
+  font-weight: normal;
+  border-radius: 15px 15px 0px 0px;
+  cursor: -webkit-grab;
+  cursor:    -moz-grab;
+  cursor:      -o-grab;
+  cursor:         grab;
+  opacity: 0.65;
+  overflow: hidden;
+}
+div.lazy-ui section ul.nav-tabs > li a:hover:not(.btn):not(.goto) {
   opacity: 0.9;
+}
+div.lazy-ui section ul.nav-tabs > li.active a:not(.btn):not(.goto) {
+  text-decoration: none !important;
+  opacity: 1 !important;
 }
 div.lazy-ui section ul.nav-tabs > li.active {
   top: 2px;
   border-bottom: none;
-  opacity: 1;
 }
-
+div.lazy-ui section ul.nav-tabs > li.active:after {
+  display: none;
+}
 div.lazy-ui section ul.nav-tabs > li.only > span.fa {
   display: none;
 }
 div.lazy-ui section ul.nav-tabs > li > span.fa {
   position: absolute;
   z-index: 1;
+}
+div.lazy-ui section ul.nav-tabs > li > span.fa-arrows,
+div.lazy-ui section ul.nav-tabs > li > span.fa-minus {
+  opacity: 0.9;
+}
+div.lazy-ui section ul.nav-tabs > li > span.fa-arrows:hover,
+div.lazy-ui section ul.nav-tabs > li > span.fa-minus:hover {
+  opacity: 1;
 }
 div.lazy-ui section ul.nav-tabs > li > span.fa-arrows {
   top: 6%;
@@ -195,26 +217,34 @@ div.lazy-ui section ul.nav-tabs > li > span.fa-minus {
 div.lazy-ui section ul.nav-tabs > li.plus {
   top: 13px;
   height: 40px;
-  opacity: 0.65 !important;
+  opacity: 0.8;
+  overflow: hidden;
+}
+div.lazy-ui section ul.nav-tabs > li.plus:hover {
+  opacity: 0.9;
 }
 div.lazy-ui section ul.nav-tabs > li.plus,
 div.lazy-ui section ul.nav-tabs > li > span.fa-plus {
   background-color: #62b062;
 }
 div.lazy-ui section ul.nav-tabs > li > span.fa-plus {
-  top: 5px;
+  top: 0px;
   right: 0px;
-  height: 32px;
+  width: 100%;
+  height: 40px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   margin: 0px auto;
   vertical-align: middle;
 }
 div.lazy-ui section ul.nav-tabs > li > span.fa-minus {
-  top: 0px;
+  top: -8px;
+  left: 5px;
   height: 20px;
   font-size: 80%;
   padding-top: 5px;
   background-color: #fe6161;
-  border-radius: 5px 2px;
+  border-radius: 5px;
 }
 
 div.lazy-ui section ul.nav-tabs > li > a {
@@ -274,6 +304,36 @@ div.lazy-ui section div.row > .line_9,
 div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_9"],
 div.lazy-ui section div#ccm-tab-content-item_9 {
   background-color: #f9fafa !important;
+}
+
+/* Display Font Colours in Tabs Control
+---------------------------------------------------------*/
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_1"] {
+  color: #376f7d !important;
+}
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_2"] {
+  color: #377d37 !important;
+}
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_3"] {
+  color: #4e3b7d !important;
+}
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_4"] {
+  color: #7d5837 !important;
+}
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_5"] {
+  color: #388080 !important;
+}
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_6"] {
+  color: #683d7d !important;
+}
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_7"] {
+  color: #757d39 !important;
+}
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_8"] {
+  color: #7d3939 !important;
+}
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_9"] {
+  color: #3d7a7a !important;
 }
 
 /* Display Content Tabs Nicely (with borders)
@@ -664,6 +724,26 @@ div.lazy-ui section div.input-group select,
 div.lazy-ui section div.input-group option,
 div.lazy-ui section div.input-group textarea {
   font-weight: normal;
+}
+
+/* * * * * * * * * * * * * *
+*  Textarea input WYSIWYG Height
+*  default is: 300px
+* * * * * * * * * * * * * */
+div.lazy-ui section div.input-group .cke_editable {
+  min-height: 300px;
+}
+div.lazy-ui section div.input-group.h200 .cke_editable {
+  min-height: 200px;
+}
+div.lazy-ui section div.input-group.h250 .cke_editable {
+  min-height: 250px;
+}
+div.lazy-ui section div.input-group.h300 .cke_editable {
+  min-height: 300px;
+}
+div.lazy-ui section div.input-group.h350 .cke_editable {
+  min-height: 350px;
 }
 
 /* set white background for radio inputs */
@@ -1103,6 +1183,7 @@ div.lazy-ui section div.is-it-visible {
   background-color: #fefee0;
   border-radius: 20%;
   border: 2px dotted #aaa;
+  visibility: hidden;
 }
 
 div.lazy-ui section div.is-it-visible div.radio {
