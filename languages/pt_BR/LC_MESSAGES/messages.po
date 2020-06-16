@@ -659,3 +659,21 @@ msgstr "Escolha um &iacute;cone para este item"
 
 msgid "min size: %s"
 msgstr "tamanho m&iacute;nimo: %s"
+
+msgid "menu"
+msgstr "card&aacute;pio"
+
+msgid "gallery"
+msgstr "galeria"
+
+msgid "testimonials"
+msgstr "depoimentos"
+
+msgid "about"
+msgstr "sobre"
+
+msgid "home"
+msgstr "p&aacute;gina inicial"
+
+msgid "homepage"
+msgstr "p&aacute;gina inicial"

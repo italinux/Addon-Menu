@@ -659,3 +659,21 @@ msgstr "Vyberte ikonu t&eacute;to polo&#382;ky"
 
 msgid "min size: %s"
 msgstr "velikost min: %s"
+
+msgid "menu"
+msgstr "j&iacute;deln&iacute; l&iacute;stek"
+
+msgid "gallery"
+msgstr "galerie"
+
+msgid "testimonials"
+msgstr "reference"
+
+msgid "about"
+msgstr "o"
+
+msgid "home"
+msgstr "domovskou str&aacute;nku"
+
+msgid "homepage"
+msgstr "domovskou str&aacute;nku"

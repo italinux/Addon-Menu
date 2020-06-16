@@ -659,3 +659,21 @@ msgstr "Scegli un'icona per questo articolo"
 
 msgid "min size: %s"
 msgstr "dimensione minima: %s"
+
+msgid "menu"
+msgstr "men&ugrave;"
+
+msgid "gallery"
+msgstr "galleria"
+
+msgid "testimonials"
+msgstr "testimonianze"
+
+msgid "about"
+msgstr "chi siamo"
+
+msgid "home"
+msgstr "home"
+
+msgid "homepage"
+msgstr "homepage"

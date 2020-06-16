@@ -659,3 +659,21 @@ msgstr "Elija un &iacute;cono para este art&iacute;culo"
 
 msgid "min size: %s"
 msgstr "tama&ntilde;o m&iacute;nimo: %s"
+
+msgid "menu"
+msgstr "men&uacute;"
+
+msgid "gallery"
+msgstr "galer&iacute;a"
+
+msgid "testimonials"
+msgstr "testimonios"
+
+msgid "about"
+msgstr "acerca de"
+
+msgid "home"
+msgstr "p&aacute;gina principal"
+
+msgid "homepage"
+msgstr "p&aacute;gina principal"

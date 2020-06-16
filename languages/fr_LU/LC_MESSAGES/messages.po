@@ -659,3 +659,21 @@ msgstr "Choisissez une ic&ocirc;ne pour cet article"
 
 msgid "min size: %s"
 msgstr "taille minimale: %s"
+
+msgid "menu"
+msgstr "menu"
+
+msgid "gallery"
+msgstr "galerie"
+
+msgid "testimonials"
+msgstr "t&eacute;moignages"
+
+msgid "about"
+msgstr "&agrave; propos"
+
+msgid "home"
+msgstr "accueil"
+
+msgid "homepage"
+msgstr "accueil"

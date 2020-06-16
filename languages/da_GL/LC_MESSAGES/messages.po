@@ -659,3 +659,21 @@ msgstr "V&aelig;lg et ikon for dette element"
 
 msgid "min size: %s"
 msgstr "min. st&oslash;rrelse: %s"
+
+msgid "menu"
+msgstr "menu"
+
+msgid "gallery"
+msgstr "galleri"
+
+msgid "testimonials"
+msgstr "begejstring"
+
+msgid "about"
+msgstr "om"
+
+msgid "home"
+msgstr "hjemmeside"
+
+msgid "homepage"
+msgstr "hjemmeside"

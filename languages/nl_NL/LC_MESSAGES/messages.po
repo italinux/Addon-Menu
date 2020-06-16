@@ -659,3 +659,21 @@ msgstr "Kies een pictogram voor dit item"
 
 msgid "min size: %s"
 msgstr "min grootte: %s"
+
+msgid "menu"
+msgstr "menu"
+
+msgid "gallery"
+msgstr "galerij"
+
+msgid "testimonials"
+msgstr "getuigenissen"
+
+msgid "about"
+msgstr "over"
+
+msgid "home"
+msgstr "home"
+
+msgid "homepage"
+msgstr "homepage"

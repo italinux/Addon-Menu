@@ -13,7 +13,7 @@
 | @copyright (c) 2020                                                       |
 | ------------------------------------------------------------------------- |
 | @license: Concrete5.org Marketplace Commercial Add-Ons & Themes License   |
-|           https://concrete5.org/help/legal/commercial_add-on_license       |
+|           https://concrete5.org/help/legal/commercial_add-on_license      |
 |           or just: file://lazy_menu/LICENSE.TXT                           |
 |                                                                           |
 | This program is distributed in the hope that it will be useful - WITHOUT  |
@@ -100,7 +100,7 @@ class Utils {
             /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
             * Retrieve VALUE
             */
-            $o = (is_bool($o) === true) ? ((int) $o) : (((empty($o) === true) || is_numeric($o)) ? $value : t($o));
+            $o = (is_bool($o) === true) ? ((int) $o) : (((empty($o) === true) || is_numeric($o)) ? $value : ((is_array($o) == true) ? $o :  t($o)));
         }
 
         return $o;

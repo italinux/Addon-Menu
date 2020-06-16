@@ -659,3 +659,21 @@ msgstr "W&auml;hlen Sie ein Symbol f&uuml;r diesen Artikel"
 
 msgid "min size: %s"
 msgstr "mindestgr&ouml;&szlig;e: %s"
+
+msgid "menu"
+msgstr "speisekarte"
+
+msgid "gallery"
+msgstr "galerie"
+
+msgid "testimonials"
+msgstr "referenzen"
+
+msgid "about"
+msgstr "&uuml;ber"
+
+msgid "home"
+msgstr "home"
+
+msgid "homepage"
+msgstr "homepage"

@@ -659,3 +659,21 @@ msgstr "Valitse t&auml;m&auml;n kohteen kuvake"
 
 msgid "min size: %s"
 msgstr "min koko: %s"
+
+msgid "menu"
+msgstr "valikko"
+
+msgid "gallery"
+msgstr "galleria"
+
+msgid "testimonials"
+msgstr "suositukset"
+
+msgid "about"
+msgstr "noin"
+
+msgid "home"
+msgstr "kotisivu"
+
+msgid "homepage"
+msgstr "kotisivu"
