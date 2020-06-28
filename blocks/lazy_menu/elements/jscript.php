@@ -104,6 +104,9 @@ defined('C5_EXECUTE') or die("Access Denied.");
           }
       }
     ?>
+
+      // Show All current menu items
+      wrapper.children('div[data-item]').show(0);
     };
 
     // - - - - - - - - - - - - - - - - - - - - - - - -
@@ -143,6 +146,9 @@ defined('C5_EXECUTE') or die("Access Denied.");
           uniqueID: genRandomID(),
               sort: (count)
         }));
+
+        // add with transition
+        wrapper.children('div[data-item]').last().slideDown(500);
     });
 
     // - - - - - - - - - - - - - - - - - - - - - - - -
@@ -154,7 +160,12 @@ defined('C5_EXECUTE') or die("Access Denied.");
         var thisItem = $(this).closest('div[data-item]');
 
         if (r == true) {
-            thisItem.remove();
+
+            // delete with transition
+            thisItem.slideUp(500, function(){ 
+                $(this).remove();
+            });
+
             indexMenuItems();
         }
     });

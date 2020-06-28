@@ -101,7 +101,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
 
             <!-- THE TEMPLATE WE'LL USE FOR EACH ITEM -->
             <script type="text/template" id="item-template">
-              <div class="item panel panel-default" data-item="<%=parseInt(sort)%>">
+              <div class="item panel panel-default" data-item="<%=parseInt(sort)%>" style="display: none">
 
                 <div class="panel-heading" style="cursor: move;">
                   <div class="row">
