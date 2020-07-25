@@ -68,8 +68,8 @@ defined('C5_EXECUTE') or die("Access Denied.");
       var template = _.template($('script#item-template').html());
 
     <?php
-      if ($menuItemsDefaultsAll) {
-          foreach ($menuItemsDefaultsAll as $key => $value) {
+      if ($itemsDefaultsAll) {
+          foreach ($itemsDefaultsAll as $key => $value) {
 
              // get Sort Order
              $value['sort'] = ($value['sort'] == false ? $key : $value['sort']);

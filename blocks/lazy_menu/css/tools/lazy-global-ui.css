@@ -143,16 +143,16 @@ div.lazy-ui section div.wrap-tab-6 ul.nav-tabs li {
 div.lazy-ui section div.wrap-tab-9 ul.nav-tabs li {
   width: 10.4%;
 }
-
 div.lazy-ui section ul.nav-tabs {
   padding-left: 0px;
   margin-left: 0px;
   margin-right: 0px;
   border-bottom: none;
-  display: flex;
+  display: block;
 }
 div.lazy-ui section ul.nav-tabs > li {
-  margin: 0px 4px;
+  margin: 5px 4px 0px 4px;
+  min-width: 100px;
   max-width: 200px;
   text-align: center;
   border: 1px solid #ddd;
@@ -221,7 +221,7 @@ div.lazy-ui section ul.nav-tabs > li > span.fa-angle-down {
   overflow: hidden;
 }
 div.lazy-ui section ul.nav-tabs > li.plus {
-  top: 13px;
+  margin-top: 13px;
   height: 40px;
   opacity: 0.8;
   overflow: hidden;
@@ -280,89 +280,109 @@ div.lazy-ui section ul.nav-tabs > li > a {
   padding: 15px 2px 10px;
   white-space: pre;
 }
+/* Display Background Colours in Tabs Control
+---------------------------------------------------------*/
 div.lazy-ui section div.row.item_1,
 div.lazy-ui section div.row > .line_1,
-div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_1"],
-div.lazy-ui section div#ccm-tab-content-item_1 {
+div.lazy-ui section div[class*=" wrap-tab-"] > div:nth-of-type(9n+2) {
   background-color: #eefafd !important;
 }
 div.lazy-ui section div.row.item_2,
 div.lazy-ui section div.row > .line_2,
-div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_2"],
-div.lazy-ui section div#ccm-tab-content-item_2 {
+div.lazy-ui section div[class*=" wrap-tab-"] > div:nth-of-type(9n+3) {
   background-color: #eefdee !important;
 }
 div.lazy-ui section div.row.item_3,
 div.lazy-ui section div.row > .line_3,
-div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_3"],
-div.lazy-ui section div#ccm-tab-content-item_3 {
+div.lazy-ui section div[class*=" wrap-tab-"] > div:nth-of-type(9n+4) {
   background-color: #f8f6fd !important;
 }
 div.lazy-ui section div.row.item_4,
 div.lazy-ui section div.row > .line_4,
-div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_4"],
-div.lazy-ui section div#ccm-tab-content-item_4 {
+div.lazy-ui section div[class*=" wrap-tab-"] > div:nth-of-type(9n+5) {
   background-color: #fdf5ee !important;
 }
 div.lazy-ui section div.row.item_5,
 div.lazy-ui section div.row > .line_5,
-div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_5"],
-div.lazy-ui section div#ccm-tab-content-item_5 {
+div.lazy-ui section div[class*=" wrap-tab-"] > div:nth-of-type(9n+6) {
   background-color: #effefe !important;
 }
 div.lazy-ui section div.row.item_6,
 div.lazy-ui section div.row > .line_6,
-div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_6"],
-div.lazy-ui section div#ccm-tab-content-item_6 {
+div.lazy-ui section div[class*=" wrap-tab-"] > div:nth-of-type(9n+7) {
   background-color: #fcfafd !important;
 }
 div.lazy-ui section div.row.item_7,
 div.lazy-ui section div.row > .line_7,
-div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_7"],
-div.lazy-ui section div#ccm-tab-content-item_7 {
+div.lazy-ui section div[class*=" wrap-tab-"] > div:nth-of-type(9n+8) {
   background-color: #fcfdf4 !important;
 }
 div.lazy-ui section div.row.item_8,
 div.lazy-ui section div.row > .line_8,
-div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_8"],
-div.lazy-ui section div#ccm-tab-content-item_8 {
+div.lazy-ui section div[class*=" wrap-tab-"] > div:nth-of-type(9n+9) {
   background-color: #fdf4f4 !important;
 }
 div.lazy-ui section div.row.item_9,
 div.lazy-ui section div.row > .line_9,
-div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_9"],
-div.lazy-ui section div#ccm-tab-content-item_9 {
+div.lazy-ui section div[class*=" wrap-tab-"] > div:nth-of-type(9n+10) {
   background-color: #f9fafa !important;
 }
 
 /* Display Font Colours in Tabs Control
 ---------------------------------------------------------*/
-div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_1"] {
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_1"],
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_10"],
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_19"] {
   color: #376f7d !important;
+  background-color: #eefafd !important;
 }
-div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_2"] {
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_2"],
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_11"],
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_20"] {
   color: #377d37 !important;
+  background-color: #eefdee !important;
 }
-div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_3"] {
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_3"],
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_12"],
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_21"] {
   color: #4e3b7d !important;
+  background-color: #f8f6fd !important;
 }
-div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_4"] {
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_4"],
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_13"],
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_22"] {
   color: #7d5837 !important;
+  background-color: #fdf5ee !important;
 }
-div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_5"] {
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_5"],
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_14"],
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_23"] {
   color: #388080 !important;
+  background-color: #effefe !important;
 }
-div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_6"] {
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_6"],
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_15"],
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_24"] {
   color: #683d7d !important;
+  background-color: #fcfafd !important;
 }
-div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_7"] {
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_7"],
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_16"],
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_25"] {
   color: #757d39 !important;
+  background-color: #fcfdf4 !important;
 }
-div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_8"] {
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_8"],
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_17"],
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_26"] {
   color: #7d3939 !important;
+  background-color: #fdf4f4 !important;
 }
-div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_9"] {
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_9"],
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_18"],
+div.lazy-ui section ul.nav-tabs > li > a[data-tab="item_27"] {
   color: #3d7a7a !important;
+  background-color: #f9fafa !important;
 }
 
 /* Display Content Tabs Nicely (with borders)

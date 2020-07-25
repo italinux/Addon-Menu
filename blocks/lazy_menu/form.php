@@ -87,7 +87,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
           </div>
           <div class="wrapper">
 
-            <div class="double-space-bottom info-items-list-title">
+            <div class="single-space-bottom info-items-list-title">
               <h4><?php echo t('all your menu items are listed below')?></h4>
             </div>
 

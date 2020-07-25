@@ -41,7 +41,8 @@ class Controller extends BlockController
 {
 
     protected $btTable = "btLazyMenu";
-    protected $btExportTables = array('btLazyMenu', 'btLazyMenuItem');
+    protected $btExportTables = array('btLazyMenu', 'btLazyMenuItems');
+ 
     protected static $btHandlerId = "menu";
     protected $btDefaultSet = 'lazy';
 
@@ -113,7 +114,7 @@ class Controller extends BlockController
     /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
     * Retrieve Menu Items All
     */
-    protected function getMenuItemsDefaultsAll()
+    protected function getItemsDefaultsAll()
     {
         $cName  = 'item';
         $config = self::$btHandlerId . '.' . $cName;
@@ -126,7 +127,7 @@ class Controller extends BlockController
               ),
           );
 
-          $items = count($this->getMenuItemsAll()) > 0 ? $this->getMenuItemsAll() : BlockUtils::getDefaultValue($config, $dValue, $this->{$cName});
+          $items = count($this->getItemsAll()) > 0 ? $this->getItemsAll() : BlockUtils::getDefaultValue($config, $dValue, $this->{$cName});
 
         return (array) $items;
     }
@@ -238,7 +239,7 @@ class Controller extends BlockController
             'addonsAll' => array(
                 'label' => t('All recommended add-ons hash tags'),
             ),
-            'menuItemsDefaultsAll' => array(
+            'itemsDefaultsAll' => array(
                 'label' => t('All items information'),
             ),
         );
@@ -317,11 +318,11 @@ class Controller extends BlockController
         return strtolower(substr($locale, -2));
     }
 
-    protected function getMenuItemsAll()
+    protected function getItemsAll()
     {
         $db = BlockUtils::getThisApp()->make('database')->connection();
 
-        $items = $db->GetAll('SELECT * FROM ' . $this->btTable . 'Item WHERE bID = ? ORDER BY sort', array($this->bID));
+        $items = $db->GetAll('SELECT * FROM ' . $this->btExportTables[1] . ' WHERE bID = ? ORDER BY sort', array($this->bID));
 
         return (array) $items;
     }
@@ -329,7 +330,7 @@ class Controller extends BlockController
     /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
     * This Block: Insert / Duplicate / Delete Items Methods
     */
-    protected function insertMenuItems($bID, $rows, $args)
+    protected function insertItems($bID, $rows, $args)
     {
         $db = BlockUtils::getThisApp()->make('database')->connection();
 
@@ -352,7 +353,7 @@ class Controller extends BlockController
             // Merge values, ready to insert
             $all = array_merge(array($bID), $fValues);
 
-            $db->executeQuery('INSERT INTO ' . $this->btTable . 'Item (bID, ' . implode(",", $fNames) . ') values(?, ' . implode(",", $fFields) . ')', $all);
+            $db->executeQuery('INSERT INTO ' . $this->btExportTables[1] . ' (bID, ' . implode(",", $fNames) . ') values(?, ' . implode(",", $fFields) . ')', $all);
         }
     }
 
@@ -365,7 +366,7 @@ class Controller extends BlockController
     {
         $items = array();
 
-        foreach ($this->getMenuItemsAll() as $key => $value){
+        foreach ($this->getItemsAll() as $key => $value){
 
             // - - - - - - - - - - - - - - - - - - - - -
             // get Anchor (hash)
@@ -807,7 +808,7 @@ class Controller extends BlockController
 
         parent::duplicate($newBID);
 
-        $res = $this->getMenuItemsAll();
+        $res = $this->getItemsAll();
 
         // Duplicate:
         // Convert array structure to use existing values on a new bID
@@ -821,14 +822,14 @@ class Controller extends BlockController
 
         $args = count($rows) > 0 ? $rows : $args;
 
-        $this->insertMenuItems($newBID, count($res), $args);
+        $this->insertItems($newBID, count($res), $args);
     }
 
     public function delete()
     {
         $db = BlockUtils::getThisApp()->make('database')->connection();
 
-        $db->delete($this->btTable . 'Item', array('bID' => $this->bID));
+        $db->delete($this->btExportTables[1], array('bID' => $this->bID));
 
         parent::delete();
     }
@@ -839,9 +840,9 @@ class Controller extends BlockController
         // Save entries in Menu & Menu Items Tables
         $db = BlockUtils::getThisApp()->make('database')->connection();
 
-        $db->executeQuery('DELETE from ' . $this->btTable . 'Item WHERE bID = ?', array($this->bID));
+        $db->executeQuery('DELETE from ' . $this->btExportTables[1] . ' WHERE bID = ?', array($this->bID));
 
-        $this->insertMenuItems($this->bID, count((array)$args['sort']), $args);
+        $this->insertItems($this->bID, count((array)$args['sort']), $args);
 
         // Update custom Styles for all pages 
         foreach (array_keys(self::get_btStyles()) as $key) {

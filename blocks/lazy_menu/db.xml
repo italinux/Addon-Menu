@@ -45,7 +45,7 @@
       <col>o1_fID</col>
     </index>
   </table>
-  <table name="btLazyMenuItem">
+  <table name="btLazyMenuItems">
     <field name="id" type="integer">
       <unsigned/>
       <autoincrement/>
