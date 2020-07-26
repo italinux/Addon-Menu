@@ -121,9 +121,9 @@ class Controller extends BlockController
         $dValue = array(
               0 => array(
                   'name' => t('Who I am'),
-                'target' => 'self',
+                'target' => 'blank',
+                   'url' => 'http://italinux.com/addon-menu/docs',
                 'anchor' => 'none',
-                 'addon' => 'about-me',
               ),
           );
 
