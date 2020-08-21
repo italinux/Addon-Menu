@@ -570,14 +570,14 @@ class Controller extends BlockController
         );
 
         // Register Assets this Block
-        $al->register('css', 'cst.flags', 'blocks/lazy_menu/style/flags.css', $ph, 'lazy_menu');
+        $al->register('css', 'cst.flags', 'blocks/' . $this->getBlockHandle() . '/style/flags.css', $ph, $this->getBlockHandle());
 
         // Register Assets this Block
-        $al->register('javascript', 'jst.scroll-top', 'blocks/lazy_menu/jscript/scroll-top.js', $pf,'lazy_menu');
+        $al->register('javascript', 'jst.scroll-top', 'blocks/' . $this->getBlockHandle() . '/jscript/scroll-top.js', $pf,$this->getBlockHandle());
 
         // Register Assets this Block
-        $al->register('javascript', 'hamburgers-init', 'blocks/lazy_menu/jscript/hamburgers.init.js', $cf, 'lazy_menu');
-        $al->register('css', 'hamburgers-style',  'blocks/lazy_menu/style/hamburgers.min.css', $ph, 'lazy_menu');
+        $al->register('javascript', 'hamburgers-init', 'blocks/' . $this->getBlockHandle() . '/jscript/hamburgers.init.js', $cf, $this->getBlockHandle());
+        $al->register('css', 'hamburgers-style',  'blocks/' . $this->getBlockHandle() . '/style/hamburgers.min.css', $ph, $this->getBlockHandle());
 
         $al->registerGroup(
             'jst.hamburgers', array(
@@ -595,13 +595,13 @@ class Controller extends BlockController
         /** - - - - - - - - - - - - - - - - - - - - - - - - -
          * Register JS / CSS Animate for this Block
          */
-        $al->register('javascript', 'jt.jquery.waypoints', 'blocks/lazy_menu/jscript/min/jquery.waypoints.min.js', $pf, 'lazy_menu');
+        $al->register('javascript', 'jt.jquery.waypoints', 'blocks/' . $this->getBlockHandle() . '/jscript/min/jquery.waypoints.min.js', $pf, $this->getBlockHandle());
 
         // Register Assets Animate
-        $al->register('javascript', 'animate-lib', 'blocks/lazy_menu/jscript/min/jquery.lazy.animate.min.js', $pf, 'lazy_menu');
+        $al->register('javascript', 'animate-lib', 'blocks/' . $this->getBlockHandle() . '/jscript/min/jquery.lazy.animate.min.js', $pf, $this->getBlockHandle());
 
-        $al->register('css', 'style.animate', 'blocks/lazy_menu/style/animate.min.css', $ph, 'lazy_menu');
-        $al->register('css', 'style.animate.delay', 'blocks/lazy_menu/style/animate.delay.min.css', $ph, 'lazy_menu');
+        $al->register('css', 'style.animate', 'blocks/' . $this->getBlockHandle() . '/style/animate.min.css', $ph, $this->getBlockHandle());
+        $al->register('css', 'style.animate.delay', 'blocks/' . $this->getBlockHandle() . '/style/animate.delay.min.css', $ph, $this->getBlockHandle());
 
         $al->registerGroup(
             'jst.animate.assets', array(
@@ -625,8 +625,8 @@ class Controller extends BlockController
         );
 
         // Register Assets Animate Configuration
-        $al->register('javascript', $this->getJSelectorId() . '.animate-conf', 'blocks/lazy_menu/jscript/lazy-animate.conf.js', $cf, 'lazy_menu');
-        $al->register('javascript-inline', $this->getJSelectorId() . '.animate-init',  '$("section#' . $this->getSectionId()  . '").lazyAnimate(' . $this->getSelectorBlock() . ');', $cf, 'lazy_menu');
+        $al->register('javascript', $this->getJSelectorId() . '.animate-conf', 'blocks/' . $this->getBlockHandle() . '/jscript/lazy-animate.conf.js', $cf, $this->getBlockHandle());
+        $al->register('javascript-inline', $this->getJSelectorId() . '.animate-init',  '$("section#' . $this->getSectionId()  . '").lazyAnimate(' . $this->getSelectorBlock() . ');', $cf, $this->getBlockHandle());
 
         $al->registerGroup(
             'jst.animate.conf', array(
