@@ -468,12 +468,19 @@ class Controller extends BlockController
     */
     public function registerViewAssets($outputContent = '')
     {
+
         // Import JQuery JS framework
         $this->requireAsset('javascript', 'jquery');
 
         // Import Bootstrap CSS framework
         $this->requireAsset('css', 'bootstrap/*');
 
+        // Import this Block CSS view
+        $this->requireAsset('css', self::$btHandlerId . '-view');
+
+        /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        * load assets if animation required:
+        */
         if ($this->getIsAnimationEnabled() === true) {
             // Import Animations Assets CSS & JS
             $this->requireAsset('jst.animate.assets');

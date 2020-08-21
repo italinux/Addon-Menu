@@ -27,6 +27,8 @@ use Concrete\Core\Support\Facade\Application;
 use Concrete\Core\Package\Package;
 use Concrete\Core\Block\BlockType\BlockType;
 use Concrete\Core\Block\BlockType\Set as BlockTypeSet;
+use Concrete\Core\Asset\Asset;
+use Concrete\Core\Asset\AssetList;
 
 defined('C5_EXECUTE') or die("Access Denied.");
 
@@ -54,6 +56,26 @@ class Controller extends Package
     public function getPackageBlockTypeSet()
     {
         return strstr($this->pkgHandle, '_', true);
+    }
+
+    /** * * * * * * * * * * * * * * * * * * * * * * * * * *
+    * Assets register
+    */
+    public function on_start()
+    {
+
+        $al = AssetList::getInstance();
+
+        $ph = Array(
+            'position' => Asset::ASSET_POSITION_HEADER,
+            'minify' => true,
+            'combine' => true
+        );
+
+        /**
+        * Required JS + CSS this Package
+        */
+        $al->register('css', 'menu-view', 'blocks/' . $this->pkgHandle . '/style/view.css', $ph, $this);
     }
 
     /** * * * * * * * * * * * * * * * * * * * * * * * * * *
