@@ -570,14 +570,14 @@ class Controller extends BlockController
         );
 
         // Register Assets this Block
-        $al->register('css', 'cst.flags', 'blocks/' . $this->getBlockHandle() . '/style/flags.css', $ph, $this->getBlockHandle());
+        $al->register('css', 'cst.flags', 'blocks/' . $this->getBlockHandle() . '/style/flags.css', $ph, $this->getPackageHandle());
 
         // Register Assets this Block
-        $al->register('javascript', 'jst.scroll-top', 'blocks/' . $this->getBlockHandle() . '/jscript/scroll-top.js', $pf,$this->getBlockHandle());
+        $al->register('javascript', 'jst.scroll-top', 'blocks/' . $this->getBlockHandle() . '/jscript/scroll-top.js', $pf,$this->getPackageHandle());
 
         // Register Assets this Block
-        $al->register('javascript', 'hamburgers-init', 'blocks/' . $this->getBlockHandle() . '/jscript/hamburgers.init.js', $cf, $this->getBlockHandle());
-        $al->register('css', 'hamburgers-style',  'blocks/' . $this->getBlockHandle() . '/style/hamburgers.min.css', $ph, $this->getBlockHandle());
+        $al->register('javascript', 'hamburgers-init', 'blocks/' . $this->getBlockHandle() . '/jscript/hamburgers.init.js', $cf, $this->getPackageHandle());
+        $al->register('css', 'hamburgers-style',  'blocks/' . $this->getBlockHandle() . '/style/hamburgers.min.css', $ph, $this->getPackageHandle());
 
         $al->registerGroup(
             'jst.hamburgers', array(
@@ -595,13 +595,13 @@ class Controller extends BlockController
         /** - - - - - - - - - - - - - - - - - - - - - - - - -
          * Register JS / CSS Animate for this Block
          */
-        $al->register('javascript', 'jt.jquery.waypoints', 'blocks/' . $this->getBlockHandle() . '/jscript/min/jquery.waypoints.min.js', $pf, $this->getBlockHandle());
+        $al->register('javascript', 'jt.jquery.waypoints', 'blocks/' . $this->getBlockHandle() . '/jscript/min/jquery.waypoints.min.js', $pf, $this->getPackageHandle());
 
         // Register Assets Animate
-        $al->register('javascript', 'animate-lib', 'blocks/' . $this->getBlockHandle() . '/jscript/min/jquery.lazy.animate.min.js', $pf, $this->getBlockHandle());
+        $al->register('javascript', 'animate-lib', 'blocks/' . $this->getBlockHandle() . '/jscript/min/jquery.lazy.animate.min.js', $pf, $this->getPackageHandle());
 
-        $al->register('css', 'style.animate', 'blocks/' . $this->getBlockHandle() . '/style/animate.min.css', $ph, $this->getBlockHandle());
-        $al->register('css', 'style.animate.delay', 'blocks/' . $this->getBlockHandle() . '/style/animate.delay.min.css', $ph, $this->getBlockHandle());
+        $al->register('css', 'style.animate', 'blocks/' . $this->getBlockHandle() . '/style/animate.min.css', $ph, $this->getPackageHandle());
+        $al->register('css', 'style.animate.delay', 'blocks/' . $this->getBlockHandle() . '/style/animate.delay.min.css', $ph, $this->getPackageHandle());
 
         $al->registerGroup(
             'jst.animate.assets', array(
@@ -625,8 +625,8 @@ class Controller extends BlockController
         );
 
         // Register Assets Animate Configuration
-        $al->register('javascript', $this->getJSelectorId() . '.animate-conf', 'blocks/' . $this->getBlockHandle() . '/jscript/lazy-animate.conf.js', $cf, $this->getBlockHandle());
-        $al->register('javascript-inline', $this->getJSelectorId() . '.animate-init',  '$("section#' . $this->getSectionId()  . '").lazyAnimate(' . $this->getSelectorBlock() . ');', $cf, $this->getBlockHandle());
+        $al->register('javascript', $this->getJSelectorId() . '.animate-conf', 'blocks/' . $this->getBlockHandle() . '/jscript/lazy-animate.conf.js', $cf, $this->getPackageHandle());
+        $al->register('javascript-inline', $this->getJSelectorId() . '.animate-init',  '$("section#' . $this->getSectionId()  . '").lazyAnimate(' . $this->getSelectorBlock() . ');', $cf, $this->getPackageHandle());
 
         $al->registerGroup(
             'jst.animate.conf', array(
@@ -924,6 +924,11 @@ class Controller extends BlockController
     protected function getCustomFgColorClassName()
     {
         return (BlockUtils::isValidColor($this->fgColorRGB) ? 'cfg-color' : null);
+    }
+
+    protected function getPackageHandle()
+    {
+        return $this->getBlockObject()->getPackageHandle();
     }
 
     protected function getBlockHandle()
