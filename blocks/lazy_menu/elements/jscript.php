@@ -161,6 +161,10 @@ defined('C5_EXECUTE') or die("Access Denied.");
 
         if (r == true) {
 
+            // delete item attribute
+            thisItem.prop("data-item", null); // IE compatible
+            thisItem.removeAttr("data-item");$
+
             // delete with transition
             thisItem.slideUp(500, function(){ 
                 $(this).remove();
