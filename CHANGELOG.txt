@@ -7,7 +7,7 @@
  ------------------------------------------------
  08/07/2017 , 0.9.8 , FIX Window Overlay / Controller / View
  ------------------------------------------------
- 13/09/2020 , 1.1.4 , FIX Assets Package / Blocks
+ 13/09/2020 , 1.1.4 , FIX Translation language: German / Controller / Assets
  ------------------------------------------------
- 13/09/2020 , 1.1.5 , Added 3 new presets
+ 20/09/2020 , 1.1.5 , FIX Assets Package / Blocks
  ------------------------------------------------
