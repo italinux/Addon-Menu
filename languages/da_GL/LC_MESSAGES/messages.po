@@ -567,6 +567,9 @@ msgstr "f&oslash;j en %1$s anker %2$s for at rulle til %1$s afsnit %2$s af en si
 msgid "open up to a %1$s new page %2$s or on the %1$s same page %2$s"
 msgstr "&aring;ben op til %1$s nye side med '%2$s eller %1$s samme side %2$s"
 
+msgid "open up to a %1$s new window %2$s or on the %1$s same window %2$s"
+msgstr "&aring;bne op til et %1$s nyt vindue %2$s eller i vinduet %1$s samme vindue %2$s"
+
 msgid "Leave it empty to hide it"
 msgstr "Efterlade den tom for at skjule det"
 
@@ -677,3 +680,9 @@ msgstr "hjemmeside"
 
 msgid "homepage"
 msgstr "hjemmeside"
+
+msgid "Background File Set ID"
+msgstr "Baggrundsfil-id"
+
+msgid "Background Image type"
+msgstr "Baggrundsbilledetype"

@@ -567,6 +567,9 @@ msgstr "ajouter un %1$s ancre %2$s pour faire d&eacute;filer jusqu'&agrave; %1$s
 msgid "open up to a %1$s new page %2$s or on the %1$s same page %2$s"
 msgstr "ouverez jusqu'&agrave; %1$s nouvelle page %2$s ou sur %1$s m&ecirc;me page %2$s"
 
+msgid "open up to a %1$s new window %2$s or on the %1$s same window %2$s"
+msgstr "ouverez jusqu'&agrave; %1$s nouvelle fen&ecirc;tre %2$s ou sur %1$s m&ecirc;me fen&ecirc;tre %2$s"
+
 msgid "Leave it empty to hide it"
 msgstr "Laissez vide pour le cacher"
 
@@ -677,3 +680,9 @@ msgstr "accueil"
 
 msgid "homepage"
 msgstr "accueil"
+
+msgid "Background File Set ID"
+msgstr "ID du jeu de fichiers d’arri&egrave;re-plan"
+
+msgid "Background Image type"
+msgstr "Type d’image d’arri&egrave;re-plan"

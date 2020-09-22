@@ -559,13 +559,16 @@ msgid "Here you define:"
 msgstr "Hier definieren Sie:"
 
 msgid "link to a %1$s URL %2$s or to a %1$s Page %2$s"
-msgstr "link zu einer % 1$s URL %2$s oder zu einer %1$s Seite %2$S"
+msgstr "link zu einer %1$s URL %2$s oder zu einer %1$s Seite %2$s"
 
 msgid "add an %1$s anchor %2$s to scroll to a %1$s section %2$s of a page"
-msgstr "f&uuml;ge einen % 1$s Anker %2$s hinzu, um zu einem %1$s Abschnitt %2$s einer Seite zu scrollen"
+msgstr "f&uuml;ge einen %1$s Anker %2$s hinzu, um zu einem %1$s Abschnitt %2$s einer Seite zu scrollen"
 
 msgid "open up to a %1$s new page %2$s or on the %1$s same page %2$s"
-msgstr "&ouml;ffne bis zu einer % 1$s neuen Seite %2$s oder auf der %1$s gleichen Seite % 2$s"
+msgstr "&ouml;ffne bis zu einer %1$s neuen Seite %2$s oder auf der %1$s gleichen Seite %2$s"
+
+msgid "open up to a %1$s new window %2$s or on the %1$s same window %2$s"
+msgstr "&ouml;ffnen Sie bis zu einem %1$s neuen Fenster %2$s oder auf dem %1$s gleichen Fenster %2$s"
 
 msgid "Leave it empty to hide it"
 msgstr "Lassen Sie es leer, um es zu verstecken"
@@ -574,7 +577,7 @@ msgid "documentation:"
 msgstr "dokumentation:"
 
 msgid "an %1$s anchor %2$s to scroll to a %1$s section %2$s of a page"
-msgstr "ein %1$s-Anker % 2$s, um zu einem %1$s-Abschnitt %2$s einer Seite zu scrollen"
+msgstr "ein %1$s anker %2$s, um zu einem %1$s abschnitt %2$s einer Seite zu scrollen"
 
 msgid "button text"
 msgstr "schaltfl&auml;chentext"
@@ -649,7 +652,7 @@ msgid "minimum: %s"
 msgstr "minimum: %s"
 
 msgid "Image size limit"
-msgstr ""
+msgstr "Bildgr&ouml;&szlig;enbeschr&auml;nkung"
 
 msgid "Icon ready"
 msgstr "Symbol bereit"
@@ -677,3 +680,9 @@ msgstr "home"
 
 msgid "homepage"
 msgstr "homepage"
+
+msgid "Background File Set ID"
+msgstr "Hintergrunddateisatz-ID"
+
+msgid "Background Image type"
+msgstr "Hintergrundbildtyp"

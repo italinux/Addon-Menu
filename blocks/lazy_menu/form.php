@@ -143,7 +143,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
                         <div class="form-group light-title align-center">
                           <label class="control-label"><?php echo t('Select a Page')?>
                             <br />
-                            <span class="nota-bene"><?php echo t('%1$sNB:%2$s ', '<strong>','</strong>') . t('You can leave this blank if you want to link to this same page')?></span>
+                            <span class="nota-bene"><?php echo t('%1$sNB:%2$s ', '<strong>','</strong>') . t('You can leave this blank if you want to link to this same window')?></span>
                           </label>
                           <div class="input-group center">
 

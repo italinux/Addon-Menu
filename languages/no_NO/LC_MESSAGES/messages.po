@@ -567,6 +567,9 @@ msgstr "legg til en %1$s anchor %2$s for &aring; bla til en %1$s delen %2$s av e
 msgid "open up to a %1$s new page %2$s or on the %1$s same page %2$s"
 msgstr "&aring;pne opp for en %1$s nye side %2$s eller p&aring; %1$s samme side %2$s"
 
+msgid "open up to a %1$s new window %2$s or on the %1$s same window %2$s"
+msgstr "&aring;pne opp for en %1$s nye vindu %2$s eller p&aring; %1$s samme vindu %2$s"
+
 msgid "Leave it empty to hide it"
 msgstr "La det st&aring; tomt for &aring; skjule det"
 
@@ -677,3 +680,9 @@ msgstr "hjemmeside"
 
 msgid "homepage"
 msgstr "hjemmeside"
+
+msgid "Background File Set ID"
+msgstr "Bakgrunnsfilsett-ID"
+
+msgid "Background Image type"
+msgstr "Bildetype"

@@ -559,13 +559,16 @@ msgid "Here you define:"
 msgstr "H&auml;r definierar du:"
 
 msgid "link to a %1$s URL %2$s or to a %1$s Page %2$s"
-msgstr "l&auml;nka till en % 1$S-URL %2$s eller till en %1$s-Sida %2$s"
+msgstr "l&auml;nka till en %1$s-URL %2$s eller till en %1$s-Sida %2$s"
 
 msgid "add an %1$s anchor %2$s to scroll to a %1$s section %2$s of a page"
 msgstr "l&auml;gg till en %1$s ankare %2$s f&ouml;r att bl&auml;ddra till en %1$s Sektion %2$s p&aring; en sida"
 
 msgid "open up to a %1$s new page %2$s or on the %1$s same page %2$s"
-msgstr "&ouml;ppna upp till en %1$S ny sida %2$s eller p&aring; %1$S samma sida %2$s"
+msgstr "&ouml;ppna upp till en %1$s ny sida %2$s eller p&aring; %1$s samma sida %2$s"
+
+msgid "open up to a %1$s new window %2$s or on the %1$s same window %2$s"
+msgstr "&ouml;ppna upp till ett %1$s nytt f&ouml;nster %2$s eller p&aring; %1$s samma f&ouml;nster %2$s"
 
 msgid "Leave it empty to hide it"
 msgstr "L&auml;mna det tomt f&ouml;r att d&ouml;lja det"
@@ -574,7 +577,7 @@ msgid "documentation:"
 msgstr "dokumentation:"
 
 msgid "an %1$s anchor %2$s to scroll to a %1$s section %2$s of a page"
-msgstr "en %1$s ankare %2$s f&ouml;r att bl&auml;ddra till en %1$s Sektion %2$S p&aring; en sida"
+msgstr "en %1$s ankare %2$s f&ouml;r att bl&auml;ddra till en %1$s Sektion %2$s p&aring; en sida"
 
 msgid "button text"
 msgstr "knapp-text"
@@ -677,3 +680,9 @@ msgstr "hemsida"
 
 msgid "homepage"
 msgstr "hemsida"
+
+msgid "Background File Set ID"
+msgstr "ID f&ouml;r bakgrundsfilupps&auml;ttning"
+
+msgid "Background Image type"
+msgstr "Typ Bakgrundsbild"

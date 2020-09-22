@@ -567,6 +567,9 @@ msgstr "afegir un %1$s &agrave;ncora %2$s per despla&ccedil;ar-vos a %1$s secci&
 msgid "open up to a %1$s new page %2$s or on the %1$s same page %2$s"
 msgstr "obrir-se a %1$s noves de la p&agrave;gina de %2$s o a les %1$s mateixa p&agrave;gina a %2$s"
 
+msgid "open up to a %1$s new window %2$s or on the %1$s same window %2$s"
+msgstr "obrir-se a una %1$s finestra nova %2$s o a les %1$s mateixa finestra %2$s"
+
 msgid "Leave it empty to hide it"
 msgstr "Deixeu-la buida per amagar-la"
 
@@ -677,3 +680,9 @@ msgstr "p&agrave;gina principal"
 
 msgid "homepage"
 msgstr "p&agrave;gina principal"
+
+msgid "Background File Set ID"
+msgstr "ID de conjunt de fitxers de fons"
+
+msgid "Background Image type"
+msgstr "Tipus d'imatge de fons"

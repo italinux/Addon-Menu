@@ -133,7 +133,7 @@ msgid "Email: %s"
 msgstr "Email: %s"
 
 msgid "%1$s Page %2$s: %3$s"
-msgstr "% 1 $ S Str&aacute;nka %2$s: %3$s"
+msgstr "%1 $ S Str&aacute;nka %2$s: %3$s"
 
 msgid "my"
 msgstr "můj"
@@ -211,7 +211,7 @@ msgid "it has priority over single image"
 msgstr "m&aacute; p&#345;ednost p&#345;ed jednoho obr&aacute;zku"
 
 msgid "%1$s Select a %2$s %1$s"
-msgstr "%1$s Vyberte% 2 $ S% 1 $ S"
+msgstr "%1$s Vyberte%2 $ S%1 $ S"
 
 msgid "File Set"
 msgstr "Set File"
@@ -567,6 +567,9 @@ msgstr "p&#345;idat %1$s kotevn&iacute; %2$s p&#345;ejd&#283;te na %1$s odd&iacu
 msgid "open up to a %1$s new page %2$s or on the %1$s same page %2$s"
 msgstr "otev&#345;&iacute;t %1$s nov&eacute; str&aacute;nky %2$s na %1$s stejn&eacute; str&aacute;nce %2$s"
 
+msgid "open up to a %1$s new window %2$s or on the %1$s same window %2$s"
+msgstr "otev&#345;&iacute;t %1$s nov&eacute; str&aacute;nky %2$s na %1$s stejn&eacute; str&aacute;nce %2$s"
+
 msgid "Leave it empty to hide it"
 msgstr "Nechte to pr&aacute;zdn&eacute;, aby skr&yacute;t"
 
@@ -677,3 +680,9 @@ msgstr "domovskou str&aacute;nku"
 
 msgid "homepage"
 msgstr "domovskou str&aacute;nku"
+
+msgid "Background File Set ID"
+msgstr "ID sady souborů na pozad&iacute;"
+
+msgid "Background Image type"
+msgstr "Typ obr&aacute;zku na pozad&iacute;"

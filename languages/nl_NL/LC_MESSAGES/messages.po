@@ -567,6 +567,9 @@ msgstr "voeg een %1$s anker %2$s om naar %1$s gedeelte %2$s van een pagina"
 msgid "open up to a %1$s new page %2$s or on the %1$s same page %2$s"
 msgstr "open tot een %1$s nieuwe pagina %2$s op %1$s dezelfde pagina %2$s"
 
+msgid "open up to a %1$s new window %2$s or on the %1$s same window %2$s"
+msgstr "open tot een %1$s nieuwe venster %2$s op %1$s dezelfde venster %2$s"
+
 msgid "Leave it empty to hide it"
 msgstr "Leeg laten om het te verbergen"
 
@@ -677,3 +680,9 @@ msgstr "home"
 
 msgid "homepage"
 msgstr "homepage"
+
+msgid "Background File Set ID"
+msgstr "Id voor het instellen van achtergrondbestand"
+
+msgid "Background Image type"
+msgstr "Afbeeldingstype achtergrond"

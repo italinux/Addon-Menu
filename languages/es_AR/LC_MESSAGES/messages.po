@@ -559,13 +559,16 @@ msgid "Here you define:"
 msgstr "Aqu&iacute; defines:"
 
 msgid "link to a %1$s URL %2$s or to a %1$s Page %2$s"
-msgstr "enlace a una URL %1$s %2$s o a una p&aacute;gina %1$S % 2$s"
+msgstr "enlace a una URL %1$s %2$s o a una p&aacute;gina %1$s %2$s"
 
 msgid "add an %1$s anchor %2$s to scroll to a %1$s section %2$s of a page"
-msgstr "a&ntilde;adir un ancla % 1$s %2$s para desplazarse a una secci&oacute;n %1$s %2$s de una p&aacute;gina"
+msgstr "a&ntilde;adir un ancla %1$s %2$s para desplazarse a una secci&oacute;n %1$s %2$s de una p&aacute;gina"
 
 msgid "open up to a %1$s new page %2$s or on the %1$s same page %2$s"
-msgstr "abrir a una nueva p&aacute;gina %1$s % 2$s o en la %1$s misma p&aacute;gina %2$s"
+msgstr "abrir a una nueva p&aacute;gina %1$s %2$s o en la %1$s misma p&aacute;gina %2$s"
+
+msgid "open up to a %1$s new window %2$s or on the %1$s same window %2$s"
+msgstr "abrir a un %1$s nueva ventana %2$s o en el %1$s misma ventana %2$s"
 
 msgid "Leave it empty to hide it"
 msgstr "D&eacute;jalo vac&iacute;o para esconderlo."
@@ -677,3 +680,9 @@ msgstr "p&aacute;gina principal"
 
 msgid "homepage"
 msgstr "p&aacute;gina principal"
+
+msgid "Background File Set ID"
+msgstr "ID del conjunto de archivos de fondo"
+
+msgid "Background Image type"
+msgstr "Tipo de imagen de fondo"

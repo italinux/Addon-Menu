@@ -567,6 +567,9 @@ msgstr "adicionar um %1$s &acirc;ncora %2$s para ir para %1$s se&ccedil;&atilde;
 msgid "open up to a %1$s new page %2$s or on the %1$s same page %2$s"
 msgstr "abrem %1$s nova p&aacute;gina de %2$s ou no %1$s mesma p&aacute;gina de %2$s"
 
+msgid "open up to a %1$s new window %2$s or on the %1$s same window %2$s"
+msgstr "abrem %1$s nova janela de %2$s ou no %1$s mesma janela de %2$s"
+
 msgid "Leave it empty to hide it"
 msgstr "Deixe-o vazio para ocultar"
 
@@ -677,3 +680,9 @@ msgstr "p&aacute;gina inicial"
 
 msgid "homepage"
 msgstr "p&aacute;gina inicial"
+
+msgid "Background File Set ID"
+msgstr "ID de conjunto de ficheiros de fundo"
+
+msgid "Background Image type"
+msgstr "Tipo de imagem de fundo"

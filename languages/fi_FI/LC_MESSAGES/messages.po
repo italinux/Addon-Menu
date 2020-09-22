@@ -565,7 +565,10 @@ msgid "add an %1$s anchor %2$s to scroll to a %1$s section %2$s of a page"
 msgstr "lis&auml;&auml; %1$s ankkuri %2$s selaa to %1$s-osiossa %2$s sivu"
 
 msgid "open up to a %1$s new page %2$s or on the %1$s same page %2$s"
-msgstr "avaa enint&auml;&auml;n %1$s new page %2$s tai %1$s saman web-sivun %2$s"
+msgstr "avaa enint&auml;&auml;n %1$s uuden web-sivun %2$s tai %1$s saman web-sivun %2$s"
+
+msgid "open up to a %1$s new window %2$s or on the %1$s same window %2$s"
+msgstr "avaa ksesi %1$s uuden ikkunan %2$s tai %1$s samaan ikkunaan %2$s"
 
 msgid "Leave it empty to hide it"
 msgstr "J&auml;t&auml; se tyhj&auml;ksi, jos haluat piilottaa sen"
@@ -677,3 +680,9 @@ msgstr "kotisivu"
 
 msgid "homepage"
 msgstr "kotisivu"
+
+msgid "Background File Set ID"
+msgstr "Taustatiedoston joukon tunnus"
+
+msgid "Background Image type"
+msgstr "Taustakuvan tyyppi"
