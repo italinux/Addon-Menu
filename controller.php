@@ -58,6 +58,11 @@ class Controller extends Package
         return strstr($this->pkgHandle, '_', true);
     }
 
+    protected function getPackageBlockAssetsHandle()
+    {
+        return str_replace("_", "-", substr(strstr($this->pkgHandle, '_'), 1));
+    }
+
     /** * * * * * * * * * * * * * * * * * * * * * * * * * *
     * Assets register
     */
@@ -66,16 +71,63 @@ class Controller extends Package
 
         $al = AssetList::getInstance();
 
-        $ph = Array(
+        $ph = array(
             'position' => Asset::ASSET_POSITION_HEADER,
-            'minify' => true,
-            'combine' => true
+              'minify' => true,
+             'combine' => true
+        );
+
+        $pf = array(
+            'position' => Asset::ASSET_POSITION_FOOTER,
+              'minify' => true,
+             'combine' => true
         );
 
         /**
-        * Required JS + CSS this Package
+        * Configuration this Block Views Assets (view.js|view.css)
         */
-        $al->register('css', 'menu-view', 'blocks/' . $this->pkgHandle . '/style/view.css', $ph, $this);
+        $theseAssets = array(
+            array(
+                'type' => 'css',
+            'rel-path' => 'style/view.css',
+            'position' => $ph,
+            ),
+            array(
+                'type' => 'javascript',
+            'rel-path' => 'jscript/view.js',
+            'position' => $pf,
+            ),
+        );
+
+        /**
+        * Register this Block Views Assets (view.js|view.css)
+        */
+        $thisAssetGroup = array();
+
+        $thisAssetName = $this->getPackageBlockAssetsHandle() . '-view';
+
+        // Loop these Blocks
+        foreach ($theseAssets as $value) {
+
+            $thisAssetFullName = $thisAssetName . '.' . $value['type'];
+
+            $thisAssetFullPath = 'blocks/' . $this->pkgHandle . '/' . $value['rel-path'];
+
+            // Detect if asset (js|css) is present
+            if (is_file(__DIR__ . '/' . $thisAssetFullPath)) {
+
+                // register single asset
+                $al->register($value['type'], $thisAssetFullName, $thisAssetFullPath, $value['position'], $this);
+
+                // push it into group assets
+                array_push($thisAssetGroup, array($value['type'], $thisAssetFullName));
+            }
+        }
+
+        // register group assets
+        $al->registerGroup(
+            'jst.block.' . $thisAssetName . '.assets', $thisAssetGroup
+        );
     }
 
     /** * * * * * * * * * * * * * * * * * * * * * * * * * *
