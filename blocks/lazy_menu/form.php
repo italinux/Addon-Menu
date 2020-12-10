@@ -28,7 +28,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
   <section>
     <div>
       <div class="row main">
-        <div class="col-lg-10 col-sm-9 col-xs-12">
+        <div class="col-lg-9 col-xs-12">
           <div class="container-fluid">
             <div class="col-lg-4 col-lg-offset-0 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
               <div class="form-group center double-space-top no-space-bottom">
@@ -242,7 +242,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
             
           </div>
         </div>
-        <div class="col-lg-2 col-sm-3 col-xs-12">
+        <div class="col-lg-3 col-xs-12">
           <section class="style">
             <div>
               <div class="row main">
