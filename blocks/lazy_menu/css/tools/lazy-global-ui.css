@@ -561,6 +561,32 @@ div.lazy-ui a.info > span:hover {
   text-decoration: none;
 }
 
+/* MAX Width & force center
+---------------------------------------------------------*/
+div.lazy-ui section .max-width-200px {
+  max-width: 200px;
+}
+div.lazy-ui section .max-width-250px {
+  max-width: 250px;
+}
+div.lazy-ui section .max-width-300px {
+  max-width: 300px;
+}
+div.lazy-ui section .max-width-350px {
+  max-width: 350px;
+}
+div.lazy-ui section .max-width-400px {
+  max-width: 400px;
+}
+div.lazy-ui section .max-width-200px.center,
+div.lazy-ui section .max-width-250px.center,
+div.lazy-ui section .max-width-300px.center,
+div.lazy-ui section .max-width-350px.center,
+div.lazy-ui section .max-width-400px.center {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 /* Separators
 ---------------------------------------------------------*/
 div.lazy-ui section .separator-top {
