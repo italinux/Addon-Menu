@@ -193,6 +193,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
                                 <option value="<?php echo $key?>" <%= addon=='<?php echo $key?>' ? 'selected="selected"' : '' %> data-install="<?php echo $value['installed']?>"><?php echo $value['name']?></option>
                                   <?php
                                   }
+                                  $addonDefault = reset(array_keys($addonsAll));
                               }
                             ?>
                             </select>
@@ -223,8 +224,10 @@ defined('C5_EXECUTE') or die("Access Denied.");
                     <div class="col-lg-3 no-sides-paddings">
                       <div data-id="anchor-message" class="little-space-top little-space-bottom" <%= anchor=='addon' ? '' : 'style="display: none"' %>>
                         <div class="form-group center light-title no-margins addon-ko" <%= isInstalled==false ? 'style="display: block"' : '' %>>
-                          <label class="control-label"><?php echo t('if you have not installed it yet')?></label>
-                          <p><span><?php echo t('visit:')?></span> <a href="http://matteo-montanari.com/addon-<%=addon%>" class="goto" target="_blank"><u>addon <%=addon%></u></a></p>
+                          <label class="control-label"><?php echo t('if you have not installed it yet')?>, <?php echo t('visit:')?></label>
+                          <p>
+                            <a href="http://matteo-montanari.com/addon-<%= addon==false ? '<?php echo $addonDefault?>' : addon %>" class="goto" target="_blank"><u>addon <%= addon==false ? '<?php echo $addonDefault?>' : addon %></u></a>
+                          </p>
                         </div>
                         <div class="form-group center light-title single-space-top addon-ok" <%= isInstalled==true ? 'style="display: block"' : '' %>>
                           <label class="control-label"><?php /* echo t('OK good') */?></label>

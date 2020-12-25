@@ -21,7 +21,6 @@
 | FITNESS FOR A PARTICULAR PURPOSE.                                         |
 '---------------------------------------------------------------------------'
 */
-defined('C5_EXECUTE') or die("Access Denied.");
 ?>
 
 <script type="text/javascript">
@@ -113,6 +112,11 @@ defined('C5_EXECUTE') or die("Access Denied.");
     // NOW init Menu
     _init_Menu();
 
+     // SET default addon to display on a new menu item just added
+     <?php
+       $addonDefault = ($addonsAll == true ) ? reset(array_keys($addonsAll)) : 'banner';
+     ?>
+
     // - - - - - - - - - - - - - - - - - - - - - - - -
     // Add menu item (new)
     $("div#add-item-wrapper").on('click', "input[data-id='btn-add-item']", function(e){
@@ -140,7 +144,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
             anchor: 'hash',
               hash: '',
 
-             addon: 'what-i-do',
+             addon: '<?php echo $addonDefault?>',
        isInstalled: false,
 
           uniqueID: genRandomID(),
