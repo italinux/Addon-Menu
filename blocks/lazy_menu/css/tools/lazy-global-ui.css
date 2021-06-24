@@ -853,6 +853,9 @@ div.lazy-ui section section.style {
   border-radius: 12px 12px 0px 0px;
   overflow: hidden;
 }
+div.lazy-ui section section.style div.title {
+  font-size: 1.2em;
+}
 div.lazy-ui section section div.title {
   padding-top: 12px;
   padding-bottom: 12px;

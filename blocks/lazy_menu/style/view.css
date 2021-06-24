@@ -20,153 +20,6 @@
 | FITNESS FOR A PARTICULAR PURPOSE.                                         |
 '---------------------------------------------------------------------------'
 */
-/** - - - - - - - - - - - - - - - - - - - - -
-* Import Google Font
-*/
-/** - - - - - - - - - - - - - - - - - - - - -
-* Set Typography
-*/
-/** - - - - - - - - - - - - - - - - - - - - -
-* Additional Configuration
-*
-* See related: presets/*.less 
-* and replace values here:
-*/
-/** - - - - - - - - - - - - - - - - - - - - -
-* Local font
-*/
-/* oleo-script-regular - latin */
-@font-face {
-  font-family: 'Oleo Script';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('oleo-script/oleo-script-v5-latin-regular.eot');
-  /* IE9 Compat Modes */
-  src: local('Oleo Script'), local('OleoScript-Regular'), url('oleo-script/oleo-script-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('oleo-script/oleo-script-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */ url('oleo-script/oleo-script-v5-latin-regular.woff') format('woff'), /* Modern Browsers */ url('oleo-script/oleo-script-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('oleo-script/oleo-script-v5-latin-regular.svg#OleoScript') format('svg');
-  /* Legacy iOS */
-}
-/* oleo-script-700 - latin */
-@font-face {
-  font-family: 'Oleo Script';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('oleo-script/oleo-script-v5-latin-700.eot');
-  /* IE9 Compat Modes */
-  src: local('Oleo Script Bold'), local('OleoScript-Bold'), url('oleo-script/oleo-script-v5-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('oleo-script/oleo-script-v5-latin-700.woff2') format('woff2'), /* Super Modern Browsers */ url('oleo-script/oleo-script-v5-latin-700.woff') format('woff'), /* Modern Browsers */ url('oleo-script/oleo-script-v5-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */ url('oleo-script/oleo-script-v5-latin-700.svg#OleoScript') format('svg');
-  /* Legacy iOS */
-}
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*  GLOBAL Colours
-*
-*  ODD backgrounds SECTIONS: (default: darks)
-*  + Primary Colours: ODDS, Menu, Banner, Footer etc ..
-*/
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*  GLOBAL Font Sizes
-*
-*  Tag: <body>
-*/
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*  Headings Banner (default font-weight)
-*/
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*  GLOBAL Spaces top / bottom
-*/
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*   - - START Colors - -
-*  GLOBAL Catalyst Colors
-*/
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-*  GLOBAL basic Colours RGBA / RGB
-*
-*  ODD (default: darks)
-*/
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-*  HowTo Video INTRO
-*/
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*  GLOBAL blocks colours CONFIG
-*
-*  Menu
-*/
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*  Banner
-*/
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*  What i do
-*/
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*  Team
-*/
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*  Services
-*/
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*  Fb page posts
-*/
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*  About me
-*/
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*  Adverts
-*/
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*  Bookmarks
-*/
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*  My skills
-*/
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*  Curriculum vitae
-*/
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*  Portfolio
-*/
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*  My works
-*/
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*  Map
-*/
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*  Content free
-*/
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*  Prices
-*/
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*  Testimonials
-*/
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*  Contacts
-*/
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*  Clients
-*/
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*  Social media
-*/
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*  Footer
-*/
-/** Minix control colors
---------------------------------------------------------- */
-/**
-* SMART ITEM LIGHTER COLORS
-* --------------------------------------------------------- */
-/**
-* SMART ITEM DEFAULT COLORS
-* --------------------------------------------------------- */
-/**
-* SMART ITEM LOW SATURATION COLORS
-* --------------------------------------------------------- */
-/**
-* SMART ITEM COLORS for PORTFOLIO, TEAM
-* --------------------------------------------------------- */
-/* Menu
----------------------------------------------------------*/
 .single-space-bottom > section.menu.page-block,
 .double-space-bottom > section.menu.page-block,
 .no-spaces > section.menu.page-block,
@@ -352,32 +205,24 @@ section.menu .nopaque {
 section.menu .opaque {
   opacity: 1;
 }
-/* Media Desktop
----------------------------------------------------------*/
 @media screen and (max-width: 1600px) {
   section.menu.page-block {
     padding-left: 6%;
     padding-right: 6%;
   }
 }
-/* Media Desktop
----------------------------------------------------------*/
 @media screen and (max-width: 1280px) {
   section.menu.page-block {
     padding-left: 4%;
     padding-right: 4%;
   }
 }
-/* Media Tablets
----------------------------------------------------------*/
 @media screen and (max-width: 1024px) {
   section.menu.page-block {
     padding-left: 3%;
     padding-right: 3%;
   }
 }
-/* Media Mobiles
----------------------------------------------------------*/
 section.menu[class^="mobile_view"].page-block {
   padding-left: 2%;
   padding-right: 2%;
@@ -388,14 +233,10 @@ section.menu[class^="mobile_view"].page-block {
     padding-right: 2%;
   }
 }
-/* Default Typography
----------------------------------------------------------*/
 section.menu nav div.navbar-center div.menu-wrapper.fixed ul.nav a {
   font-size: 3em;
   line-height: 1em;
 }
-/* Media Tablets
----------------------------------------------------------*/
 @media screen and (max-width: 1024px) {
   section.menu nav div.navbar-center div.menu-wrapper.fixed ul.nav a {
     font-size: 2.4em;
@@ -717,8 +558,6 @@ section.menu div.lang-switch select option {
   background-position: 15px center;
   background-size: 40px 30px;
 }
-/* Media Tablets
----------------------------------------------------------*/
 @media screen and (max-width: 1024px) {
   section.menu nav.navbar div.navbar-header div.navbar-toggle {
     display: block;
@@ -738,8 +577,6 @@ section.menu div.lang-switch select option {
     text-indent: 2px;
   }
 }
-/* Media Tablets
----------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   section.menu.over-image.with-fade::before {
     opacity: 0.85 !important;
