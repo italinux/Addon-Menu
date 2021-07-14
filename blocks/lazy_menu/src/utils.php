@@ -84,7 +84,7 @@ class Utils {
                   /** - - - - - - - - - - - - - - - - - - - - - - - - -
                   * NOW climb up to PARENT value (e.g. app.team.imageWidth)
                   */
-                  array_splice($full, 2, 2);
+                  array_splice($full, 3, 1);
                   $o = Config::get(trim(implode(".", $full)));
                 }
               }
