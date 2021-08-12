@@ -9,7 +9,7 @@
  ------------------------------------------------
  13/09/2020 , 1.1.4 , FIX Translation language: German / Controller / Assets
  ------------------------------------------------
- 19/02/2021 , 1.1.5 , FIX PHP Syntax / Assets Controller
+ 09/08/2021 , 1.1.5 , FIX PHP Syntax / Assets Controller
  ------------------------------------------------
- 01/08/2021 , 1.1.6 , FIX Controller / Model / View on Blocks
+ 12/08/2021 , 1.1.6 , FIX Window Overlay / Controller / View
  ------------------------------------------------
