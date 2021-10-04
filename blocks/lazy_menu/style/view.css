@@ -263,10 +263,10 @@ section.menu.editMode {
 }
 section.menu.over-image::before {
   -webkit-transition: opacity 0.5s ease-in-out 0s;
-  -moz-transition: opacity 0.5s ease-in-out 0s;
-  -ms-transition: opacity 0.5s ease-in-out 0s;
-  -o-transition: opacity 0.5s ease-in-out 0s;
-  transition: opacity 0.5s ease-in-out 0s;
+     -moz-transition: opacity 0.5s ease-in-out 0s;
+      -ms-transition: opacity 0.5s ease-in-out 0s;
+       -o-transition: opacity 0.5s ease-in-out 0s;
+          transition: opacity 0.5s ease-in-out 0s;
 }
 section.menu.over-image.with-fade::before {
   position: absolute;
@@ -508,18 +508,18 @@ section.menu div.lang-switch select option {
   margin: 0px auto;
   outline: 0px !important;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+      -ms-appearance: none;
+       -o-appearance: none;
+          appearance: none;
   line-height: 1.2em;
   text-align: center;
   vertical-align: middle;
   -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  -ms-box-shadow: none !important;
-  -o-box-shadow: none !important;
-  box-shadow: none !important;
+     -moz-box-shadow: none !important;
+      -ms-box-shadow: none !important;
+       -o-box-shadow: none !important;
+          box-shadow: none !important;
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: 5px center;
@@ -595,13 +595,13 @@ section.menu div.lang-switch select option {
   }
   section.menu nav.navbar div.navbar-header div[data-animation="toggle"] {
     -webkit-animation: 0s ease 0s normal none 1 running none;
-    -moz-animation: 0s ease 0s normal none 1 running none;
-    -o-animation: 0s ease 0s normal none 1 running none;
-    animation: 0s ease 0s normal none 1 running none;
+       -moz-animation: 0s ease 0s normal none 1 running none;
+         -o-animation: 0s ease 0s normal none 1 running none;
+            animation: 0s ease 0s normal none 1 running none;
     -webkit-transition-property: none;
-    -moz-transition-property: none;
-    -o-transition-property: none;
-    transition-property: none;
+       -moz-transition-property: none;
+         -o-transition-property: none;
+            transition-property: none;
   }
   section.menu nav.navbar div.navbar-header div.title-wrapper {
     padding-top: 2px;
@@ -620,17 +620,17 @@ section.menu div.lang-switch select option {
   }
   section.menu nav.navbar div.navbar-right div[data-animation="languages"] {
     -webkit-animation: 0s ease 0s normal none 1 running none;
-    -moz-animation: 0s ease 0s normal none 1 running none;
-    -o-animation: 0s ease 0s normal none 1 running none;
-    animation: 0s ease 0s normal none 1 running none;
+       -moz-animation: 0s ease 0s normal none 1 running none;
+         -o-animation: 0s ease 0s normal none 1 running none;
+            animation: 0s ease 0s normal none 1 running none;
     -webkit-transform: none;
-    -moz-transform: none;
-    -o-transform: none;
-    transform: none;
+       -moz-transform: none;
+         -o-transform: none;
+            transform: none;
     -webkit-transition-property: none;
-    -moz-transition-property: none;
-    -o-transition-property: none;
-    transition-property: none;
+       -moz-transition-property: none;
+         -o-transition-property: none;
+            transition-property: none;
   }
   section.menu nav.navbar div.navbar-right div.lang-switch {
     width: 62px;
