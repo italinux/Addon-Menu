@@ -399,6 +399,9 @@ class Controller extends BlockController
                 $items[$key]['link'] = $value['url'];
             }
 
+            // active
+            $items[$key]['li-class'] = (parse_url(Page::getCurrentPage()->getCollectionLink(), PHP_URL_PATH) == strtok($items[$key]['link'], '#')) == true ? 'active' : null;
+
             // name
             $items[$key]['name'] = $value['name'];
 
