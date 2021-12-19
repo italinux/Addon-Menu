@@ -69,7 +69,6 @@ $(function() {
         var thisOffset = 0;
 
         /**
-        * @preserve
         * Configure Offset (if admin mode add some more offset)
         */
         if (thisNavbar.hasClass('loggedIn')) {
@@ -77,13 +76,11 @@ $(function() {
         }
 
         /**
-        * @preserve
         * This is the actual position when menu starts fading (in|out)
         */
         showPosition += thisOffset;
 
         /**
-        * @preserve
         * Scrolling
         */
         $(window).scroll(function() {
