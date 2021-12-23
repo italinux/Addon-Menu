@@ -260,6 +260,7 @@ section.menu.editMode {
   position: relative !important;
   background-color: #eee;
   border: none !important;
+  z-index: 0;
 }
 section.menu.over-image::before {
   -webkit-transition: opacity 0.5s ease-in-out 0s;
