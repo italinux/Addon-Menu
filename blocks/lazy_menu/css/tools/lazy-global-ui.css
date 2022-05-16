@@ -128,9 +128,11 @@ div.lazy-ui section .info-items-list-title {
 
 /* Display Tabs
 ---------------------------------------------------------*/
+div.lazy-ui section div.wrap-tab-1 ul.nav-tabs li,
 div.lazy-ui section div.wrap-tab-2 ul.nav-tabs li {
   width: 49%;
 }
+div.lazy-ui section div.wrap-tab-3 ul.nav-tabs li,
 div.lazy-ui section div.wrap-tab-4 ul.nav-tabs li {
   width: 24%;
 }
@@ -140,6 +142,8 @@ div.lazy-ui section div.wrap-tab-5 ul.nav-tabs li {
 div.lazy-ui section div.wrap-tab-6 ul.nav-tabs li {
   width: 15.6%;
 }
+div.lazy-ui section div.wrap-tab-7 ul.nav-tabs li,
+div.lazy-ui section div.wrap-tab-8 ul.nav-tabs li,
 div.lazy-ui section div.wrap-tab-9 ul.nav-tabs li {
   width: 10.4%;
 }
