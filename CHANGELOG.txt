@@ -13,5 +13,7 @@
  ------------------------------------------------
  10/04/2022 , 1.1.6 , FIX Assets Package / Controller / Block
  ------------------------------------------------
- 17/05/2022 , 1.1.7 , FIX Assets Package / Blocks
+ 23/05/2022 , 1.1.7 , FIX Bootstrap Mobile XS on View / Controller
+ ------------------------------------------------
+ 23/05/2022 , 1.1.8 , Added fonts and mixin Assets to variables
  ------------------------------------------------
