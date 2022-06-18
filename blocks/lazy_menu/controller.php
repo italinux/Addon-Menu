@@ -489,7 +489,7 @@ class Controller extends BlockController
             $this->requireAsset('jst.animate.assets');
 
             // Import Animations CSS & JS Configuration
-            $this->requireAsset('jst.animate.conf');
+            $this->requireAsset('jst.animate.' . self::$btHandlerId . '.conf');
         }
 
         if ($this->getShowLanguage() === true) {
@@ -598,6 +598,7 @@ class Controller extends BlockController
         /** - - - - - - - - - - - - - - - - - - - - - - - - -
          * Register JS / CSS Animate for this Block
          */
+        $al->register('javascript', 'jt.jquery.migrate', 'blocks/' . $this->getBlockHandle() . '/jscript/min/jquery.migrate.min.js', $pf, $this->getPackageHandle());
         $al->register('javascript', 'jt.jquery.waypoints', 'blocks/' . $this->getBlockHandle() . '/jscript/min/jquery.waypoints.min.js', $pf, $this->getPackageHandle());
 
         // Register Assets Animate
@@ -605,9 +606,14 @@ class Controller extends BlockController
 
         $al->register('css', 'style.animate', 'blocks/' . $this->getBlockHandle() . '/style/animate.min.css', $ph, $this->getPackageHandle());
         $al->register('css', 'style.animate.delay', 'blocks/' . $this->getBlockHandle() . '/style/animate.delay.min.css', $ph, $this->getPackageHandle());
+        $al->register('css', 'style.animate.duration', 'blocks/' . $this->getBlockHandle() . '/style/animate.duration.min.css', $ph, $this->getPackageHandle());
 
         $al->registerGroup(
             'jst.animate.assets', array(
+                array(
+                    'javascript',
+                    'jt.jquery.migrate'
+                ),
                 array(
                     'javascript',
                     'jt.jquery.waypoints'
@@ -624,6 +630,10 @@ class Controller extends BlockController
                    'css',
                    'style.animate.delay'
                ),
+               array(
+                   'css',
+                   'style.animate.duration'
+               ),
             )
         );
 
@@ -632,7 +642,7 @@ class Controller extends BlockController
         $al->register('javascript-inline', $this->getJSelectorId() . '.animate-init',  '$("section#' . $this->getSectionId()  . '").lazyAnimate(' . $this->getSelectorBlock() . ');', $cf, $this->getPackageHandle());
 
         $al->registerGroup(
-            'jst.animate.conf', array(
+            'jst.animate.' . self::$btHandlerId . '.conf', array(
                array(
                    'javascript',
                    $this->getJSelectorId() . '.animate-conf'
@@ -866,7 +876,7 @@ class Controller extends BlockController
             case 'bgColorRGBA':
             case 'fgColorRGB':
                 if (empty($args[$key])) {
-                    $args[$key] = 'transparent';
+                    $args[$key] = null;
                 }
                 break;
             }
@@ -1225,6 +1235,7 @@ class Controller extends BlockController
         $this->addFormExtraValues();
 
         // Add Assets to Window Overlay
+        $this->addLocalAssets('/css/tools/bootstrap-grid.min.css',  'css');
         $this->addLocalAssets('/css/tools/lazy-global-ui.css', 'css');
     }
 
