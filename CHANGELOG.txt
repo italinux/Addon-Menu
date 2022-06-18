@@ -13,7 +13,5 @@
  ------------------------------------------------
  10/04/2022 , 1.1.6 , FIX Assets Package / Controller / Block
  ------------------------------------------------
- 23/05/2022 , 1.1.7 , FIX Bootstrap Mobile XS on View / Controller
- ------------------------------------------------
- 02/06/2022 , 1.1.8 , Added fonts and mixin Assets to variables
+ 21/05/2022 , 1.1.7 , Ready for Concrete CMS Version 9
  ------------------------------------------------
