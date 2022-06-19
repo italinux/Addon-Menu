@@ -167,6 +167,7 @@ div.lazy-ui section ul.nav-tabs > li {
   border-bottom: none;
   border-radius: 15px 15px 0px 0px;
   overflow: visible;
+  opacity: 0.8;
 }
 div.lazy-ui section ul.nav-tabs > li a:not(.btn):not(.goto) {
   font-weight: normal;
@@ -190,8 +191,9 @@ div.lazy-ui section ul.nav-tabs > li.active a:not(.btn):not(.goto) {
   opacity: 1 !important;
 }
 div.lazy-ui section ul.nav-tabs > li.active {
-  top: 2px;
+  top: 4px;
   border-bottom: none;
+  opacity: 1 !important;
 }
 div.lazy-ui section ul.nav-tabs > li.active:after {
   display: none;
@@ -305,12 +307,13 @@ div.lazy-ui section ul.nav-tabs > li > span.current {
 
 div.lazy-ui section ul.nav-tabs > li > a {
   padding: 12px 2px 14px !important;
-  border: 0px solid transparent !important;
-  border-bottom-width: 2px !important;
+  border: 0px solid #ccc !important;
+  border-bottom-width: 1px !important;
   white-space: pre;
 }
 div.lazy-ui section ul.nav-tabs > li > a.active {
-  border-color: inherit !important;
+  border-color: transparent !important;
+  cursor: default !important;
 }
 
 /* Display Background Colours in Tabs Control
@@ -858,7 +861,7 @@ div.lazy-ui section div.ccm-tab-content {
   display: none;
 }
 div.lazy-ui section div.ccm-tab-content.active {
-  display: block;
+  display: block !important;
 }
 
 div.lazy-ui section div.ccm-tab-content fieldset legend {
