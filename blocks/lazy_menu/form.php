@@ -33,7 +33,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
             <div class="col-lg-4 col-lg-offset-0 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
               <div class="form-group center double-space-top no-space-bottom">
                 <?php echo $form->label('showLogo', t('show logo?'))?>
-                <div class="input-group center">
+                <div class="input-group center display-inline">
                   <div class="radio">
                     <label>
                       <?php echo $form->radio('showLogo', 1, (int) $showLogo)?>
@@ -68,7 +68,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
             <div class="col-lg-3">
               <div class="form-group center double-space-top">
                 <?php echo $form->label('showLanguage', t('show language switch?'))?>
-                <div class="input-group center">
+                <div class="input-group center display-inline">
                   <div class="radio">
                     <label>
                       <?php echo $form->radio('showLanguage', 1, (int) $showLanguage)?>

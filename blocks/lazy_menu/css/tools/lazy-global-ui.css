@@ -233,6 +233,14 @@ div.lazy-ui section ul.nav-tabs > li > span[class*="fa-arrows"] {
   cursor: move;
   opacity: 0.8;
 }
+div.lazy-ui section ul.nav-tabs > li > span[class*="fa-arrows"]::before {
+  font-family: "FontAwesome";
+  font-weight: 400;
+  content: "\f0b2";
+}
+div.lazy-ui section ul.nav-tabs > li > span[class*="fa-arrows"]::after {
+  display: none;
+}
 div.lazy-ui section ul.nav-tabs > li > span.fa-plus,
 div.lazy-ui section ul.nav-tabs > li > span.fa-minus,
 div.lazy-ui section ul.nav-tabs > li > span.fa-angle-down {
