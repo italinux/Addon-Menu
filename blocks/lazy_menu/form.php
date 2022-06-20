@@ -106,7 +106,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
                 <div class="panel-heading" style="cursor: move;">
                   <div class="row">
                     <div class="col-lg-6">
-                      <h5><i class="fa fa-arrows drag-handle"></i> <?php echo t('Menu item')?> <span data-id="sort-show"><%=parseInt(sort)+1%></span></h5>
+                      <h6><i class="fa fa-arrows drag-handle"></i> <span class="menu-item-title"><?php echo t('Menu item')?></span> <span data-id="sort-show"><%=parseInt(sort)+1%></span></h6>
                       <input type="hidden" name="sort[]" data-id="sort-hidden" value="<%=sort%>" />
                     </div>
                     <div class="col-lg-6 text-right">

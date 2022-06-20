@@ -59,17 +59,41 @@ div.lazy-ui section .highlight {
 
 /* Display Fitted Panel Body
 ---------------------------------------------------------*/
-div.lazy-ui section div.panel-body {
-  padding: 8px 0px;
+div.lazy-ui section div.panel-default,
+div.lazy-ui section div.panel-heading {
+    background-color: #eee;
+    border-color: #eee;
 }
-
+div.lazy-ui section div.panel-default {
+    padding-top: 8px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+div.lazy-ui section div.panel-heading {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+div.lazy-ui section div.panel-heading h6 {
+    padding-top: 6px;
+    padding-left: 4px;
+}
+div.lazy-ui section div.panel-heading span.menu-item-title {
+    padding-left: 10px;
+    padding-right: 2px;
+}
+div.lazy-ui section div.panel-body {
+  padding: 8px 0px 2px 0px;
+  border-radius: 0px 0px 5px 5px;
+  overflow: hidden;
+}
 div.lazy-ui section div.panel-body .addon-ko {
   font-size: 1.2em;
   line-height: 1.4em;
   border: 1px dashed #bbb;
   display: none;
 }
-
 div.lazy-ui section div.panel-body .addon-ko span,
 div.lazy-ui section div.panel-body .addon-ko label,
 div.lazy-ui section div.panel-body .ccm-summary-selected-item-label {
@@ -215,15 +239,17 @@ div.lazy-ui section ul.nav-tabs > li > span.fa-minus:hover,
 div.lazy-ui section ul.nav-tabs > li > span.fa-angle-down:hover {
   opacity: 1;
 }
+div.lazy-ui section div.panel-heading i.fa-arrows,
 div.lazy-ui section ul.nav-tabs > li > span[class*="fa-arrows"] {
-  top: 0px;
-  right: 2px;
-
   transform: -webkit-rotate(45deg);
   transform:    -moz-rotate(45deg);
   transform:     -ms-rotate(45deg);
   transform:      -o-rotate(45deg);
   transform:         rotate(45deg);
+}
+div.lazy-ui section ul.nav-tabs > li > span[class*="fa-arrows"] {
+  top: 0px;
+  right: 2px;
 
   margin-top: -10px;
   margin-right: 0px;
@@ -233,11 +259,13 @@ div.lazy-ui section ul.nav-tabs > li > span[class*="fa-arrows"] {
   cursor: move;
   opacity: 0.8;
 }
+div.lazy-ui section div.panel-heading i.fa-arrows::before,
 div.lazy-ui section ul.nav-tabs > li > span[class*="fa-arrows"]::before {
   font-family: "FontAwesome";
   font-weight: 400;
   content: "\f0b2";
 }
+div.lazy-ui section div.panel-heading i.fa-arrows::after,
 div.lazy-ui section ul.nav-tabs > li > span[class*="fa-arrows"]::after {
   display: none;
 }
@@ -900,6 +928,11 @@ div.lazy-ui section div.input-group input[type="text"] {
 }
 div.lazy-ui section div.input-group select:not([multiple]) {
   width: auto !important;
+  appearance: auto !important; /* ALWAYS show right dropdown arrow */
+  border-right: 10px solid #fff; /* Add some right space to dropdown arrow */
+}
+div.lazy-ui section div.input-group select:not([multiple]) > option {
+  zoom: 1.2;
 }
 
 /* * * * * * * * * * * * * *

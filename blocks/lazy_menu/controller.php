@@ -497,8 +497,8 @@ class Controller extends BlockController
             $this->requireAsset('css', 'cst.flags');
         }
 
-        // Import Logo & Title Scroll-top
-        $this->requireAsset('javascript', 'jst.scroll-top');
+        // Import Navigation Smooth Scrolling
+        $this->requireAsset('javascript', 'jst.scrolling');
 
         // Import CSS Toggle Menu
         $this->requireAsset('jst.hamburgers');
@@ -576,7 +576,7 @@ class Controller extends BlockController
         $al->register('css', 'cst.flags', 'blocks/' . $this->getBlockHandle() . '/style/flags.css', $ph, $this->getPackageHandle());
 
         // Register Assets this Block
-        $al->register('javascript', 'jst.scroll-top', 'blocks/' . $this->getBlockHandle() . '/jscript/scroll-top.js', $pf,$this->getPackageHandle());
+        $al->register('javascript', 'jst.scrolling', 'blocks/' . $this->getBlockHandle() . '/jscript/scrolling.js', $pf,$this->getPackageHandle());
 
         // Register Assets this Block
         $al->register('javascript', 'hamburgers-init', 'blocks/' . $this->getBlockHandle() . '/jscript/hamburgers.init.js', $cf, $this->getPackageHandle());
@@ -1226,12 +1226,6 @@ class Controller extends BlockController
         $this->set('bgColorPalette', BlockUtils::getBgColorPalette(true, true, self::$btStyleOpacity));
 
         $this->set('btWrapperForm', $this->btWrapperForm);
-
-        // Add Assets Site-Map
-        $this->requireAsset('core/sitemap');
-
-        // Page Selector
-        $this->set('pageSelector', BlockUtils::getThisApp()->make('helper/form/page_selector'));
 
         // Urls
         $this->set('hUrl', BlockUtils::getThisApp()->make('helper/concrete/urls'));
