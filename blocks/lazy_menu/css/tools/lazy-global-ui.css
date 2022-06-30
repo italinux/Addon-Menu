@@ -934,7 +934,9 @@ div.lazy-ui section div.input-group select:not([multiple]) {
 div.lazy-ui section div.input-group select:not([multiple]) > option {
   zoom: 1.2;
 }
-
+div.lazy-ui section div.input-group textarea {
+  width: 100% !important;
+}
 /* * * * * * * * * * * * * *
 *  Textarea input WYSIWYG Height
 *  default is: 300px
@@ -1187,7 +1189,7 @@ div.lazy-ui section div.input-group.align-center {
 }
 div.lazy-ui section div.input-group.center {
   flex-direction: column;
-  flex-flow: column;
+  flex-flow: wrap;
 }
 div.lazy-ui section div.input-group.align-center input[type="text"] {
   text-align: center;
