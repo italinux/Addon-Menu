@@ -1,19 +1,19 @@
  Date (d/m/Y) | Version | Description / Comment
  ================================================
 
- 03/05/2016 , 0.9.2 , FIX the color propagation of colors on ccm-ui
- ------------------------------------------------
- 10/05/2016 , 0.9.3 , Added 5 new presets
- ------------------------------------------------
- 08/07/2017 , 0.9.8 , FIX Window Overlay / Controller / View
- ------------------------------------------------
  13/09/2020 , 1.1.4 , FIX Translation language: German / Controller / Assets
  ------------------------------------------------
  09/08/2021 , 1.1.5 , FIX PHP Syntax / Assets Controller
  ------------------------------------------------
  10/04/2022 , 1.1.6 , FIX Assets Package / Controller / Block
  ------------------------------------------------
- 23/05/2022 , 1.1.7 , FIX Bootstrap Mobile XS on View / Controller
+ 20/06/2022 , 2.1.7 , Ready for Concrete CMS Version 9
  ------------------------------------------------
- 01/07/2022 , 1.1.8 , Added fonts and mixin Assets to variables
+ 20/06/2022 , 2.1.8 , FIX Blocks Controllers Utils
+ ------------------------------------------------
+ 21/06/2022 , 2.1.9 , FIX Controller / Model / View on Blocks
+ ------------------------------------------------
+ 21/06/2022 , 2.2   , FIX Assets Package / Blocks
+ ------------------------------------------------
+ 01/07/2022 , 2.2.1 , FIX Controller / Model / View on Blocks
  ------------------------------------------------

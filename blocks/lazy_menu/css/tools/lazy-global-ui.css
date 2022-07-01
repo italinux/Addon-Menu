@@ -59,17 +59,41 @@ div.lazy-ui section .highlight {
 
 /* Display Fitted Panel Body
 ---------------------------------------------------------*/
-div.lazy-ui section div.panel-body {
-  padding: 8px 0px;
+div.lazy-ui section div.panel-default,
+div.lazy-ui section div.panel-heading {
+    background-color: #eee;
+    border-color: #eee;
 }
-
+div.lazy-ui section div.panel-default {
+    padding-top: 8px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+div.lazy-ui section div.panel-heading {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+div.lazy-ui section div.panel-heading h6 {
+    padding-top: 6px;
+    padding-left: 4px;
+}
+div.lazy-ui section div.panel-heading span.menu-item-title {
+    padding-left: 10px;
+    padding-right: 2px;
+}
+div.lazy-ui section div.panel-body {
+  padding: 8px 0px 2px 0px;
+  border-radius: 0px 0px 5px 5px;
+  overflow: hidden;
+}
 div.lazy-ui section div.panel-body .addon-ko {
   font-size: 1.2em;
   line-height: 1.4em;
   border: 1px dashed #bbb;
   display: none;
 }
-
 div.lazy-ui section div.panel-body .addon-ko span,
 div.lazy-ui section div.panel-body .addon-ko label,
 div.lazy-ui section div.panel-body .ccm-summary-selected-item-label {
@@ -105,8 +129,9 @@ div.lazy-ui section div.row div.ordinal-numbers {
   height: 50px;
   margin-left: 10px;
   margin-top: 10px;
-  padding-right: 2px;
-  font-size: 160%;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-size: 20px;
   line-height: 48px;
   text-align: center;
   border: 1px solid #ccc;
@@ -151,24 +176,29 @@ div.lazy-ui section ul.nav-tabs {
   padding-left: 0px;
   margin-left: 0px;
   margin-right: 0px;
+  margin-bottom: 0px !important;
   border-bottom: none;
-  display: block;
+  display: flex;
 }
 div.lazy-ui section ul.nav-tabs > li {
-  margin: 5px 4px 0px 4px;
+  position: relative;
   min-width: 100px;
   max-width: 200px;
+  max-height: 55px;
+  margin: 5px 4px 0px 4px;
   text-align: center;
   border: 1px solid #ddd;
   border-bottom: none;
   border-radius: 15px 15px 0px 0px;
   overflow: visible;
+  opacity: 0.8;
 }
 div.lazy-ui section ul.nav-tabs > li a:not(.btn):not(.goto) {
   font-weight: normal;
   border-radius: 15px 15px 0px 0px;
   cursor: -webkit-grab;
   cursor:    -moz-grab;
+  cursor:     -ms-grab;
   cursor:      -o-grab;
   cursor:         grab;
   opacity: 0.65;
@@ -185,8 +215,9 @@ div.lazy-ui section ul.nav-tabs > li.active a:not(.btn):not(.goto) {
   opacity: 1 !important;
 }
 div.lazy-ui section ul.nav-tabs > li.active {
-  top: 2px;
+  top: 4px;
   border-bottom: none;
+  opacity: 1 !important;
 }
 div.lazy-ui section ul.nav-tabs > li.active:after {
   display: none;
@@ -198,21 +229,45 @@ div.lazy-ui section ul.nav-tabs > li > span.fa {
   position: absolute;
   z-index: 1;
 }
-div.lazy-ui section ul.nav-tabs > li > span.fa-arrows,
+div.lazy-ui section ul.nav-tabs > li > span[class*="fa-arrows"],
 div.lazy-ui section ul.nav-tabs > li > span.fa-minus,
 div.lazy-ui section ul.nav-tabs > li > span.fa-angle-down {
   opacity: 0.9;
 }
-div.lazy-ui section ul.nav-tabs > li > span.fa-arrows:hover,
+div.lazy-ui section ul.nav-tabs > li > span[class*="fa-arrows"]:hover,
 div.lazy-ui section ul.nav-tabs > li > span.fa-minus:hover,
 div.lazy-ui section ul.nav-tabs > li > span.fa-angle-down:hover {
   opacity: 1;
 }
-div.lazy-ui section ul.nav-tabs > li > span.fa-arrows {
-  top: 6%;
-  right: 5%;
-  font-size: 80%;
+div.lazy-ui section div.panel-heading i.fa-arrows,
+div.lazy-ui section ul.nav-tabs > li > span[class*="fa-arrows"] {
+  transform: -webkit-rotate(45deg);
+  transform:    -moz-rotate(45deg);
+  transform:     -ms-rotate(45deg);
+  transform:      -o-rotate(45deg);
+  transform:         rotate(45deg);
+}
+div.lazy-ui section ul.nav-tabs > li > span[class*="fa-arrows"] {
+  top: 0px;
+  right: 2px;
+
+  margin-top: -10px;
+  margin-right: 0px;
+  padding: 4px 4px 16px 4px;
+
+  color: #666;
   cursor: move;
+  opacity: 0.8;
+}
+div.lazy-ui section div.panel-heading i.fa-arrows::before,
+div.lazy-ui section ul.nav-tabs > li > span[class*="fa-arrows"]::before {
+  font-family: "FontAwesome";
+  font-weight: 400;
+  content: "\f0b2";
+}
+div.lazy-ui section div.panel-heading i.fa-arrows::after,
+div.lazy-ui section ul.nav-tabs > li > span[class*="fa-arrows"]::after {
+  display: none;
 }
 div.lazy-ui section ul.nav-tabs > li > span.fa-plus,
 div.lazy-ui section ul.nav-tabs > li > span.fa-minus,
@@ -265,12 +320,18 @@ div.lazy-ui section ul.nav-tabs > li > span.fa-angle-down {
   color: #555;
   cursor: auto;
 }
-div.lazy-ui section ul.nav-tabs > li > span.active {
+div.lazy-ui section ul.nav-tabs > li > span.current {
   position: absolute;
-  width: fit-content;
   top: -26px;
   left: 0px;
   right: 0px;
+
+  width: -webkit-fit-content;
+  width:    -moz-fit-content;
+  width:     -ms-fit-content;
+  width:      -o-fit-content;
+  width:         fit-content;
+
   margin: 0px auto;
   padding: 2px 20px 0px;
   font-size: 1em;
@@ -281,9 +342,16 @@ div.lazy-ui section ul.nav-tabs > li > span.active {
 }
 
 div.lazy-ui section ul.nav-tabs > li > a {
-  padding: 15px 2px 10px;
+  padding: 12px 2px 14px !important;
+  border: 0px solid #ccc !important;
+  border-bottom-width: 1px !important;
   white-space: pre;
 }
+div.lazy-ui section ul.nav-tabs > li > a.active {
+  border-color: transparent !important;
+  cursor: default !important;
+}
+
 /* Display Background Colours in Tabs Control
 ---------------------------------------------------------*/
 div.lazy-ui section div.row.item_1,
@@ -404,6 +472,9 @@ div.lazy-ui section div#contacts-modal > div[id^="ccm-tab-content-"] div.form-gr
 }
 
 /* Display image Selector */
+div.lazy-ui section div.ccm-item-selector-loaded > div {
+  max-width: 200px;;
+}
 div.lazy-ui section div.ccm-file-selector {
   background-color: #fff;
   color: #555;
@@ -652,6 +723,15 @@ div.lazy-ui section .triple-space-top {
   padding-top: 30px;
 }
 
+/* Sides */
+div.lazy-ui section .single-sides-spaces {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+/* NO SPACES */
 div.lazy-ui section .no-spaces {
   margin: 0 !important;
   padding: 0 !important;
@@ -665,6 +745,35 @@ div.lazy-ui section .no-paddings {
   padding: 0 !important;
 }
 
+/* NO Top */
+div.lazy-ui section .no-top-margin {
+  margin-top: 0 !important;
+}
+
+div.lazy-ui section .no-top-padding {
+  padding-top: 0 !important;
+}
+
+div.lazy-ui section .no-top-space {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* NO Bottom */
+div.lazy-ui section .no-bottom-margin {
+  margin-bottom: 0 !important;
+}
+
+div.lazy-ui section .no-bottom-padding {
+  padding-bottom: 0 !important;
+}
+
+div.lazy-ui section .no-bottom-space {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* NO Left */
 div.lazy-ui section .no-left-margin {
   margin-left: 0 !important;
 }
@@ -678,6 +787,7 @@ div.lazy-ui section .no-left-space {
   padding-left: 0 !important;
 }
 
+/* NO Right */
 div.lazy-ui section .no-right-margin {
   margin-right: 0 !important;
 }
@@ -691,6 +801,7 @@ div.lazy-ui section .no-right-space {
   padding-right: 0 !important;
 }
 
+/* NO Sides */
 div.lazy-ui section .no-sides-margins {
   margin-left: 0 !important;
   margin-right: 0 !important;
@@ -782,6 +893,13 @@ div.lazy-ui .no-paddings {
 /* * * * * * * * * * * * * *
 *  Tabs
 * * * * * * * * * * * * * */
+div.lazy-ui section div.ccm-tab-content {
+  display: none;
+}
+div.lazy-ui section div.ccm-tab-content.active {
+  display: block !important;
+}
+
 div.lazy-ui section div.ccm-tab-content fieldset legend {
   font-size: 14px;
   font-style: italic;
@@ -804,7 +922,21 @@ div.lazy-ui section div.input-group option,
 div.lazy-ui section div.input-group textarea {
   font-weight: normal;
 }
-
+div.lazy-ui section div.input-group select:not([multiple]),
+div.lazy-ui section div.input-group input[type="text"] {
+  height: 2.5em;
+}
+div.lazy-ui section div.input-group select:not([multiple]) {
+  width: auto !important;
+  appearance: auto !important; /* ALWAYS show right dropdown arrow */
+  border-right: 10px solid #fff; /* Add some right space to dropdown arrow */
+}
+div.lazy-ui section div.input-group select:not([multiple]) > option {
+  zoom: 1.2;
+}
+div.lazy-ui section div.input-group textarea {
+  width: 100% !important;
+}
 /* * * * * * * * * * * * * *
 *  Textarea input WYSIWYG Height
 *  default is: 300px
@@ -860,6 +992,11 @@ div.lazy-ui section section.style {
 div.lazy-ui section section.style div.title {
   font-size: 1.2em;
 }
+div.lazy-ui section section.style div.form-group.center div.input-group > div {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
 div.lazy-ui section section div.title {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -871,14 +1008,14 @@ div.lazy-ui section section div.title {
 
 div.lazy-ui section.style {
   background: -webkit-linear-gradient(135deg, rgba(0,0,0,0) 25%, rgba(255,255,255,0.2) 25%, rgba(255,255,255,0.2) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 75%, rgba(255,255,255,0.2) 75%),
-  -webkit-linear-gradient(45deg, rgba(0,0,0,0) 25%, rgba(255,255,255,0.2) 25%, rgba(255,255,255,0.2) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 75%, rgba(255,255,255,0.2) 75%),
-  rgba(86, 188, 100, 0.5);
+              -webkit-linear-gradient(45deg, rgba(0,0,0,0) 25%, rgba(255,255,255,0.2) 25%, rgba(255,255,255,0.2) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 75%, rgba(255,255,255,0.2) 75%), rgba(86, 188, 100, 0.5);
   background:    -moz-linear-gradient(-45deg, rgba(0,0,0,0) 25%, rgba(255,255,255,0.2) 25%, rgba(255,255,255,0.2) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 75%, rgba(255,255,255,0.2) 75%),
-  -moz-linear-gradient(45deg, rgba(0,0,0,0) 25%, rgba(255,255,255,0.2) 25%, rgba(255,255,255,0.2) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 75%, rgba(255,255,255,0.2) 75%),
-  rgba(86, 188, 100, 0.5);
+                 -moz-linear-gradient(45deg, rgba(0,0,0,0) 25%, rgba(255,255,255,0.2) 25%, rgba(255,255,255,0.2) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 75%, rgba(255,255,255,0.2) 75%), rgba(86, 188, 100, 0.5);
   background:         linear-gradient(-45deg, rgba(0,0,0,0) 25%, rgba(255,255,255,0.2) 25%, rgba(255,255,255,0.2) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 75%, rgba(255,255,255,0.2) 75%),
-  linear-gradient(45deg, rgba(0,0,0,0) 25%, rgba(255,255,255,0.2) 25%, rgba(255,255,255,0.2) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 75%, rgba(255,255,255,0.2) 75%),
-  rgba(86, 188, 100, 0.5);
+                      linear-gradient(45deg, rgba(0,0,0,0) 25%, rgba(255,255,255,0.2) 25%, rgba(255,255,255,0.2) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 75%, rgba(255,255,255,0.2) 75%), rgba(86, 188, 100, 0.5);
+
+  background-size: 100% 740px;
+
   border: 2px dashed rgba(86, 188, 100, 0.8);
   text-align: center;
 }
@@ -930,7 +1067,7 @@ div.lazy-ui section.style label {
 }
 
 /* * * * * * * * * * * * * *
-*  SECTION Style
+*  SECTION Style INPUTS
 * * * * * * * * * * * * * */
 div.lazy-ui section.style div.ccm-file-selector-choose-new,
 div.lazy-ui section.style div.ccm-file-selector-file-selected {
@@ -1020,6 +1157,11 @@ div.lazy-ui section div.form-group span.label-checkbox {
   font-weight: bold;
 }
 
+/* Utils Classes */
+div.lazy-ui section div.display-inline {
+  display: inline !important;
+}
+
 div.lazy-ui section div.float-left {
   float: left;
 }
@@ -1044,6 +1186,10 @@ div.lazy-ui section div.input-group {
 div.lazy-ui section div.input-group.center,
 div.lazy-ui section div.input-group.align-center {
   margin: 0px auto;
+}
+div.lazy-ui section div.input-group.center {
+  flex-direction: column;
+  flex-flow: wrap;
 }
 div.lazy-ui section div.input-group.align-center input[type="text"] {
   text-align: center;
@@ -1115,6 +1261,7 @@ div.lazy-ui section div[id$="_linkType_url"].input-group > input[type="text"][id
 
 div.lazy-ui section div[id$="_imageTypes"].input-group {
   text-align: center;
+  display: inherit;
 }
 
 /* Media Tablets
@@ -1158,6 +1305,15 @@ div.lazy-ui section div.input-group input[type="text"] {
   width: 92% !important;
 }
 
+/**
+* GLOBAL input group wrapper
+*/
+div.lazy-ui section div.input-group[class*=" p"] {
+}
+
+/**
+* SPECIFIC input group wrappers
+*/
 div.lazy-ui section div.input-group.p20 {
   width: 20%;
 }
@@ -1229,10 +1385,12 @@ div.lazy-ui section div.input-group.p90 {
 }
 
 div.lazy-ui section div.form-group.center {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
+
 div.lazy-ui section div.form-group.center input[type="text"] {
   float: none;
   width: 70%;
@@ -1262,9 +1420,9 @@ div.lazy-ui section div.wrap-visible {
 div.lazy-ui section div.is-it-visible {
   max-width: 165px;
   padding: 5px 0px !important;
-  background-color: #fefee0;
+  /* background-color: #fff; */
   border-radius: 20%;
-  border: 2px dotted #aaa;
+  /* border: 2px dotted #ccc; */
   visibility: hidden;
 }
 
@@ -1274,6 +1432,7 @@ div.lazy-ui section div.is-it-visible div.radio {
 }
 
 div.lazy-ui section div.is-it-visible > label {
+  margin-bottom: 0px;
   display: block;
 }
 
@@ -1300,6 +1459,9 @@ div.lazy-ui section div.input-group select[multiple="true"] > option:hover {
 ---------------------------------------------------------*/
 div.lazy-ui section div.input-group select[multiple="true"] option.fa-responsive {
   font-size: 3em;
+}
+div.lazy-ui section div.input-group select[multiple="true"] option.fa-responsive::before {
+  zoom: 0.9;
 }
 
 @media screen and (max-width: 1280px) {

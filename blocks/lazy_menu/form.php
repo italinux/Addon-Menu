@@ -33,7 +33,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
             <div class="col-lg-4 col-lg-offset-0 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
               <div class="form-group center double-space-top no-space-bottom">
                 <?php echo $form->label('showLogo', t('show logo?'))?>
-                <div class="input-group center">
+                <div class="input-group center display-inline">
                   <div class="radio">
                     <label>
                       <?php echo $form->radio('showLogo', 1, (int) $showLogo)?>
@@ -68,7 +68,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
             <div class="col-lg-3">
               <div class="form-group center double-space-top">
                 <?php echo $form->label('showLanguage', t('show language switch?'))?>
-                <div class="input-group center">
+                <div class="input-group center display-inline">
                   <div class="radio">
                     <label>
                       <?php echo $form->radio('showLanguage', 1, (int) $showLanguage)?>
@@ -106,7 +106,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
                 <div class="panel-heading" style="cursor: move;">
                   <div class="row">
                     <div class="col-lg-6">
-                      <h5><i class="fa fa-arrows drag-handle"></i> <?php echo t('Menu item')?> <span data-id="sort-show"><%=parseInt(sort)+1%></span></h5>
+                      <h6><i class="fa fa-arrows drag-handle"></i> <span class="menu-item-title"><?php echo t('Menu item')?></span> <span data-id="sort-show"><%=parseInt(sort)+1%></span></h6>
                       <input type="hidden" name="sort[]" data-id="sort-hidden" value="<%=sort%>" />
                     </div>
                     <div class="col-lg-6 text-right">
@@ -255,7 +255,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
                 <div class="col-lg-12">
                   <div class="form-group center light-title no-margins no-sides-paddings double-space-bottom single-space-top">
                     <?php echo $form->label('bgColorRGBA', t('background colour %s', '<br /><span>(' . t('with or without transparency') . ')</span>'))?>
-                    <div class="input-group">
+                    <div class="input-group center p50">
                       <!-- Show a Color Palette in RGB Color Format with Transparency Slider (RGBA) -->
                       <?php $color->output('bgColorRGBA', $bgColorRGBA, $bgColorPalette)?>
                     </div>
@@ -297,7 +297,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
                 <div class="col-lg-12">
                   <div class="form-group center light-title single-space-bottom double-space-top">
                     <?php echo $form->label('fgColorRGB', t('font colour'))?>
-                    <div class="input-group">
+                    <div class="input-group center p50">
                       <!-- Show a Color Palette in RGB Color Format -->
                       <?php $color->output('fgColorRGB', $fgColorRGB, $fgColorPalette)?>
                     </div>

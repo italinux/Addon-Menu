@@ -489,7 +489,7 @@ class Controller extends BlockController
             $this->requireAsset('jst.animate.assets');
 
             // Import Animations CSS & JS Configuration
-            $this->requireAsset('jst.animate.conf');
+            $this->requireAsset('jst.animate.' . $this->getBlockAssetsId() . '.conf');
         }
 
         if ($this->getShowLanguage() === true) {
@@ -497,8 +497,8 @@ class Controller extends BlockController
             $this->requireAsset('css', 'cst.flags');
         }
 
-        // Import Logo & Title Scroll-top
-        $this->requireAsset('javascript', 'jst.scroll-top');
+        // Import Navigation Smooth Scrolling
+        $this->requireAsset('javascript', 'jst.scrolling');
 
         // Import CSS Toggle Menu
         $this->requireAsset('jst.hamburgers');
@@ -576,7 +576,7 @@ class Controller extends BlockController
         $al->register('css', 'cst.flags', 'blocks/' . $this->getBlockHandle() . '/style/flags.css', $ph, $this->getPackageHandle());
 
         // Register Assets this Block
-        $al->register('javascript', 'jst.scroll-top', 'blocks/' . $this->getBlockHandle() . '/jscript/scroll-top.js', $pf,$this->getPackageHandle());
+        $al->register('javascript', 'jst.scrolling', 'blocks/' . $this->getBlockHandle() . '/jscript/scrolling.js', $pf,$this->getPackageHandle());
 
         // Register Assets this Block
         $al->register('javascript', 'hamburgers-init', 'blocks/' . $this->getBlockHandle() . '/jscript/hamburgers.init.js', $cf, $this->getPackageHandle());
@@ -598,6 +598,7 @@ class Controller extends BlockController
         /** - - - - - - - - - - - - - - - - - - - - - - - - -
          * Register JS / CSS Animate for this Block
          */
+        $al->register('javascript', 'jt.jquery.migrate', 'blocks/' . $this->getBlockHandle() . '/jscript/min/jquery.migrate.min.js', $pf, $this->getPackageHandle());
         $al->register('javascript', 'jt.jquery.waypoints', 'blocks/' . $this->getBlockHandle() . '/jscript/min/jquery.waypoints.min.js', $pf, $this->getPackageHandle());
 
         // Register Assets Animate
@@ -605,9 +606,14 @@ class Controller extends BlockController
 
         $al->register('css', 'style.animate', 'blocks/' . $this->getBlockHandle() . '/style/animate.min.css', $ph, $this->getPackageHandle());
         $al->register('css', 'style.animate.delay', 'blocks/' . $this->getBlockHandle() . '/style/animate.delay.min.css', $ph, $this->getPackageHandle());
+        $al->register('css', 'style.animate.duration', 'blocks/' . $this->getBlockHandle() . '/style/animate.duration.min.css', $ph, $this->getPackageHandle());
 
         $al->registerGroup(
             'jst.animate.assets', array(
+                array(
+                    'javascript',
+                    'jt.jquery.migrate'
+                ),
                 array(
                     'javascript',
                     'jt.jquery.waypoints'
@@ -624,6 +630,10 @@ class Controller extends BlockController
                    'css',
                    'style.animate.delay'
                ),
+               array(
+                   'css',
+                   'style.animate.duration'
+               ),
             )
         );
 
@@ -632,7 +642,7 @@ class Controller extends BlockController
         $al->register('javascript-inline', $this->getJSelectorId() . '.animate-init',  '$("section#' . $this->getSectionId()  . '").lazyAnimate(' . $this->getSelectorBlock() . ');', $cf, $this->getPackageHandle());
 
         $al->registerGroup(
-            'jst.animate.conf', array(
+            'jst.animate.' . $this->getBlockAssetsId() . '.conf', array(
                array(
                    'javascript',
                    $this->getJSelectorId() . '.animate-conf'
@@ -866,7 +876,7 @@ class Controller extends BlockController
             case 'bgColorRGBA':
             case 'fgColorRGB':
                 if (empty($args[$key])) {
-                    $args[$key] = 'transparent';
+                    $args[$key] = null;
                 }
                 break;
             }
@@ -905,6 +915,11 @@ class Controller extends BlockController
     protected function getJSelectorId()
     {
         return $this->getSectionId() . '.' . self::$btHandlerId;
+    }
+
+    protected function getBlockAssetsId()
+    {
+        return $this->getJSelectorId();
     }
  
     protected function getSelectorBlock()
@@ -1212,12 +1227,6 @@ class Controller extends BlockController
 
         $this->set('btWrapperForm', $this->btWrapperForm);
 
-        // Add Assets Site-Map
-        $this->requireAsset('core/sitemap');
-
-        // Page Selector
-        $this->set('pageSelector', BlockUtils::getThisApp()->make('helper/form/page_selector'));
-
         // Urls
         $this->set('hUrl', BlockUtils::getThisApp()->make('helper/concrete/urls'));
 
@@ -1225,6 +1234,7 @@ class Controller extends BlockController
         $this->addFormExtraValues();
 
         // Add Assets to Window Overlay
+        $this->addLocalAssets('/css/tools/bootstrap-grid.min.css',  'css');
         $this->addLocalAssets('/css/tools/lazy-global-ui.css', 'css');
     }
 

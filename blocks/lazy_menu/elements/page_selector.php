@@ -29,7 +29,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
       <span class="ccm-summary-selected-item-label" style="white-space: pre"><%=pageName%></span>
     </div>
 
-    <a href="<?php echo View::url('/tools')?>/required/sitemap_search_selector?cID=0"
+    <a href="/ccm/system/dialogs/page/sitemap_selector?cID=0"
        class="ccm-sitemap-select-page"
        data-page-selector-launch="<%=uniqueID%>"
        dialog-width="90%"
