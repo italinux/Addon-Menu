@@ -56,13 +56,6 @@ section.menu {
   position: relative;
   overflow: hidden;
 }
-section.menu div[data-animation] {
-   -webkit-transform: scale(1);
-      -moz-transform: scale(1);
-       -ms-transform: scale(1);
-        -o-transform: scale(1);
-           transform: scale(1);
-}
 section.menu a:not(.CTA-clean).info::after,
 section.menu a:not(.CTA-clean).goto::after {
   margin-top: 0px;
@@ -311,7 +304,6 @@ section.menu nav.navbar div.navbar-header div.navbar-toggle {
 }
 section.menu nav.navbar div.navbar-header div.navbar-toggle div.hamburger {
   padding: 0.7em;
-  outline: none !important;
 }
 section.menu nav.navbar div.navbar-header div.navbar-toggle div.hamburger .hamburger-inner,
 section.menu nav.navbar div.navbar-header div.navbar-toggle div.hamburger .hamburger-inner::before,
@@ -355,9 +347,6 @@ section.menu nav.navbar div.navbar-header div.title-wrapper .nav-title {
   vertical-align: middle;
   display: none;
 }
-section.menu nav.navbar div.navbar-header div.title-wrapper .nav-title.show {
-  display: block;
-}
 section.menu nav.navbar div.navbar-header div.title-wrapper .nav-title a {
   text-decoration: none;
 }
@@ -379,10 +368,6 @@ section.menu nav.navbar div.navbar-center div.menu-wrapper {
   right: 0px;
   margin: 0px auto;
   text-align: center;
-}
-section.menu nav.navbar div.navbar-center div.menu-wrapper > ul.nav {
-  flex-direction: unset;
-  display: flex;
 }
 section.menu nav.navbar div.navbar-center div.menu-wrapper.fixed {
   position: fixed;
