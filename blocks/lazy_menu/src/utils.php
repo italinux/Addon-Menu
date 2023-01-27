@@ -74,18 +74,29 @@ class Utils {
               // Check IF it's 'item' (CHILD)
               if ($full[2] == 'item') {
 
-                switch ($full[4]) {
-                /** - - - - - - - - - - - - - - - - - - - - - - - - -
-                * Add entries HERE to AVOID climbing up to PARENT value (e.g. title)
-                */
-                case 'title':
-                    break;
-                default:
-                  /** - - - - - - - - - - - - - - - - - - - - - - - - -
-                  * NOW climb up to PARENT value (e.g. app.team.imageWidth)
-                  */
-                  array_splice($full, 3, 1);
-                  $o = Config::get(trim(implode(".", $full)));
+                // HOT-FIX: PHPv8 Compatibility CHECK ARRAY KEY EXISTS
+                // Check IF key 4 exists
+                if (array_key_exists(4, $full)) {
+
+                    switch ($full[4]) {
+                    /** - - - - - - - - - - - - - - - - - - - - - - - - -
+                    * Add entries HERE to AVOID climbing up to PARENT value (e.g. title)
+                    */
+                    case 'title':
+                        break;
+                    default:
+                      /** - - - - - - - - - - - - - - - - - - - - - - - - -
+                      * NOW climb up to PARENT value (e.g. app.team.imageWidth)
+                      */
+                      array_splice($full, 3, 1);
+                      $o = Config::get(trim(implode(".", $full)));
+                    }
+                } else {
+                    /** - - - - - - - - - - - - - - - - - - - - - - - - -
+                    * NOW climb up to PARENT value (e.g. app.team.imageWidth)
+                    */
+                    array_splice($full, 3, 1);
+                    $o = Config::get(trim(implode(".", $full)));
                 }
               }
             }
@@ -261,7 +272,8 @@ class Utils {
     public static function getIsValidURL($uri)
     {
 
-        return ((substr($uri, 0, 4) == 'http' && filter_var($uri, FILTER_VALIDATE_URL, FILTER_FLAG_SCHEME_REQUIRED) !== false) ? true : false);
+        // HOT-FIX: PHPv8 Compatibility REMOVE = FILTER_FLAG_SCHEME_REQUIRED
+        return ((substr($uri, 0, 4) == 'http' && filter_var($uri, FILTER_VALIDATE_URL) !== false) ? true : false);
     }
 
     /** - - - - - - - - - - - - - - - - - - - - - - - - - - -

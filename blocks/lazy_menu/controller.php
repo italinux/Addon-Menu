@@ -95,20 +95,47 @@ class Controller extends BlockController
     */
     protected $btCacheBlockOutputLifetime = 0;
 
+    // HOT-FIX: PHPv8 Compatibility = ADD properties all btStyles
+    // Set properties: all btStyles
+    protected $bgColorRGBA;
+    protected $bgColorOpacity;
+    protected $bgFID;
+    protected $fgColorRGB;
+    protected $isAnimated;
+
+    // HOT-FIX: PHPv8 Compatibility = SET Default property Value
     /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    * Block Fields: All Default Values in Window Overlay
+    * Block Fields: Set Default Property Value
     * @description Prefill Fields with Values
     * @return Mixed (string|boolean|integer)
     */
-    protected static function getDefaultValue($id)
+    protected function setDefaultValue($cName)
     {
+        // Set Default Value for property: null
+        if ( ! isset($this->{$cName})) {
+            $this->{$cName} = null;
+        }
+
+        return $this->{$cName};
+    }
+
+    /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    * Block Fields: Get All Default Values in Window Overlay
+    * @description Prefill Fields with Values
+    * @return Mixed (string|boolean|integer)
+    */
+    protected function getDefaultValue($cName)
+    {
+        // Set default property value
+        $this->setDefaultValue($cName);
+
         $o = array(
           'title' => null,
           'showLogo' => true,
           'showLanguage' => false,
         );
 
-        return array_key_exists($id, $o) ? $o[$id] : false;
+        return array_key_exists($cName, $o) ? $o[$cName] : false;
     }
 
     /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -127,7 +154,11 @@ class Controller extends BlockController
               ),
           );
 
-          $items = count($this->getItemsAll()) > 0 ? $this->getItemsAll() : BlockUtils::getDefaultValue($config, $dValue, $this->{$cName});
+        // HOT-FIX: PHPv8 Compatibility = SET default property value
+        // Set default property value
+        $this->setDefaultValue($cName);
+
+        $items = count($this->getItemsAll()) > 0 ? $this->getItemsAll() : BlockUtils::getDefaultValue($config, $dValue, $this->{$cName});
 
         return (array) $items;
     }
@@ -153,6 +184,12 @@ class Controller extends BlockController
           'social-media' => array('name' => 'Social Media',     'installed' => false),
                 'footer' => array('name' => 'Footer',           'installed' => false),
                );
+    }
+
+    // HOT-FIX: PHPv8 Compatibility = SET property Value
+    protected function getThisValue($cName)
+    {
+        return $this->setDefaultValue($cName);
     }
 
     /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -283,8 +320,8 @@ class Controller extends BlockController
 
     public function getO1_fID()
     {
-        if ($this->o1_fID > 0) {
-            $fObj = BlockUtils::getFileObject($this->o1_fID);
+        if ($this->getThisValue('o1_fID') > 0) {
+            $fObj = BlockUtils::getFileObject($this->getThisValue('o1_fID'));
         }
 
         return (isset($fObj) && is_object($fObj)) ? $fObj : null;
@@ -397,6 +434,9 @@ class Controller extends BlockController
             case 'blank':
                 // link for blank
                 $items[$key]['link'] = $value['url'];
+
+                // HOT-FIX: PHPv8 Compatibility CHECK VARIABLE EXISTS
+                $items[$key]['a-class'] = null;
             }
 
             // active
@@ -526,6 +566,12 @@ class Controller extends BlockController
 
             // Get Language Switch Block Type
             $this->set('languageSwitch', $this->getLanguageSwitch());
+        } else {
+            // HOT-FIX: PHPv8 Compatibility CHECK VARIABLE EXISTS
+            $this->set('locale', false);
+
+            // HOT-FIX: PHPv8 Compatibility CHECK VARIABLE EXISTS
+            $this->set('languageSwitch', false);
         }
 
         // Set style values
@@ -862,7 +908,10 @@ class Controller extends BlockController
 
         $db->executeQuery('DELETE from ' . $this->btExportTables[1] . ' WHERE bID = ?', array($this->bID));
 
-        $this->insertItems($this->bID, count((array)$args['sort']), $args);
+        // HOT-FIX: PHPv8 Compatibility CHECK ARRAY KEY EXISTS
+        $sort = (array_key_exists('sort', $args) ? $args['sort'] : null);
+
+        $this->insertItems($this->bID, count((array)$sort), $args);
 
         // Update custom Styles for all pages 
         foreach (array_keys(self::get_btStyles()) as $key) {
@@ -876,7 +925,8 @@ class Controller extends BlockController
             case 'bgColorRGBA':
             case 'fgColorRGB':
                 if (empty($args[$key])) {
-                    $args[$key] = null;
+                    // HOT-FIX: PHPv8 Compatibility REMOVE = null;
+                    $args[$key] = '';
                 }
                 break;
             }
@@ -1232,6 +1282,10 @@ class Controller extends BlockController
 
         $this->addFormDefaultValues();
         $this->addFormExtraValues();
+
+        // HOT-FIX: PHPv8 Compatibility = ADD set bgColorRGBA & fgColorRGB
+        $this->set('bgColorRGBA', $this->bgColorRGBA);
+        $this->set('fgColorRGB', $this->fgColorRGB);
 
         // Add Assets to Window Overlay
         $this->addLocalAssets('/css/tools/bootstrap-grid.min.css',  'css');

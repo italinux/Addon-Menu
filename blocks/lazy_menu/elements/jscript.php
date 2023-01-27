@@ -71,20 +71,22 @@ defined('C5_EXECUTE') or die("Access Denied.");
       if ($itemsDefaultsAll) {
           foreach ($itemsDefaultsAll as $key => $value) {
 
+             // HOT-FIX: PHPv8 Compatibility CHECK ARRAY KEY EXISTS
              // get Sort Order
-             $value['sort'] = ($value['sort'] == false ? $key : $value['sort']);
+             $value['sort'] = isset($value['sort']) ? $value['sort'] : $key;
 
-             $page = $value['pageID'] == true ? Page::getByID($value['pageID']) : null;
+             // HOT-FIX: PHPv8 Compatibility CHECK ARRAY KEY EXISTS
+             $page = isset($value['pageID']) ? Page::getByID($value['pageID']) : null;
 
              // get Page Name for self
              $pageName = is_object($page) == true ? $page->getCollectionName() : null;
 
+             // HOT-FIX: PHPv8 Compatibility CHECK ARRAY KEY EXISTS
              // get if the add-on is supposedly installed or not
-             $isInstalled = array_key_exists($value['addon'], $addonsAll) ? ($addonsAll[$value['addon']]['installed'] === true ? 1 : 0) : 0;
+             $isInstalled = (isset($value['addon']) && array_key_exists($value['addon'], $addonsAll)) ? ($addonsAll[$value['addon']]['installed'] === true ? 1 : 0) : 0;
           ?>
           wrapper.append(template({
-
-              pageID: '<?php echo $value['pageID']?>',
+              pageID: '<?php echo (isset($value['pageID']) ? $value['pageID'] : null)?>',
             pageName: '<?php echo $pageName?>',
 
               target: '<?php echo $value['target']?>',
@@ -92,9 +94,9 @@ defined('C5_EXECUTE') or die("Access Denied.");
                 name: '<?php echo t($value['name'])?>',
 
               anchor: '<?php echo $value['anchor']?>',
-                hash: '<?php echo $value['hash']?>',
+                hash: '<?php echo (isset($value['hash']) ? $value['hash'] : null)?>',
 
-               addon: '<?php echo $value['addon']?>',
+               addon: '<?php echo (isset($value['addon']) ? $value['addon'] : null)?>',
          isInstalled: <?php echo $isInstalled?>,
 
             uniqueID: genRandomID(),
