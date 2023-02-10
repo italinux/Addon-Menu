@@ -1,8 +1,6 @@
  Date (d/m/Y) | Version | Description / Comment
  ================================================
 
- 09/08/2021 , 1.1.5 , FIX PHP Syntax / Assets Controller
- ------------------------------------------------
  10/04/2022 , 1.1.6 , FIX Assets Package / Controller / Block
  ------------------------------------------------
  20/06/2022 , 2.1.7 , Ready for Concrete CMS Version 9
@@ -15,5 +13,7 @@
  ------------------------------------------------
  30/12/2022 , 2.2.1 , Ready for PHP Version 8
  ------------------------------------------------
- 10/01/2023 , 2.2.2 , FIX Window Overlay / Controller / View
+ 10/02/2023 , 2.2.2 , Ready for Concrete CMS Version 9
+ ------------------------------------------------
+ 10/02/2023 , 2.2.3 , FIX Window Overlay / Controller / View
  ------------------------------------------------

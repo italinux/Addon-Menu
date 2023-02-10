@@ -90,7 +90,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
             pageName: '<?php echo $pageName?>',
 
               target: '<?php echo $value['target']?>',
-                link: '<?php echo $value['url']?>',
+                link: '<?php echo (isset($value['url']) ? $value['url'] : null)?>',
                 name: '<?php echo t($value['name'])?>',
 
               anchor: '<?php echo $value['anchor']?>',
