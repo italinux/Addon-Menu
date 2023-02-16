@@ -1191,7 +1191,8 @@ div.lazy-ui section div.input-group.center {
   flex-direction: column;
   flex-flow: wrap;
 }
-div.lazy-ui section div.input-group.center > div[data-concrete-file-input] {
+div.lazy-ui section div.input-group.center > div[data-concrete-file-input],
+div.lazy-ui section div.input-group.center > div[data-page-selector] {
   margin-left: auto;
   margin-right: auto;
 }
