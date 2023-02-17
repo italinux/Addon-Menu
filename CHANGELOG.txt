@@ -1,8 +1,6 @@
  Date (d/m/Y) | Version | Description / Comment
  ================================================
 
- 10/04/2022 , 1.1.6 , FIX Assets Package / Controller / Block
- ------------------------------------------------
  20/06/2022 , 2.1.7 , Ready for Concrete CMS Version 9
  ------------------------------------------------
  20/06/2022 , 2.1.8 , FIX Blocks Controllers Utils
@@ -16,4 +14,6 @@
  10/02/2023 , 2.2.2 , Ready for Concrete CMS Version 9
  ------------------------------------------------
  17/02/2023 , 2.2.3 , FIX Page Selector on Sub Folders
+ ------------------------------------------------
+ 17/02/2023 , 2.2.4 , Added fonts and mixin Assets to variables
  ------------------------------------------------
