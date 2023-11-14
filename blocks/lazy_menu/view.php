@@ -48,7 +48,7 @@ echo $cStyle;
              ?>
               <!-- Logo -->
              <a data-animation="logo" class="<?php echo $toHome['class']?> nav-logo <?php echo $nopaque?>" href="<?php echo $toHome['path']?>">
-               <img class="img-responsive" width="<?php echo $logo['width']?>" height="<?php echo $logo['height']?>" src="<?php echo $logo['path']?>" alt="" />
+               <img class="img-responsive" width="<?php echo $logo['width']?>" height="<?php echo $logo['height']?>" src="<?php echo $logo['path']?>" alt="logo" />
              </a>
              <?php
              }
