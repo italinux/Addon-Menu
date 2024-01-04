@@ -10,7 +10,7 @@
 |  @link:   https://matteo-montanari.com
 '---------------------------------------------------------------------'
 .---------------------------------------------------------------------------.
-| @copyright (c) current year
+| @copyright (c) current year                                               |
 | ------------------------------------------------------------------------- |
 | @license: Concrete5.org Marketplace Commercial Add-Ons & Themes License   |
 |           https://concrete5.org/help/legal/commercial_add-on_license      |
