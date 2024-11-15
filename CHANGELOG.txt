@@ -15,5 +15,5 @@
  ------------------------------------------------
  17/02/2023 , 2.2.3 , FIX Page Selector on Sub Folders
  ------------------------------------------------
- 04/01/2024 , 2.2.4 , Added fonts and mixin Assets to variables
+ 15/11/2024 , 2.2.4 , Added fonts and mixin Assets to variables
  ------------------------------------------------

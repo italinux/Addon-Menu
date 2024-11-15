@@ -928,11 +928,17 @@ div.lazy-ui section div.input-group input[type="text"] {
 }
 div.lazy-ui section div.input-group select:not([multiple]) {
   width: auto !important;
-  appearance: auto !important; /* ALWAYS show right dropdown arrow */
-  border-right: 10px solid #fff; /* Add some right space to dropdown arrow */
+  /* appearance: auto !important; */ /* ALWAYS show right dropdown arrow */
+  /* border-right: 10px solid #fff; */ /* Add some right space to dropdown arrow */
 }
 div.lazy-ui section div.input-group select:not([multiple]) > option {
   zoom: 1.2;
+}
+div.lazy-ui section div.input-group select:disabled,
+div.lazy-ui section div.input-group select[disabled="disabled"] {
+  background-color: #dedede;
+  text-shadow: 1px 1px 1px #fff;
+  cursor: not-allowed;
 }
 div.lazy-ui section div.input-group textarea {
   width: 100% !important;
@@ -985,6 +991,7 @@ div.lazy-ui section.warning {
   color: #222 !important;
 }
 div.lazy-ui section section.style {
+  height: 100%;
   margin-top: 5px;
   border-radius: 12px 12px 0px 0px;
   overflow: hidden;
@@ -1095,15 +1102,18 @@ div.ui-dialog .ui-dialog-content a:not(.btn):not(.goto) {
 div.ui-dialog .ui-dialog-content a:hover:not(.btn):not(.goto) {
   text-decoration: none !important;
 }
-
 /* color picker */
-.sp-container.ccm-widget-colorpicker {
+div.lazy-ui section.style .sp-replacer.ccm-widget-colorpicker {
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+div.lazy-ui section.style .sp-container.ccm-widget-colorpicker {
   width: 335px !important;
 }
-.sp-picker-container {
+div.lazy-ui section.style .sp-picker-container {
   width: 220px !important;
 }
-.sp-input-container {
+div.lazy-ui section.style .sp-input-container {
   width: 140px !important;
 }
 div.lazy-ui section div.form-group.light-title > label {
@@ -1222,7 +1232,7 @@ div.lazy-ui section div.form-group > label .tooltip > div {
   text-align: center;
   border: 1px dashed #aaa;
   border-radius: 6px;
-  padding: 15px 0;
+  padding: 20px 20px 30px 20px;
   text-decoration: none;
   /* Position the tooltip */
 
