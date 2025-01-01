@@ -1,10 +1,6 @@
  Date (d/m/Y) | Version | Description / Comment
  ================================================
 
- 20/06/2022 , 2.1.7 , Ready for Concrete CMS Version 9
- ------------------------------------------------
- 20/06/2022 , 2.1.8 , FIX Blocks Controllers Utils
- ------------------------------------------------
  21/06/2022 , 2.1.9 , FIX Controller / Model / View on Blocks
  ------------------------------------------------
  21/06/2022 , 2.2   , FIX Assets Package / Blocks
@@ -15,5 +11,9 @@
  ------------------------------------------------
  17/02/2023 , 2.2.3 , FIX Page Selector on Sub Folders
  ------------------------------------------------
- 15/11/2024 , 2.2.4 , Added fonts and mixin Assets to variables
+ 23/12/2024 , 2.2.4 , New Marketplace approval guidelines: AVOID PHP preg_replace
+ ------------------------------------------------
+ 29/12/2024 , 2.2.5 , FIX Page Selector on Sub Folder installation (DIR_REL)
+ ------------------------------------------------
+ 01/01/2025 , 2.2.6 , FIX Controller / Model / View on Blocks
  ------------------------------------------------

@@ -236,7 +236,8 @@ class Utils {
             '\\1'
         );
 
-        $o = preg_replace($search, $replace, $buffer);
+        // HOT-FIX: new Marketplace approval guidelines at ConcreteCMS
+        // $o = preg_replace($search, $replace, $buffer);
 
         return $o;
     }

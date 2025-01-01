@@ -22,9 +22,6 @@
 '---------------------------------------------------------------------------'
 */
 defined('C5_EXECUTE') or die("Access Denied.");
-
-// GET Relative Directory Path (i.e. $_SERVER['DOCUMENT_ROOT'] . '/subfolder')
-$dirRelPath = substr($_SERVER['REQUEST_URI'], 0, strpos($_SERVER['REQUEST_URI'], "/index.php"));
 ?>
 
   <div class="ccm-summary-selected-item" data-page-selector="<%=uniqueID%>">
@@ -32,7 +29,7 @@ $dirRelPath = substr($_SERVER['REQUEST_URI'], 0, strpos($_SERVER['REQUEST_URI'],
       <span class="ccm-summary-selected-item-label" style="white-space: pre"><%=pageName%></span>
     </div>
 
-    <a href="<?php echo $dirRelPath?>/ccm/system/dialogs/page/sitemap_selector?cID=0"
+    <a href="<?php echo DIR_REL?>/index.php/ccm/system/dialogs/page/sitemap_selector?cID=0"
        class="ccm-sitemap-select-page"
        data-page-selector-launch="<%=uniqueID%>"
        dialog-width="90%"

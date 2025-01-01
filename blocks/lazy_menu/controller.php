@@ -600,15 +600,21 @@ class Controller extends BlockController
     {
         $al = AssetList::getInstance();
 
+        $ph = array(
+            'position' => Asset::ASSET_POSITION_HEADER,
+            'minify' => true,
+            'combine' => true
+        );
+
         $pf = array(
             'position' => Asset::ASSET_POSITION_FOOTER,
             'minify' => true,
             'combine' => true
         );
 
-        $ph = array(
+        $ch = array(
             'position' => Asset::ASSET_POSITION_HEADER,
-            'minify' => true,
+            'minify' => false,
             'combine' => true
         );
 
@@ -626,7 +632,12 @@ class Controller extends BlockController
 
         // Register Assets this Block
         $al->register('javascript', 'hamburgers-init', 'blocks/' . $this->getBlockHandle() . '/jscript/hamburgers.init.js', $cf, $this->getPackageHandle());
-        $al->register('css', 'hamburgers-style',  'blocks/' . $this->getBlockHandle() . '/style/hamburgers.min.css', $ph, $this->getPackageHandle());
+        $al->register('css', 'hamburgers-style',  'blocks/' . $this->getBlockHandle() . '/style/hamburgers.min.css', array(
+                                                                                                                       'version' => '1.2.0',
+                                                                                                                       'position' => Asset::ASSET_POSITION_HEADER,
+                                                                                                                       'minify' => false,
+                                                                                                                       'combine' => true
+                                                                                                                     ), $this->getPackageHandle());
 
         $al->registerGroup(
             'jst.hamburgers', array(
@@ -644,15 +655,36 @@ class Controller extends BlockController
         /** - - - - - - - - - - - - - - - - - - - - - - - - -
          * Register JS / CSS Animate for this Block
          */
-        $al->register('javascript', 'jt.jquery.migrate', 'blocks/' . $this->getBlockHandle() . '/jscript/min/jquery.migrate.min.js', $pf, $this->getPackageHandle());
-        $al->register('javascript', 'jt.jquery.waypoints', 'blocks/' . $this->getBlockHandle() . '/jscript/min/jquery.waypoints.min.js', $pf, $this->getPackageHandle());
+        $al->register('javascript', 'jt.jquery.migrate', 'blocks/' . $this->getBlockHandle() . '/jscript/min/jquery.migrate.min.js', array(
+                                                                                                                                       'version' => '3.0.0',
+                                                                                                                                       'position' => Asset::ASSET_POSITION_FOOTER,
+                                                                                                                                       'minify' => false,
+                                                                                                                                       'combine' => true
+                                                                                                                                     ), $this->getPackageHandle());
 
+        $al->register('javascript', 'jt.jquery.waypoints', 'blocks/' . $this->getBlockHandle() . '/jscript/min/jquery.waypoints.min.js', array(
+                                                                                                                                           'version' => '3.1.1',
+                                                                                                                                           'position' => Asset::ASSET_POSITION_FOOTER,
+                                                                                                                                           'minify' => false,
+                                                                                                                                           'combine' => true
+                                                                                                                                         ), $this->getPackageHandle());
         // Register Assets Animate
-        $al->register('javascript', 'animate-lib', 'blocks/' . $this->getBlockHandle() . '/jscript/min/jquery.lazy.animate.min.js', $pf, $this->getPackageHandle());
+        $al->register('javascript', 'animate-lib', 'blocks/' . $this->getBlockHandle() . '/jscript/min/jquery.lazy.animate.min.js', array(
+                                                                                                                                      'version' => '1.1.0',
+                                                                                                                                      'position' => Asset::ASSET_POSITION_FOOTER,
+                                                                                                                                      'minify' => true,
+                                                                                                                                      'combine' => true
+                                                                                                                                    ), $this->getPackageHandle());
 
-        $al->register('css', 'style.animate', 'blocks/' . $this->getBlockHandle() . '/style/animate.min.css', $ph, $this->getPackageHandle());
-        $al->register('css', 'style.animate.delay', 'blocks/' . $this->getBlockHandle() . '/style/animate.delay.min.css', $ph, $this->getPackageHandle());
-        $al->register('css', 'style.animate.duration', 'blocks/' . $this->getBlockHandle() . '/style/animate.duration.min.css', $ph, $this->getPackageHandle());
+        $al->register('css', 'style.animate', 'blocks/' . $this->getBlockHandle() . '/style/animate.min.css', array(
+                                                                                                                'version' => '4.1.1',
+                                                                                                                'position' => Asset::ASSET_POSITION_HEADER,
+                                                                                                                'minify' => false,
+                                                                                                                'combine' => true
+                                                                                                              ), $this->getPackageHandle());
+
+        $al->register('css', 'style.animate.delay', 'blocks/' . $this->getBlockHandle() . '/style/animate.delay.min.css', $ch, $this->getPackageHandle());
+        $al->register('css', 'style.animate.duration', 'blocks/' . $this->getBlockHandle() . '/style/animate.duration.min.css', $ch, $this->getPackageHandle());
 
         $al->registerGroup(
             'jst.animate.assets', array(
