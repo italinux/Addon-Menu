@@ -316,7 +316,7 @@ div.lazy-ui section ul.nav-tabs > li > span.fa-angle-down {
   right: 0px;
   margin: 0px auto;
   font-size: 1.4em;
-  background-color: transparent;;
+  background-color: transparent;
   color: #555;
   cursor: auto;
 }
@@ -473,7 +473,7 @@ div.lazy-ui section div#contacts-modal > div[id^="ccm-tab-content-"] div.form-gr
 
 /* Display image Selector */
 div.lazy-ui section div.ccm-item-selector-loaded > div {
-  max-width: 200px;;
+  max-width: 200px;
 }
 div.lazy-ui section div.ccm-file-selector {
   background-color: #fff;
@@ -488,14 +488,14 @@ div.mini-wysiwyg section div.redactor-box ul.redactor-toolbar a[rel^="unorderedl
 div.mini-wysiwyg section div.redactor-box ul.redactor-toolbar a[rel^="orderedlist"],
 div.mini-wysiwyg section div.redactor-box ul.redactor-toolbar a[rel^="outdent"],
 div.mini-wysiwyg section div.redactor-box ul.redactor-toolbar a[rel^="indent"] {
-  display: none!important;
+  display: none !important;
 }
 
 /* Textarea mini height */
 div.mini-wysiwyg section div.redactor-box div.redactor-editor {
   border: 1px solid #bbb;
   border-top: none;
-  min-height: 230px!important;
+  min-height: 230px !important;
 }
 
 /* Display JQuery UI slider
@@ -928,12 +928,24 @@ div.lazy-ui section div.input-group input[type="text"] {
 }
 div.lazy-ui section div.input-group select:not([multiple]) {
   width: auto !important;
-  /* appearance: auto !important; */ /* ALWAYS show right dropdown arrow */
-  /* border-right: 10px solid #fff; */ /* Add some right space to dropdown arrow */
+
+  /* ALWAYS show right dropdown arrow */
+  /* appearance: auto !important; */
+
+  /* Add some right space to dropdown arrow */
+  /* border-right: 10px solid #fff; */
 }
 div.lazy-ui section div.input-group select:not([multiple]) > option {
   zoom: 1.2;
 }
+div.lazy-ui section div.input-group select:not([multiple]).form-control {
+  /* ALWAYS show right dropdown arrow */
+  appearance: auto !important;
+
+  /* Add some right space to dropdown arrow */
+  border-right: 10px solid #fff;
+}
+
 div.lazy-ui section div.input-group select:disabled,
 div.lazy-ui section div.input-group select[disabled="disabled"] {
   background-color: #dedede;

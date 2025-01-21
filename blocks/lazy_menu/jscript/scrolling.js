@@ -40,7 +40,7 @@ $(function() {
 
             e.preventDefault();
 
-            var speedFactor = 2; // + o - speed (play with decimals first)
+            var speedFactor = 3; // + o - speed (play with decimals first)
 
             // minimum animation duration in millisecs
             var animDurationMsecs = 400;

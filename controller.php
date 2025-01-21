@@ -36,7 +36,7 @@ class Controller extends Package
 {
 
     protected $pkgHandle = 'lazy_menu';
-    protected $pkgVersion = '2.2.6';
+    protected $pkgVersion = '2.2.6.2';
 
     protected $appVersionRequired = '9.0';
 

@@ -240,6 +240,14 @@ class Utils {
         $buffer = preg_replace($search, $replace, $buffer);
         */
 
+        $search = array(
+            "\n", // strip new line UNIX
+            "\r", // strip new line MS
+            ' '   // strip whitespaces
+        );
+
+        $buffer = str_replace($search, '', $buffer);
+
         return $buffer;
     }
 
