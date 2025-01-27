@@ -88,21 +88,20 @@ div.lazy-ui section div.panel-body {
   border-radius: 0px 0px 5px 5px;
   overflow: hidden;
 }
-div.lazy-ui section div.panel-body .addon-ko {
-  font-size: 1.2em;
+div.lazy-ui section div.panel-body .addon-ko,
+div.lazy-ui section div.panel-body .addon-ok {
+  padding-top: 5px;
+  font-size: 1em;
   line-height: 1.4em;
-  border: 1px dashed #bbb;
   display: none;
+}
+div.lazy-ui section div.panel-body .addon-ko {
+  border: 1px dashed #bbb;
 }
 div.lazy-ui section div.panel-body .addon-ko span,
 div.lazy-ui section div.panel-body .addon-ko label,
 div.lazy-ui section div.panel-body .ccm-summary-selected-item-label {
   color: darkblue;
-}
-div.lazy-ui section div.panel-body .addon-ok {
-  font-size: 1.4em;
-  line-height: 1.6em;
-  display: none;
 }
 div.lazy-ui section div.panel-body .addon-ok label {
   color: darkgreen;
