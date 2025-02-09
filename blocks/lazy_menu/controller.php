@@ -467,9 +467,9 @@ class Controller extends BlockController
     {
         $logoThumb = $this->getLogoImageObject();
 
-        return ($logoThumb == true ? array('path' => $logoThumb->src,
-                                          'width' => $logoThumb->width,
-                                         'height' => $logoThumb->height,
+        return ($logoThumb == true ? array('path' => (isset($logoThumb->src) ? $logoThumb->src : null),
+                                          'width' => (isset($logoThumb->width) ? $logoThumb->width : null),
+                                         'height' => (isset($logoThumb->height) ? $logoThumb->height : null),
                                         'default' => false) : array('path' => $this->getBlockDefaultImageURL(),
                                                                    'width' => $this->getBlockDefaultImageWidth(),
                                                                   'height' => $this->getBlockDefaultImageHeight(),
