@@ -1,7 +1,7 @@
  Date (d/m/Y) | Version | Description / Comment
  ================================================
 
- 09/02/2025 , 2.2.6.2 , FIX Window Overlay / Controller / View
+ 04/07/2025 , 2.2.6.2 , FIX Window Overlay / Controller / View
  ------------------------------------------------
  10/01/2025 , 2.2.6.1 , FIX Version to 4 digits allowing remote upgrade
  ------------------------------------------------

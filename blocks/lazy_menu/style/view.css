@@ -493,7 +493,7 @@ section.menu nav.navbar div.navbar-center div.menu-wrapper ul.nav li ol.dropdown
   width: 100%;
 }
 section.menu nav.navbar img {
-  max-height: 50px;
+  max-height: 80px;
   width: auto;
   vertical-align: middle;
 }

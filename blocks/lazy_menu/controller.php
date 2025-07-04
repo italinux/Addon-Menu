@@ -48,7 +48,7 @@ class Controller extends BlockController
 
     // Custom Image Thumb Width X Height (pixels)
     protected static $btCustomImageThumbWidth = 250;
-    protected static $btCustomImageThumbHeight = 50;
+    protected static $btCustomImageThumbHeight = 70;
 
     // Style Background & Foreground Colours
     protected static $btStyleOpacity = '0.5';
