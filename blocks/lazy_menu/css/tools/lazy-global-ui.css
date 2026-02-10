@@ -1209,7 +1209,7 @@ div.lazy-ui section div.input-group.align-center {
   margin: 0px auto;
 }
 div.lazy-ui section div.input-group.center {
-  flex-direction: column;
+  flex-direction: column !important;
   flex-flow: wrap;
 }
 div.lazy-ui section div.input-group.center > div[data-concrete-file-input],

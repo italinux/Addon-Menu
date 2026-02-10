@@ -308,6 +308,7 @@ section.menu nav.navbar div.navbar-header div.navbar-toggle {
   text-align: center;
   transform: translate(0%, -50%);
   display: none;
+  z-index: 1;
 }
 section.menu nav.navbar div.navbar-header div.navbar-toggle div.hamburger {
   padding: 0.7em;
