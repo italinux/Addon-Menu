@@ -45,7 +45,7 @@
   text-align: center;
 }
 .fix-spaces-buttons section.menu div.global-cta .btn.goto > span {
-  max-width: 150px;
+  max-width: 200px;
   display: inline-block;
 }
 .fix-spaces-buttons section.menu div.global-cta .btn.goto::after {
@@ -494,6 +494,7 @@ section.menu nav.navbar div.navbar-center div.menu-wrapper ul.nav li ol.dropdown
   width: 100%;
 }
 section.menu nav.navbar img {
+  max-width: none;
   max-height: 80px;
   width: auto;
   vertical-align: middle;

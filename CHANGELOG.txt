@@ -1,7 +1,7 @@
  Date (d/m/Y) | Version | Description / Comment
  ================================================
 
- 10/02/2026 , 2.2.6.2 , FIX Window Overlay / Controller / View
+ 18/02/2026 , 2.2.6.2 , FIX Menu add SVG support to Logo
  ------------------------------------------------
  10/01/2025 , 2.2.6.1 , FIX Version to 4 digits allowing remote upgrade
  ------------------------------------------------

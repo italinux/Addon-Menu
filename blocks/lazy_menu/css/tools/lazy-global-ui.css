@@ -955,6 +955,14 @@ div.lazy-ui section div.input-group textarea {
   width: 100% !important;
 }
 /* * * * * * * * * * * * * *
+*  Placeholders
+* * * * * * * * * * * * * */
+/* hide placeholders on focus */
+div.lazy-ui section div.input-group input[type="text"]:focus::placeholder,
+div.lazy-ui section div.input-group textarea:focus::placeholder {
+    color: transparent !important;
+}
+/* * * * * * * * * * * * * *
 *  Textarea input WYSIWYG Height
 *  default is: 300px
 * * * * * * * * * * * * * */
@@ -1340,6 +1348,12 @@ div.lazy-ui section div.input-group[class*=" p"] {
 /**
 * SPECIFIC input group wrappers
 */
+div.lazy-ui section div.input-group.p10 {
+  width: 10%;
+}
+div.lazy-ui section div.input-group.p15 {
+  width: 15%;
+}
 div.lazy-ui section div.input-group.p20 {
   width: 20%;
 }

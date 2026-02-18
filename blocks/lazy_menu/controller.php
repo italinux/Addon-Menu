@@ -54,7 +54,7 @@ class Controller extends BlockController
     protected static $btStyleOpacity = '0.5';
 
     // Style Upload Background Image size in KBytes (1KB = 1024b)
-    protected static $btStyleUploadImageSize = 450;
+    protected static $btStyleUploadImageSize = 1500;
 
     // Style Background Image size: Width X Height (pixels)
     protected static $btStyleUploadThumbWidth = 1190;
@@ -486,8 +486,23 @@ class Controller extends BlockController
         // get logo image object
         $fID = $this->getO1_fID();
 
-        // get logo thumbnail object
-        return (is_object($fID) ? BlockUtils::getThisApp()->make('helper/image')->getThumbnail($fID, self::$btCustomImageThumbWidth, self::$btCustomImageThumbHeight, false) : null);
+        // get image object
+        if (is_object($fID)) {
+
+            // detect if image is SVG
+            if ($fID->getTypeObject()->isSVG()) {
+                // return image object with property for SVG image
+                return (object) array('width' => self::$btCustomImageThumbWidth,
+                                     'height' => self::$btCustomImageThumbHeight,
+                                        'src' => $fID->getVersion()->getRelativePath());
+
+            } else {
+                // return image object
+                return BlockUtils::getThisApp()->make('helper/image')->getThumbnail($fID, self::$btCustomImageThumbWidth, self::$btCustomImageThumbHeight, false);
+            }
+        }
+
+        return null;
     }
 
     /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -852,9 +867,10 @@ class Controller extends BlockController
                         case 'image/jpeg':
                         case 'image/jpg':
                         case 'image/png':
+                        case 'image/svg+xml':
                             break;
                         default:
-                            $e->add(t('File type required: JPG or PNG'));
+                            $e->add(t('File type required: JPG, PNG or SVG'));
                             break;
                         }
 
@@ -862,9 +878,10 @@ class Controller extends BlockController
                         case 'jpeg':
                         case 'jpg':
                         case 'png':
+                        case 'svg':
                             break;
                         default:
-                            $e->add(t('File extension required: JPG or PNG'));
+                            $e->add(t('File extension required: JPG, PNG or SVG'));
                             break;
                         }
 
@@ -1134,7 +1151,7 @@ class Controller extends BlockController
     private function getDefaultImageFullSrc($file='default')
     {
         $image = null;
-        $ext = array('png', 'jpg');
+        $ext = array('png', 'jpg', 'svg');
 
         // check if Template Image folder has images
         if (is_dir($this->getBlockImagesBaseTemplatePath())) {
