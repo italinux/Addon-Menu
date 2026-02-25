@@ -93,6 +93,16 @@ class Controller extends Package
             'position' => $ph,
             ),
             array(
+                'type' => 'css',
+            'rel-path' => 'style/media.css',
+            'position' => $ph,
+            ),
+            array(
+                'type' => 'css',
+            'rel-path' => 'style/extra.css',
+            'position' => $ph,
+            ),
+            array(
                 'type' => 'javascript',
             'rel-path' => 'jscript/view.js',
             'position' => $pf,
@@ -102,19 +112,23 @@ class Controller extends Package
         /**
         * Register this Block Views Assets (view.js|view.css)
         */
+        // SET Asset Group
         $thisAssetGroup = array();
 
+        // SET Asset Prefix Name (e.g. portfolio-view, my-skills-view)
         $thisAssetName = $this->getPackageBlockAssetsHandle() . '-view';
 
-        // Loop these Blocks
-        foreach ($theseAssets as $value) {
+        // Loop all the Sections = Blocks
+        foreach ($theseAssets as $key => $value) {
 
-            $thisAssetFullName = $thisAssetName . '.' . $value['type'];
+            // SET Asset Full Name (e.g. portfolio-view-1.css, portfolio-view-3.js)
+            $thisAssetFullName = $thisAssetName . '-' . $key . '.' . $value['type'];
 
+            // SET Asset Full Name (e.g. blocks/lazy_portfolio/style/view.css)
             $thisAssetFullPath = 'blocks/' . $this->pkgHandle . '/' . $value['rel-path'];
 
-            // Detect if asset (js|css) is present
-            if (is_file(__DIR__ . '/' . $thisAssetFullPath)) {
+            // Detect if asset (js|css) is present: packages | application
+            if (is_file(__DIR__ . '/' . $thisAssetFullPath) || is_file(__DIR__ . '/../' .'../application/' . $thisAssetFullPath)) {
 
                 // register single asset
                 $al->register($value['type'], $thisAssetFullName, $thisAssetFullPath, $value['position'], $this);
@@ -124,7 +138,7 @@ class Controller extends Package
             }
         }
 
-        // register group assets
+        // Register Asset Group (e.g. jst.block.portfolio-view.asset, array())
         $al->registerGroup(
             'jst.block.' . $thisAssetName . '.assets', $thisAssetGroup
         );
